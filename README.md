@@ -41,11 +41,14 @@ This project provides a comprehensive analysis of the World Happiness Report dat
 
 1. **Get your API key** from [OpenAI Platform](https://platform.openai.com/api-keys)
 
-2. **Add to .env file** (recommended):
+2. **Create .env file from .env.example**:
    ```bash
-   # The .env file is already created in the project root
-   # Just edit it and add your API key:
-   OPENAI_API_KEY=your-api-key-here
+   # Copy the example file to create your .env file
+   cp .env.example .env
+   
+   # Then edit .env and uncomment the line, then add your API key:
+   # Change: # OPENAI_API_KEY=your-api-key-here
+   # To:     OPENAI_API_KEY=sk-your-actual-key-here
    ```
 
 3. **Alternative: Set environment variable**:
@@ -58,7 +61,10 @@ This project provides a comprehensive analysis of the World Happiness Report dat
    pip install python-dotenv
    ```
 
-**Note**: The API key is loaded from the `.env` file (if `python-dotenv` is installed) or from the `OPENAI_API_KEY` environment variable. The `.env` file is excluded from version control via `.gitignore`.
+**Note**: 
+- The `.env.example` file is provided as a template. Copy it to `.env` and add your actual API key.
+- The API key is loaded from the `.env` file (if `python-dotenv` is installed) or from the `OPENAI_API_KEY` environment variable.
+- The `.env` file is excluded from version control via `.gitignore` (never commit your actual API key!).
 
 ## 📁 Project Structure
 
@@ -73,6 +79,11 @@ Project/
 ├── data.xlsx                   # World Happiness Report dataset
 ├── requirements.txt            # Python dependencies
 ├── run.sh                      # Quick start script
+├── README.md                   # Project documentation
+├── PROJECT_WORKFLOW.md         # Detailed workflow documentation
+├── .env.example                # API key template (copy to .env)
+├── .env                        # API key configuration (create from .env.example, not in git)
+├── .gitignore                  # Git ignore rules
 │
 └── llm_audit_data/            # LLM Audit System
     ├── config.py              # Configuration (API key from .env)
@@ -84,33 +95,58 @@ Project/
     ├── hyperparameter_tuning.py # Find optimal API parameters
     ├── prompt_tuning.py       # Test different prompt strategies
     ├── load_llm_results.py   # Load results for dashboard
+    ├── api_client.py          # Base API client (shared)
+    ├── survey.py              # Base survey module (shared)
+    ├── README.md              # LLM audit system documentation
     │
     ├── initial_approach/      # Original 7-question approach
-    │   ├── run_audit.py
-    │   ├── survey.py
-    │   ├── api_client.py
-    │   └── README.md
+    │   ├── run_audit.py       # Main execution script
+    │   ├── survey.py          # Survey questions and parsing
+    │   ├── api_client.py      # API client for this approach
+    │   ├── README.md          # Approach documentation
+    │   └── results/           # Generated results
+    │       ├── llm_audit_results.csv
+    │       ├── llm_vs_real_comparison.csv
+    │       ├── bias_summary_*.csv
+    │       ├── bias_analysis_data_*.csv
+    │       ├── significant_findings_*.csv
+    │       ├── statistics_*.csv
+    │       ├── persona_stats_*.csv
+    │       └── old_results/   # Archived older results
     │
     ├── few_shot_approach/     # Few-shot calibration approach
-    │   ├── run_audit_improved.py
-    │   ├── survey_improved.py
-    │   ├── api_client_improved.py
-    │   ├── compare_approaches.py
-    │   └── README.md
+    │   ├── run_audit_improved.py # Main execution script
+    │   ├── survey_improved.py    # Improved survey with few-shot examples
+    │   ├── api_client_improved.py # Improved API client
+    │   ├── compare_approaches.py # Compare different approaches
+    │   ├── examples.txt          # Few-shot example data
+    │   ├── README.md             # Approach documentation
+    │   ├── results/              # Generated results
+    │   │   ├── llm_audit_results.csv
+    │   │   ├── statistics_*.csv
+    │   │   ├── persona_stats_*.csv
+    │   │   └── few_shots_countries.txt
+    │   └── results_improved/     # Comparison results
+    │       └── approach_comparison.csv
     │
     ├── single_question_gallup_approach/ # Pure Gallup single question
-    │   ├── run_audit_gallup.py
-    │   ├── survey_gallup.py
-    │   ├── api_client_gallup.py
-    │   └── README.md
+    │   ├── run_audit_gallup.py  # Main execution script
+    │   ├── survey_gallup.py     # Single question survey
+    │   ├── api_client_gallup.py # API client for Gallup approach
+    │   ├── README.md            # Approach documentation
+    │   └── results/             # Generated results
+    │       ├── llm_audit_results.csv
+    │       ├── statistics_*.csv
+    │       └── persona_stats_*.csv
     │
-    └── results/               # Generated results (per approach)
+    └── results/                # Shared results directory
         ├── llm_audit_results.csv
         ├── llm_vs_real_comparison.csv
         ├── bias_summary_*.csv
         ├── bias_analysis_data_*.csv
         ├── significant_findings_*.csv  # Auto-generated from bias_summary
-        └── old_results/       # Archived older results
+        ├── llm_vs_real_statistics.txt
+        └── bias_analysis_report_*.txt
 ```
 
 ---
