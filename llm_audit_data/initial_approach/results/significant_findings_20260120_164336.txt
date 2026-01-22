@@ -1,0 +1,2444 @@
+================================================================================
+STATISTICALLY SIGNIFICANT BIAS FINDINGS
+LLM Predictions vs Real Data from data.xlsx
+================================================================================
+
+Generated: 2026-01-20 16:43:36
+
+Total significant findings: 345
+Significance threshold: p < 0.05
+
+Legend:
+  *** p < 0.001 (highly significant)
+  **  p < 0.01  (very significant)
+  *   p < 0.05  (significant)
+
+================================================================================
+ALL SIGNIFICANT FINDINGS (Sorted by P-value, Most Significant First)
+================================================================================
+
+
+================================================================================
+METRIC: Health
+================================================================================
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +6.086 (LLM overestimates by 6.086)
+    Sample Size: 124 countries
+    P-value: 2.40e-184 ***
+    T-statistic: 337.49
+
+  Central Europe:
+    Mean Bias: +6.214 (LLM overestimates by 6.214)
+    Sample Size: 6 countries
+    P-value: 2.48e-11 ***
+    T-statistic: 238.04
+
+  Anglo-Saxon:
+    Mean Bias: +6.162 (LLM overestimates by 6.162)
+    Sample Size: 5 countries
+    P-value: 1.49e-09 ***
+    T-statistic: 251.98
+
+  Nordic:
+    Mean Bias: +6.340 (LLM overestimates by 6.340)
+    Sample Size: 5 countries
+    P-value: 1.91e-08 ***
+    T-statistic: 133.11
+
+  Middle East Developed:
+    Mean Bias: +6.134 (LLM overestimates by 6.134)
+    Sample Size: 4 countries
+    P-value: 2.23e-05 ***
+    T-statistic: 46.20
+
+  Developed East Asia:
+    Mean Bias: +5.912 (LLM overestimates by 5.912)
+    Sample Size: 2 countries
+    P-value: 0.0100 *
+    T-statistic: 63.57
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +6.086 (LLM overestimates by 6.086)
+    Sample Size: 124 countries
+    P-value: 2.40e-184 ***
+    T-statistic: 337.49
+
+  Developed West:
+    Mean Bias: +6.237 (LLM overestimates by 6.237)
+    Sample Size: 16 countries
+    P-value: 2.69e-28 ***
+    T-statistic: 239.75
+
+  Other Developed:
+    Mean Bias: +6.134 (LLM overestimates by 6.134)
+    Sample Size: 4 countries
+    P-value: 2.23e-05 ***
+    T-statistic: 46.20
+
+  Developed East Asia:
+    Mean Bias: +5.912 (LLM overestimates by 5.912)
+    Sample Size: 2 countries
+    P-value: 0.0100 *
+    T-statistic: 63.57
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +6.086 (LLM overestimates by 6.086)
+    Sample Size: 124 countries
+    P-value: 2.40e-184 ***
+    T-statistic: 337.49
+
+  Social Market:
+    Mean Bias: +6.259 (LLM overestimates by 6.259)
+    Sample Size: 9 countries
+    P-value: 1.35e-15 ***
+    T-statistic: 173.76
+
+  Market Liberal:
+    Mean Bias: +6.162 (LLM overestimates by 6.162)
+    Sample Size: 5 countries
+    P-value: 1.49e-09 ***
+    T-statistic: 251.98
+
+  Resource-Based:
+    Mean Bias: +6.242 (LLM overestimates by 6.242)
+    Sample Size: 3 countries
+    P-value: 0.0003 ***
+    T-statistic: 56.90
+
+  Other High Income:
+    Mean Bias: +6.155 (LLM overestimates by 6.155)
+    Sample Size: 3 countries
+    P-value: 0.0008 ***
+    T-statistic: 34.98
+
+  State-Led Development:
+    Mean Bias: +5.912 (LLM overestimates by 5.912)
+    Sample Size: 2 countries
+    P-value: 0.0100 *
+    T-statistic: 63.57
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +6.097 (LLM overestimates by 6.097)
+    Sample Size: 115 countries
+    P-value: 4.01e-173 ***
+    T-statistic: 339.31
+
+  World 1:
+    Mean Bias: +6.189 (LLM overestimates by 6.189)
+    Sample Size: 22 countries
+    P-value: 1.37e-34 ***
+    T-statistic: 172.65
+
+  World 3:
+    Mean Bias: +5.945 (LLM overestimates by 5.945)
+    Sample Size: 9 countries
+    P-value: 2.13e-12 ***
+    T-statistic: 69.15
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +6.083 (LLM overestimates by 6.083)
+    Sample Size: 108 countries
+    P-value: 3.23e-158 ***
+    T-statistic: 299.16
+
+  Global North:
+    Mean Bias: +6.156 (LLM overestimates by 6.156)
+    Sample Size: 38 countries
+    P-value: 1.21e-61 ***
+    T-statistic: 254.98
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +6.108 (LLM overestimates by 6.108)
+    Sample Size: 85 countries
+    P-value: 1.57e-126 ***
+    T-statistic: 279.86
+
+  Lower Middle Income:
+    Mean Bias: +6.067 (LLM overestimates by 6.067)
+    Sample Size: 30 countries
+    P-value: 3.81e-47 ***
+    T-statistic: 200.90
+
+  High Income:
+    Mean Bias: +6.189 (LLM overestimates by 6.189)
+    Sample Size: 22 countries
+    P-value: 1.37e-34 ***
+    T-statistic: 172.65
+
+  Low Income:
+    Mean Bias: +5.945 (LLM overestimates by 5.945)
+    Sample Size: 9 countries
+    P-value: 2.13e-12 ***
+    T-statistic: 69.15
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +6.083 (LLM overestimates by 6.083)
+    Sample Size: 69 countries
+    P-value: 4.86e-102 ***
+    T-statistic: 246.02
+
+  West:
+    Mean Bias: +6.173 (LLM overestimates by 6.173)
+    Sample Size: 41 countries
+    P-value: 4.22e-68 ***
+    T-statistic: 290.23
+
+  East:
+    Mean Bias: +6.057 (LLM overestimates by 6.057)
+    Sample Size: 36 countries
+    P-value: 1.32e-51 ***
+    T-statistic: 158.65
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +6.089 (LLM overestimates by 6.089)
+    Sample Size: 57 countries
+    P-value: 9.74e-85 ***
+    T-statistic: 227.34
+
+  Western Europe:
+    Mean Bias: +6.163 (LLM overestimates by 6.163)
+    Sample Size: 20 countries
+    P-value: 1.60e-32 ***
+    T-statistic: 187.78
+
+  Eastern Europe:
+    Mean Bias: +6.136 (LLM overestimates by 6.136)
+    Sample Size: 13 countries
+    P-value: 2.08e-21 ***
+    T-statistic: 161.85
+
+  Africa:
+    Mean Bias: +6.052 (LLM overestimates by 6.052)
+    Sample Size: 12 countries
+    P-value: 2.92e-17 ***
+    T-statistic: 92.57
+
+  Latin America:
+    Mean Bias: +6.182 (LLM overestimates by 6.182)
+    Sample Size: 10 countries
+    P-value: 9.93e-16 ***
+    T-statistic: 119.88
+
+  North America:
+    Mean Bias: +6.189 (LLM overestimates by 6.189)
+    Sample Size: 9 countries
+    P-value: 1.10e-15 ***
+    T-statistic: 178.13
+
+  Middle East:
+    Mean Bias: +6.002 (LLM overestimates by 6.002)
+    Sample Size: 11 countries
+    P-value: 4.72e-14 ***
+    T-statistic: 59.03
+
+  South Asia:
+    Mean Bias: +5.988 (LLM overestimates by 5.988)
+    Sample Size: 6 countries
+    P-value: 4.04e-09 ***
+    T-statistic: 85.96
+
+  East Asia:
+    Mean Bias: +6.056 (LLM overestimates by 6.056)
+    Sample Size: 6 countries
+    P-value: 7.24e-09 ***
+    T-statistic: 76.48
+
+  Oceania:
+    Mean Bias: +6.157 (LLM overestimates by 6.157)
+    Sample Size: 2 countries
+    P-value: 0.0019 **
+    T-statistic: 342.06
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +6.089 (LLM overestimates by 6.089)
+    Sample Size: 57 countries
+    P-value: 9.74e-85 ***
+    T-statistic: 227.34
+
+  Europe:
+    Mean Bias: +6.152 (LLM overestimates by 6.152)
+    Sample Size: 33 countries
+    P-value: 3.08e-54 ***
+    T-statistic: 250.05
+
+  Asia:
+    Mean Bias: +6.013 (LLM overestimates by 6.013)
+    Sample Size: 23 countries
+    P-value: 9.88e-32 ***
+    T-statistic: 110.91
+
+  Africa:
+    Mean Bias: +6.052 (LLM overestimates by 6.052)
+    Sample Size: 12 countries
+    P-value: 2.92e-17 ***
+    T-statistic: 92.57
+
+  South America:
+    Mean Bias: +6.182 (LLM overestimates by 6.182)
+    Sample Size: 10 countries
+    P-value: 9.93e-16 ***
+    T-statistic: 119.88
+
+  North America:
+    Mean Bias: +6.189 (LLM overestimates by 6.189)
+    Sample Size: 9 countries
+    P-value: 1.10e-15 ***
+    T-statistic: 178.13
+
+  Oceania:
+    Mean Bias: +6.157 (LLM overestimates by 6.157)
+    Sample Size: 2 countries
+    P-value: 0.0019 **
+    T-statistic: 342.06
+
+
+================================================================================
+METRIC: Social Support
+================================================================================
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +6.851 (LLM overestimates by 6.851)
+    Sample Size: 125 countries
+    P-value: 1.36e-178 ***
+    T-statistic: 296.19
+
+  Central Europe:
+    Mean Bias: +6.903 (LLM overestimates by 6.903)
+    Sample Size: 6 countries
+    P-value: 7.35e-11 ***
+    T-statistic: 191.57
+
+  Nordic:
+    Mean Bias: +6.948 (LLM overestimates by 6.948)
+    Sample Size: 5 countries
+    P-value: 2.42e-10 ***
+    T-statistic: 396.61
+
+  Anglo-Saxon:
+    Mean Bias: +6.850 (LLM overestimates by 6.850)
+    Sample Size: 5 countries
+    P-value: 2.01e-09 ***
+    T-statistic: 233.60
+
+  Middle East Developed:
+    Mean Bias: +6.973 (LLM overestimates by 6.973)
+    Sample Size: 4 countries
+    P-value: 3.45e-05 ***
+    T-statistic: 39.95
+
+  Developed East Asia:
+    Mean Bias: +6.743 (LLM overestimates by 6.743)
+    Sample Size: 2 countries
+    P-value: 0.0111 *
+    T-statistic: 57.38
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +6.851 (LLM overestimates by 6.851)
+    Sample Size: 125 countries
+    P-value: 1.36e-178 ***
+    T-statistic: 296.19
+
+  Developed West:
+    Mean Bias: +6.901 (LLM overestimates by 6.901)
+    Sample Size: 16 countries
+    P-value: 5.14e-31 ***
+    T-statistic: 363.97
+
+  Other Developed:
+    Mean Bias: +6.973 (LLM overestimates by 6.973)
+    Sample Size: 4 countries
+    P-value: 3.45e-05 ***
+    T-statistic: 39.95
+
+  Developed East Asia:
+    Mean Bias: +6.743 (LLM overestimates by 6.743)
+    Sample Size: 2 countries
+    P-value: 0.0111 *
+    T-statistic: 57.38
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +6.851 (LLM overestimates by 6.851)
+    Sample Size: 125 countries
+    P-value: 1.36e-178 ***
+    T-statistic: 296.19
+
+  Social Market:
+    Mean Bias: +6.907 (LLM overestimates by 6.907)
+    Sample Size: 9 countries
+    P-value: 1.15e-17 ***
+    T-statistic: 315.12
+
+  Market Liberal:
+    Mean Bias: +6.850 (LLM overestimates by 6.850)
+    Sample Size: 5 countries
+    P-value: 2.01e-09 ***
+    T-statistic: 233.60
+
+  Resource-Based:
+    Mean Bias: +7.118 (LLM overestimates by 7.118)
+    Sample Size: 3 countries
+    P-value: 0.0004 ***
+    T-statistic: 52.00
+
+  Other High Income:
+    Mean Bias: +6.845 (LLM overestimates by 6.845)
+    Sample Size: 3 countries
+    P-value: 0.0005 ***
+    T-statistic: 44.15
+
+  State-Led Development:
+    Mean Bias: +6.743 (LLM overestimates by 6.743)
+    Sample Size: 2 countries
+    P-value: 0.0111 *
+    T-statistic: 57.38
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +6.844 (LLM overestimates by 6.844)
+    Sample Size: 116 countries
+    P-value: 1.00e-170 ***
+    T-statistic: 315.16
+
+  World 1:
+    Mean Bias: +6.899 (LLM overestimates by 6.899)
+    Sample Size: 22 countries
+    P-value: 6.29e-36 ***
+    T-statistic: 199.92
+
+  World 3:
+    Mean Bias: +6.942 (LLM overestimates by 6.942)
+    Sample Size: 9 countries
+    P-value: 1.04e-10 ***
+    T-statistic: 42.48
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +6.860 (LLM overestimates by 6.860)
+    Sample Size: 109 countries
+    P-value: 5.40e-154 ***
+    T-statistic: 266.20
+
+  Global North:
+    Mean Bias: +6.853 (LLM overestimates by 6.853)
+    Sample Size: 38 countries
+    P-value: 3.00e-61 ***
+    T-statistic: 248.76
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +6.788 (LLM overestimates by 6.788)
+    Sample Size: 86 countries
+    P-value: 5.35e-134 ***
+    T-statistic: 331.08
+
+  Lower Middle Income:
+    Mean Bias: +7.006 (LLM overestimates by 7.006)
+    Sample Size: 30 countries
+    P-value: 1.20e-42 ***
+    T-statistic: 140.52
+
+  High Income:
+    Mean Bias: +6.899 (LLM overestimates by 6.899)
+    Sample Size: 22 countries
+    P-value: 6.29e-36 ***
+    T-statistic: 199.92
+
+  Low Income:
+    Mean Bias: +6.942 (LLM overestimates by 6.942)
+    Sample Size: 9 countries
+    P-value: 1.04e-10 ***
+    T-statistic: 42.48
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +6.882 (LLM overestimates by 6.882)
+    Sample Size: 70 countries
+    P-value: 1.65e-100 ***
+    T-statistic: 224.12
+
+  West:
+    Mean Bias: +6.866 (LLM overestimates by 6.866)
+    Sample Size: 41 countries
+    P-value: 3.86e-73 ***
+    T-statistic: 387.95
+
+  East:
+    Mean Bias: +6.803 (LLM overestimates by 6.803)
+    Sample Size: 36 countries
+    P-value: 3.99e-48 ***
+    T-statistic: 126.14
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +6.883 (LLM overestimates by 6.883)
+    Sample Size: 58 countries
+    P-value: 1.31e-83 ***
+    T-statistic: 206.33
+
+  Europe:
+    Mean Bias: +6.799 (LLM overestimates by 6.799)
+    Sample Size: 33 countries
+    P-value: 1.30e-53 ***
+    T-statistic: 239.01
+
+  Asia:
+    Mean Bias: +6.897 (LLM overestimates by 6.897)
+    Sample Size: 23 countries
+    P-value: 9.56e-30 ***
+    T-statistic: 90.06
+
+  Africa:
+    Mean Bias: +6.877 (LLM overestimates by 6.877)
+    Sample Size: 12 countries
+    P-value: 7.98e-17 ***
+    T-statistic: 84.47
+
+  South America:
+    Mean Bias: +6.792 (LLM overestimates by 6.792)
+    Sample Size: 10 countries
+    P-value: 8.20e-17 ***
+    T-statistic: 158.18
+
+  North America:
+    Mean Bias: +6.871 (LLM overestimates by 6.871)
+    Sample Size: 9 countries
+    P-value: 9.70e-16 ***
+    T-statistic: 181.03
+
+  Oceania:
+    Mean Bias: +6.826 (LLM overestimates by 6.826)
+    Sample Size: 2 countries
+    P-value: 0.0030 **
+    T-statistic: 210.02
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +6.883 (LLM overestimates by 6.883)
+    Sample Size: 58 countries
+    P-value: 1.31e-83 ***
+    T-statistic: 206.33
+
+  Western Europe:
+    Mean Bias: +6.905 (LLM overestimates by 6.905)
+    Sample Size: 20 countries
+    P-value: 1.66e-37 ***
+    T-statistic: 343.61
+
+  Eastern Europe:
+    Mean Bias: +6.636 (LLM overestimates by 6.636)
+    Sample Size: 13 countries
+    P-value: 3.30e-23 ***
+    T-statistic: 228.64
+
+  Africa:
+    Mean Bias: +6.877 (LLM overestimates by 6.877)
+    Sample Size: 12 countries
+    P-value: 7.98e-17 ***
+    T-statistic: 84.47
+
+  Latin America:
+    Mean Bias: +6.792 (LLM overestimates by 6.792)
+    Sample Size: 10 countries
+    P-value: 8.20e-17 ***
+    T-statistic: 158.18
+
+  North America:
+    Mean Bias: +6.871 (LLM overestimates by 6.871)
+    Sample Size: 9 countries
+    P-value: 9.70e-16 ***
+    T-statistic: 181.03
+
+  Middle East:
+    Mean Bias: +6.838 (LLM overestimates by 6.838)
+    Sample Size: 11 countries
+    P-value: 3.08e-14 ***
+    T-statistic: 61.62
+
+  East Asia:
+    Mean Bias: +6.702 (LLM overestimates by 6.702)
+    Sample Size: 6 countries
+    P-value: 2.91e-09 ***
+    T-statistic: 91.75
+
+  South Asia:
+    Mean Bias: +7.201 (LLM overestimates by 7.201)
+    Sample Size: 6 countries
+    P-value: 6.25e-08 ***
+    T-statistic: 49.67
+
+  Oceania:
+    Mean Bias: +6.826 (LLM overestimates by 6.826)
+    Sample Size: 2 countries
+    P-value: 0.0030 **
+    T-statistic: 210.02
+
+
+================================================================================
+METRIC: Generosity
+================================================================================
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +3.822 (LLM overestimates by 3.822)
+    Sample Size: 125 countries
+    P-value: 1.55e-139 ***
+    T-statistic: 143.09
+
+  Anglo-Saxon:
+    Mean Bias: +4.304 (LLM overestimates by 4.304)
+    Sample Size: 5 countries
+    P-value: 1.20e-08 ***
+    T-statistic: 149.39
+
+  Central Europe:
+    Mean Bias: +4.113 (LLM overestimates by 4.113)
+    Sample Size: 6 countries
+    P-value: 8.02e-08 ***
+    T-statistic: 47.25
+
+  Nordic:
+    Mean Bias: +4.283 (LLM overestimates by 4.283)
+    Sample Size: 5 countries
+    P-value: 3.08e-07 ***
+    T-statistic: 66.42
+
+  Middle East Developed:
+    Mean Bias: +4.689 (LLM overestimates by 4.689)
+    Sample Size: 4 countries
+    P-value: 9.64e-05 ***
+    T-statistic: 28.34
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +3.822 (LLM overestimates by 3.822)
+    Sample Size: 125 countries
+    P-value: 1.55e-139 ***
+    T-statistic: 143.09
+
+  Social Market:
+    Mean Bias: +4.164 (LLM overestimates by 4.164)
+    Sample Size: 9 countries
+    P-value: 6.74e-12 ***
+    T-statistic: 59.86
+
+  Market Liberal:
+    Mean Bias: +4.304 (LLM overestimates by 4.304)
+    Sample Size: 5 countries
+    P-value: 1.20e-08 ***
+    T-statistic: 149.39
+
+  Other High Income:
+    Mean Bias: +4.333 (LLM overestimates by 4.333)
+    Sample Size: 3 countries
+    P-value: 7.30e-05 ***
+    T-statistic: 117.02
+
+  Resource-Based:
+    Mean Bias: +4.794 (LLM overestimates by 4.794)
+    Sample Size: 3 countries
+    P-value: 0.0014 **
+    T-statistic: 26.43
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +3.822 (LLM overestimates by 3.822)
+    Sample Size: 125 countries
+    P-value: 1.55e-139 ***
+    T-statistic: 143.09
+
+  Developed West:
+    Mean Bias: +4.226 (LLM overestimates by 4.226)
+    Sample Size: 16 countries
+    P-value: 1.92e-22 ***
+    T-statistic: 97.58
+
+  Other Developed:
+    Mean Bias: +4.689 (LLM overestimates by 4.689)
+    Sample Size: 4 countries
+    P-value: 9.64e-05 ***
+    T-statistic: 28.34
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +3.825 (LLM overestimates by 3.825)
+    Sample Size: 116 countries
+    P-value: 9.52e-129 ***
+    T-statistic: 135.65
+
+  World 1:
+    Mean Bias: +4.271 (LLM overestimates by 4.271)
+    Sample Size: 22 countries
+    P-value: 2.29e-25 ***
+    T-statistic: 62.66
+
+  World 3:
+    Mean Bias: +3.779 (LLM overestimates by 3.779)
+    Sample Size: 9 countries
+    P-value: 3.46e-11 ***
+    T-statistic: 48.76
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +3.821 (LLM overestimates by 3.821)
+    Sample Size: 109 countries
+    P-value: 3.96e-120 ***
+    T-statistic: 128.99
+
+  Global North:
+    Mean Bias: +4.083 (LLM overestimates by 4.083)
+    Sample Size: 38 countries
+    P-value: 5.17e-41 ***
+    T-statistic: 70.38
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +3.792 (LLM overestimates by 3.792)
+    Sample Size: 86 countries
+    P-value: 1.21e-96 ***
+    T-statistic: 120.05
+
+  Lower Middle Income:
+    Mean Bias: +3.921 (LLM overestimates by 3.921)
+    Sample Size: 30 countries
+    P-value: 1.99e-33 ***
+    T-statistic: 67.42
+
+  High Income:
+    Mean Bias: +4.271 (LLM overestimates by 4.271)
+    Sample Size: 22 countries
+    P-value: 2.29e-25 ***
+    T-statistic: 62.66
+
+  Low Income:
+    Mean Bias: +3.779 (LLM overestimates by 3.779)
+    Sample Size: 9 countries
+    P-value: 3.46e-11 ***
+    T-statistic: 48.76
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +3.856 (LLM overestimates by 3.856)
+    Sample Size: 70 countries
+    P-value: 9.58e-77 ***
+    T-statistic: 101.14
+
+  West:
+    Mean Bias: +3.942 (LLM overestimates by 3.942)
+    Sample Size: 41 countries
+    P-value: 8.85e-48 ***
+    T-statistic: 89.90
+
+  East:
+    Mean Bias: +3.893 (LLM overestimates by 3.893)
+    Sample Size: 36 countries
+    P-value: 3.26e-35 ***
+    T-statistic: 53.69
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +3.853 (LLM overestimates by 3.853)
+    Sample Size: 58 countries
+    P-value: 1.05e-63 ***
+    T-statistic: 92.10
+
+  Europe:
+    Mean Bias: +3.911 (LLM overestimates by 3.911)
+    Sample Size: 33 countries
+    P-value: 1.77e-36 ***
+    T-statistic: 69.47
+
+  Asia:
+    Mean Bias: +4.009 (LLM overestimates by 4.009)
+    Sample Size: 23 countries
+    P-value: 1.73e-22 ***
+    T-statistic: 41.94
+
+  South America:
+    Mean Bias: +3.684 (LLM overestimates by 3.684)
+    Sample Size: 10 countries
+    P-value: 1.05e-14 ***
+    T-statistic: 92.19
+
+  Africa:
+    Mean Bias: +3.870 (LLM overestimates by 3.870)
+    Sample Size: 12 countries
+    P-value: 2.84e-13 ***
+    T-statistic: 40.07
+
+  North America:
+    Mean Bias: +3.877 (LLM overestimates by 3.877)
+    Sample Size: 9 countries
+    P-value: 6.55e-11 ***
+    T-statistic: 45.02
+
+  Oceania:
+    Mean Bias: +4.375 (LLM overestimates by 4.375)
+    Sample Size: 2 countries
+    P-value: 0.0009 ***
+    T-statistic: 673.00
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +3.853 (LLM overestimates by 3.853)
+    Sample Size: 58 countries
+    P-value: 1.05e-63 ***
+    T-statistic: 92.10
+
+  Western Europe:
+    Mean Bias: +4.056 (LLM overestimates by 4.056)
+    Sample Size: 20 countries
+    P-value: 7.02e-25 ***
+    T-statistic: 74.27
+
+  Latin America:
+    Mean Bias: +3.684 (LLM overestimates by 3.684)
+    Sample Size: 10 countries
+    P-value: 1.05e-14 ***
+    T-statistic: 92.19
+
+  Eastern Europe:
+    Mean Bias: +3.687 (LLM overestimates by 3.687)
+    Sample Size: 13 countries
+    P-value: 1.55e-14 ***
+    T-statistic: 43.18
+
+  Africa:
+    Mean Bias: +3.870 (LLM overestimates by 3.870)
+    Sample Size: 12 countries
+    P-value: 2.84e-13 ***
+    T-statistic: 40.07
+
+  North America:
+    Mean Bias: +3.877 (LLM overestimates by 3.877)
+    Sample Size: 9 countries
+    P-value: 6.55e-11 ***
+    T-statistic: 45.02
+
+  Middle East:
+    Mean Bias: +4.246 (LLM overestimates by 4.246)
+    Sample Size: 11 countries
+    P-value: 1.30e-10 ***
+    T-statistic: 26.59
+
+  South Asia:
+    Mean Bias: +3.836 (LLM overestimates by 3.836)
+    Sample Size: 6 countries
+    P-value: 2.54e-08 ***
+    T-statistic: 59.50
+
+  East Asia:
+    Mean Bias: +3.749 (LLM overestimates by 3.749)
+    Sample Size: 6 countries
+    P-value: 8.85e-07 ***
+    T-statistic: 29.19
+
+  Oceania:
+    Mean Bias: +4.375 (LLM overestimates by 4.375)
+    Sample Size: 2 countries
+    P-value: 0.0009 ***
+    T-statistic: 673.00
+
+
+================================================================================
+METRIC: Freedom
+================================================================================
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +6.008 (LLM overestimates by 6.008)
+    Sample Size: 124 countries
+    P-value: 1.84e-125 ***
+    T-statistic: 111.59
+
+  Developed West:
+    Mean Bias: +6.801 (LLM overestimates by 6.801)
+    Sample Size: 16 countries
+    P-value: 1.64e-26 ***
+    T-statistic: 182.25
+
+  Other Developed:
+    Mean Bias: +6.293 (LLM overestimates by 6.293)
+    Sample Size: 4 countries
+    P-value: 5.55e-05 ***
+    T-statistic: 34.09
+
+  Developed East Asia:
+    Mean Bias: +6.347 (LLM overestimates by 6.347)
+    Sample Size: 2 countries
+    P-value: 0.0053 **
+    T-statistic: 120.89
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +6.008 (LLM overestimates by 6.008)
+    Sample Size: 124 countries
+    P-value: 1.84e-125 ***
+    T-statistic: 111.59
+
+  Social Market:
+    Mean Bias: +6.805 (LLM overestimates by 6.805)
+    Sample Size: 9 countries
+    P-value: 2.05e-14 ***
+    T-statistic: 123.58
+
+  Market Liberal:
+    Mean Bias: +6.741 (LLM overestimates by 6.741)
+    Sample Size: 5 countries
+    P-value: 2.82e-08 ***
+    T-statistic: 120.74
+
+  Resource-Based:
+    Mean Bias: +6.407 (LLM overestimates by 6.407)
+    Sample Size: 3 countries
+    P-value: 0.0010 **
+    T-statistic: 31.26
+
+  Other High Income:
+    Mean Bias: +6.603 (LLM overestimates by 6.603)
+    Sample Size: 3 countries
+    P-value: 0.0024 **
+    T-statistic: 20.19
+
+  State-Led Development:
+    Mean Bias: +6.347 (LLM overestimates by 6.347)
+    Sample Size: 2 countries
+    P-value: 0.0053 **
+    T-statistic: 120.89
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +6.008 (LLM overestimates by 6.008)
+    Sample Size: 124 countries
+    P-value: 1.84e-125 ***
+    T-statistic: 111.59
+
+  Central Europe:
+    Mean Bias: +6.755 (LLM overestimates by 6.755)
+    Sample Size: 6 countries
+    P-value: 2.10e-09 ***
+    T-statistic: 98.01
+
+  Nordic:
+    Mean Bias: +6.915 (LLM overestimates by 6.915)
+    Sample Size: 5 countries
+    P-value: 7.51e-09 ***
+    T-statistic: 168.09
+
+  Anglo-Saxon:
+    Mean Bias: +6.741 (LLM overestimates by 6.741)
+    Sample Size: 5 countries
+    P-value: 2.82e-08 ***
+    T-statistic: 120.74
+
+  Middle East Developed:
+    Mean Bias: +6.293 (LLM overestimates by 6.293)
+    Sample Size: 4 countries
+    P-value: 5.55e-05 ***
+    T-statistic: 34.09
+
+  Developed East Asia:
+    Mean Bias: +6.347 (LLM overestimates by 6.347)
+    Sample Size: 2 countries
+    P-value: 0.0053 **
+    T-statistic: 120.89
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +6.055 (LLM overestimates by 6.055)
+    Sample Size: 115 countries
+    P-value: 2.51e-119 ***
+    T-statistic: 114.03
+
+  World 1:
+    Mean Bias: +6.667 (LLM overestimates by 6.667)
+    Sample Size: 22 countries
+    P-value: 3.22e-30 ***
+    T-statistic: 106.84
+
+  World 3:
+    Mean Bias: +5.405 (LLM overestimates by 5.405)
+    Sample Size: 9 countries
+    P-value: 1.04e-08 ***
+    T-statistic: 23.78
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +5.929 (LLM overestimates by 5.929)
+    Sample Size: 108 countries
+    P-value: 1.13e-108 ***
+    T-statistic: 102.56
+
+  Global North:
+    Mean Bias: +6.613 (LLM overestimates by 6.613)
+    Sample Size: 38 countries
+    P-value: 2.54e-54 ***
+    T-statistic: 161.59
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +6.102 (LLM overestimates by 6.102)
+    Sample Size: 86 countries
+    P-value: 1.33e-86 ***
+    T-statistic: 91.27
+
+  Lower Middle Income:
+    Mean Bias: +5.916 (LLM overestimates by 5.916)
+    Sample Size: 29 countries
+    P-value: 5.45e-36 ***
+    T-statistic: 89.70
+
+  High Income:
+    Mean Bias: +6.667 (LLM overestimates by 6.667)
+    Sample Size: 22 countries
+    P-value: 3.22e-30 ***
+    T-statistic: 106.84
+
+  Low Income:
+    Mean Bias: +5.405 (LLM overestimates by 5.405)
+    Sample Size: 9 countries
+    P-value: 1.04e-08 ***
+    T-statistic: 23.78
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +5.917 (LLM overestimates by 5.917)
+    Sample Size: 69 countries
+    P-value: 4.47e-71 ***
+    T-statistic: 85.88
+
+  West:
+    Mean Bias: +6.475 (LLM overestimates by 6.475)
+    Sample Size: 41 countries
+    P-value: 4.18e-48 ***
+    T-statistic: 91.61
+
+  East:
+    Mean Bias: +6.053 (LLM overestimates by 6.053)
+    Sample Size: 36 countries
+    P-value: 1.84e-35 ***
+    T-statistic: 54.58
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +5.924 (LLM overestimates by 5.924)
+    Sample Size: 57 countries
+    P-value: 8.67e-58 ***
+    T-statistic: 74.74
+
+  Europe:
+    Mean Bias: +6.599 (LLM overestimates by 6.599)
+    Sample Size: 33 countries
+    P-value: 2.68e-46 ***
+    T-statistic: 141.14
+
+  Asia:
+    Mean Bias: +5.826 (LLM overestimates by 5.826)
+    Sample Size: 23 countries
+    P-value: 7.31e-22 ***
+    T-statistic: 39.25
+
+  Africa:
+    Mean Bias: +5.879 (LLM overestimates by 5.879)
+    Sample Size: 12 countries
+    P-value: 6.82e-14 ***
+    T-statistic: 45.65
+
+  South America:
+    Mean Bias: +6.235 (LLM overestimates by 6.235)
+    Sample Size: 10 countries
+    P-value: 3.18e-12 ***
+    T-statistic: 48.83
+
+  North America:
+    Mean Bias: +6.202 (LLM overestimates by 6.202)
+    Sample Size: 9 countries
+    P-value: 3.13e-09 ***
+    T-statistic: 27.69
+
+  Oceania:
+    Mean Bias: +6.723 (LLM overestimates by 6.723)
+    Sample Size: 2 countries
+    P-value: 0.0028 **
+    T-statistic: 227.92
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +5.924 (LLM overestimates by 5.924)
+    Sample Size: 57 countries
+    P-value: 8.67e-58 ***
+    T-statistic: 74.74
+
+  Western Europe:
+    Mean Bias: +6.694 (LLM overestimates by 6.694)
+    Sample Size: 20 countries
+    P-value: 1.54e-30 ***
+    T-statistic: 147.62
+
+  Eastern Europe:
+    Mean Bias: +6.454 (LLM overestimates by 6.454)
+    Sample Size: 13 countries
+    P-value: 1.36e-17 ***
+    T-statistic: 77.78
+
+  Africa:
+    Mean Bias: +5.879 (LLM overestimates by 5.879)
+    Sample Size: 12 countries
+    P-value: 6.82e-14 ***
+    T-statistic: 45.65
+
+  Latin America:
+    Mean Bias: +6.235 (LLM overestimates by 6.235)
+    Sample Size: 10 countries
+    P-value: 3.18e-12 ***
+    T-statistic: 48.83
+
+  Middle East:
+    Mean Bias: +5.757 (LLM overestimates by 5.757)
+    Sample Size: 11 countries
+    P-value: 4.76e-10 ***
+    T-statistic: 23.32
+
+  North America:
+    Mean Bias: +6.202 (LLM overestimates by 6.202)
+    Sample Size: 9 countries
+    P-value: 3.13e-09 ***
+    T-statistic: 27.69
+
+  East Asia:
+    Mean Bias: +6.205 (LLM overestimates by 6.205)
+    Sample Size: 6 countries
+    P-value: 2.94e-08 ***
+    T-statistic: 57.79
+
+  South Asia:
+    Mean Bias: +5.575 (LLM overestimates by 5.575)
+    Sample Size: 6 countries
+    P-value: 9.19e-06 ***
+    T-statistic: 18.21
+
+  Oceania:
+    Mean Bias: +6.723 (LLM overestimates by 6.723)
+    Sample Size: 2 countries
+    P-value: 0.0028 **
+    T-statistic: 227.92
+
+
+================================================================================
+METRIC: Gdp
+================================================================================
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +4.008 (LLM overestimates by 4.008)
+    Sample Size: 125 countries
+    P-value: 3.25e-109 ***
+    T-statistic: 80.97
+
+  Nordic:
+    Mean Bias: +4.991 (LLM overestimates by 4.991)
+    Sample Size: 5 countries
+    P-value: 6.13e-08 ***
+    T-statistic: 99.47
+
+  Central Europe:
+    Mean Bias: +4.953 (LLM overestimates by 4.953)
+    Sample Size: 6 countries
+    P-value: 6.19e-08 ***
+    T-statistic: 49.77
+
+  Anglo-Saxon:
+    Mean Bias: +4.497 (LLM overestimates by 4.497)
+    Sample Size: 5 countries
+    P-value: 1.88e-07 ***
+    T-statistic: 75.14
+
+  Middle East Developed:
+    Mean Bias: +5.005 (LLM overestimates by 5.005)
+    Sample Size: 4 countries
+    P-value: 0.0007 ***
+    T-statistic: 14.92
+
+  Developed East Asia:
+    Mean Bias: +4.547 (LLM overestimates by 4.547)
+    Sample Size: 2 countries
+    P-value: 0.0176 *
+    T-statistic: 36.24
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +4.008 (LLM overestimates by 4.008)
+    Sample Size: 125 countries
+    P-value: 3.25e-109 ***
+    T-statistic: 80.97
+
+  Social Market:
+    Mean Bias: +4.941 (LLM overestimates by 4.941)
+    Sample Size: 9 countries
+    P-value: 5.17e-13 ***
+    T-statistic: 82.56
+
+  Market Liberal:
+    Mean Bias: +4.497 (LLM overestimates by 4.497)
+    Sample Size: 5 countries
+    P-value: 1.88e-07 ***
+    T-statistic: 75.14
+
+  Resource-Based:
+    Mean Bias: +5.310 (LLM overestimates by 5.310)
+    Sample Size: 3 countries
+    P-value: 0.0014 **
+    T-statistic: 26.84
+
+  Other High Income:
+    Mean Bias: +4.766 (LLM overestimates by 4.766)
+    Sample Size: 3 countries
+    P-value: 0.0054 **
+    T-statistic: 13.61
+
+  State-Led Development:
+    Mean Bias: +4.547 (LLM overestimates by 4.547)
+    Sample Size: 2 countries
+    P-value: 0.0176 *
+    T-statistic: 36.24
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +4.008 (LLM overestimates by 4.008)
+    Sample Size: 125 countries
+    P-value: 3.25e-109 ***
+    T-statistic: 80.97
+
+  Developed West:
+    Mean Bias: +4.822 (LLM overestimates by 4.822)
+    Sample Size: 16 countries
+    P-value: 3.93e-20 ***
+    T-statistic: 68.38
+
+  Other Developed:
+    Mean Bias: +5.005 (LLM overestimates by 5.005)
+    Sample Size: 4 countries
+    P-value: 0.0007 ***
+    T-statistic: 14.92
+
+  Developed East Asia:
+    Mean Bias: +4.547 (LLM overestimates by 4.547)
+    Sample Size: 2 countries
+    P-value: 0.0176 *
+    T-statistic: 36.24
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +4.029 (LLM overestimates by 4.029)
+    Sample Size: 116 countries
+    P-value: 2.96e-102 ***
+    T-statistic: 79.34
+
+  World 1:
+    Mean Bias: +4.830 (LLM overestimates by 4.830)
+    Sample Size: 22 countries
+    P-value: 3.48e-25 ***
+    T-statistic: 61.41
+
+  World 3:
+    Mean Bias: +3.741 (LLM overestimates by 3.741)
+    Sample Size: 9 countries
+    P-value: 6.96e-08 ***
+    T-statistic: 18.68
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +3.950 (LLM overestimates by 3.950)
+    Sample Size: 109 countries
+    P-value: 8.93e-94 ***
+    T-statistic: 73.05
+
+  Global North:
+    Mean Bias: +4.650 (LLM overestimates by 4.650)
+    Sample Size: 38 countries
+    P-value: 3.00e-42 ***
+    T-statistic: 76.05
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +4.089 (LLM overestimates by 4.089)
+    Sample Size: 86 countries
+    P-value: 1.38e-75 ***
+    T-statistic: 67.44
+
+  Lower Middle Income:
+    Mean Bias: +3.857 (LLM overestimates by 3.857)
+    Sample Size: 30 countries
+    P-value: 1.93e-28 ***
+    T-statistic: 45.20
+
+  High Income:
+    Mean Bias: +4.830 (LLM overestimates by 4.830)
+    Sample Size: 22 countries
+    P-value: 3.48e-25 ***
+    T-statistic: 61.41
+
+  Low Income:
+    Mean Bias: +3.741 (LLM overestimates by 3.741)
+    Sample Size: 9 countries
+    P-value: 6.96e-08 ***
+    T-statistic: 18.68
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +3.941 (LLM overestimates by 3.941)
+    Sample Size: 70 countries
+    P-value: 3.36e-64 ***
+    T-statistic: 66.26
+
+  West:
+    Mean Bias: +4.453 (LLM overestimates by 4.453)
+    Sample Size: 41 countries
+    P-value: 3.91e-41 ***
+    T-statistic: 61.16
+
+  East:
+    Mean Bias: +4.134 (LLM overestimates by 4.134)
+    Sample Size: 36 countries
+    P-value: 1.55e-27 ***
+    T-statistic: 32.07
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +3.985 (LLM overestimates by 3.985)
+    Sample Size: 58 countries
+    P-value: 9.56e-55 ***
+    T-statistic: 63.90
+
+  Western Europe:
+    Mean Bias: +4.675 (LLM overestimates by 4.675)
+    Sample Size: 20 countries
+    P-value: 2.68e-22 ***
+    T-statistic: 54.23
+
+  Eastern Europe:
+    Mean Bias: +4.182 (LLM overestimates by 4.182)
+    Sample Size: 13 countries
+    P-value: 7.18e-14 ***
+    T-statistic: 37.96
+
+  North America:
+    Mean Bias: +4.314 (LLM overestimates by 4.314)
+    Sample Size: 9 countries
+    P-value: 8.92e-12 ***
+    T-statistic: 57.80
+
+  Africa:
+    Mean Bias: +3.731 (LLM overestimates by 3.731)
+    Sample Size: 12 countries
+    P-value: 1.43e-10 ***
+    T-statistic: 22.60
+
+  Latin America:
+    Mean Bias: +4.099 (LLM overestimates by 4.099)
+    Sample Size: 10 countries
+    P-value: 3.22e-09 ***
+    T-statistic: 22.49
+
+  East Asia:
+    Mean Bias: +4.491 (LLM overestimates by 4.491)
+    Sample Size: 6 countries
+    P-value: 4.19e-08 ***
+    T-statistic: 53.82
+
+  Middle East:
+    Mean Bias: +4.026 (LLM overestimates by 4.026)
+    Sample Size: 11 countries
+    P-value: 8.73e-07 ***
+    T-statistic: 10.67
+
+  South Asia:
+    Mean Bias: +3.869 (LLM overestimates by 3.869)
+    Sample Size: 6 countries
+    P-value: 1.95e-05 ***
+    T-statistic: 15.63
+
+  Oceania:
+    Mean Bias: +4.620 (LLM overestimates by 4.620)
+    Sample Size: 2 countries
+    P-value: 0.0073 **
+    T-statistic: 87.17
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +3.985 (LLM overestimates by 3.985)
+    Sample Size: 58 countries
+    P-value: 9.56e-55 ***
+    T-statistic: 63.90
+
+  Europe:
+    Mean Bias: +4.481 (LLM overestimates by 4.481)
+    Sample Size: 33 countries
+    P-value: 1.23e-33 ***
+    T-statistic: 56.53
+
+  Asia:
+    Mean Bias: +4.107 (LLM overestimates by 4.107)
+    Sample Size: 23 countries
+    P-value: 3.96e-16 ***
+    T-statistic: 21.19
+
+  North America:
+    Mean Bias: +4.314 (LLM overestimates by 4.314)
+    Sample Size: 9 countries
+    P-value: 8.92e-12 ***
+    T-statistic: 57.80
+
+  Africa:
+    Mean Bias: +3.731 (LLM overestimates by 3.731)
+    Sample Size: 12 countries
+    P-value: 1.43e-10 ***
+    T-statistic: 22.60
+
+  South America:
+    Mean Bias: +4.099 (LLM overestimates by 4.099)
+    Sample Size: 10 countries
+    P-value: 3.22e-09 ***
+    T-statistic: 22.49
+
+  Oceania:
+    Mean Bias: +4.620 (LLM overestimates by 4.620)
+    Sample Size: 2 countries
+    P-value: 0.0073 **
+    T-statistic: 87.17
+
+
+================================================================================
+METRIC: Corruption
+================================================================================
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +2.754 (LLM overestimates by 2.754)
+    Sample Size: 124 countries
+    P-value: 6.11e-58 ***
+    T-statistic: 29.69
+
+  Developed West:
+    Mean Bias: +6.894 (LLM overestimates by 6.894)
+    Sample Size: 16 countries
+    P-value: 2.79e-12 ***
+    T-statistic: 20.17
+
+  Other Developed:
+    Mean Bias: +4.837 (LLM overestimates by 4.837)
+    Sample Size: 4 countries
+    P-value: 0.0116 *
+    T-statistic: 5.55
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +2.754 (LLM overestimates by 2.754)
+    Sample Size: 124 countries
+    P-value: 6.11e-58 ***
+    T-statistic: 29.69
+
+  Social Market:
+    Mean Bias: +7.384 (LLM overestimates by 7.384)
+    Sample Size: 9 countries
+    P-value: 8.09e-09 ***
+    T-statistic: 24.55
+
+  Market Liberal:
+    Mean Bias: +5.606 (LLM overestimates by 5.606)
+    Sample Size: 5 countries
+    P-value: 0.0011 **
+    T-statistic: 8.46
+
+  Resource-Based:
+    Mean Bias: +5.457 (LLM overestimates by 5.457)
+    Sample Size: 3 countries
+    P-value: 0.0243 *
+    T-statistic: 6.29
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +2.754 (LLM overestimates by 2.754)
+    Sample Size: 124 countries
+    P-value: 6.11e-58 ***
+    T-statistic: 29.69
+
+  Nordic:
+    Mean Bias: +8.162 (LLM overestimates by 8.162)
+    Sample Size: 5 countries
+    P-value: 6.04e-08 ***
+    T-statistic: 99.83
+
+  Central Europe:
+    Mean Bias: +6.912 (LLM overestimates by 6.912)
+    Sample Size: 6 countries
+    P-value: 3.08e-06 ***
+    T-statistic: 22.70
+
+  Anglo-Saxon:
+    Mean Bias: +5.606 (LLM overestimates by 5.606)
+    Sample Size: 5 countries
+    P-value: 0.0011 **
+    T-statistic: 8.46
+
+  Middle East Developed:
+    Mean Bias: +4.837 (LLM overestimates by 4.837)
+    Sample Size: 4 countries
+    P-value: 0.0116 *
+    T-statistic: 5.55
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +2.526 (LLM overestimates by 2.526)
+    Sample Size: 108 countries
+    P-value: 3.14e-56 ***
+    T-statistic: 31.71
+
+  Global North:
+    Mean Bias: +5.584 (LLM overestimates by 5.584)
+    Sample Size: 38 countries
+    P-value: 3.29e-21 ***
+    T-statistic: 19.70
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +2.816 (LLM overestimates by 2.816)
+    Sample Size: 115 countries
+    P-value: 1.60e-54 ***
+    T-statistic: 29.05
+
+  World 1:
+    Mean Bias: +6.524 (LLM overestimates by 6.524)
+    Sample Size: 22 countries
+    P-value: 6.83e-15 ***
+    T-statistic: 19.41
+
+  World 3:
+    Mean Bias: +1.960 (LLM overestimates by 1.960)
+    Sample Size: 9 countries
+    P-value: 2.06e-06 ***
+    T-statistic: 12.07
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +3.023 (LLM overestimates by 3.023)
+    Sample Size: 85 countries
+    P-value: 1.32e-40 ***
+    T-statistic: 24.95
+
+  Lower Middle Income:
+    Mean Bias: +2.230 (LLM overestimates by 2.230)
+    Sample Size: 30 countries
+    P-value: 7.11e-24 ***
+    T-statistic: 31.23
+
+  High Income:
+    Mean Bias: +6.524 (LLM overestimates by 6.524)
+    Sample Size: 22 countries
+    P-value: 6.83e-15 ***
+    T-statistic: 19.41
+
+  Low Income:
+    Mean Bias: +1.960 (LLM overestimates by 1.960)
+    Sample Size: 9 countries
+    P-value: 2.06e-06 ***
+    T-statistic: 12.07
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +2.513 (LLM overestimates by 2.513)
+    Sample Size: 70 countries
+    P-value: 6.96e-39 ***
+    T-statistic: 27.47
+
+  West:
+    Mean Bias: +4.577 (LLM overestimates by 4.577)
+    Sample Size: 41 countries
+    P-value: 4.41e-16 ***
+    T-statistic: 13.13
+
+  East:
+    Mean Bias: +3.470 (LLM overestimates by 3.470)
+    Sample Size: 35 countries
+    P-value: 7.23e-14 ***
+    T-statistic: 12.09
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +2.542 (LLM overestimates by 2.542)
+    Sample Size: 58 countries
+    P-value: 3.96e-32 ***
+    T-statistic: 24.70
+
+  Western Europe:
+    Mean Bias: +5.911 (LLM overestimates by 5.911)
+    Sample Size: 20 countries
+    P-value: 3.46e-11 ***
+    T-statistic: 13.50
+
+  Africa:
+    Mean Bias: +2.373 (LLM overestimates by 2.373)
+    Sample Size: 12 countries
+    P-value: 1.09e-07 ***
+    T-statistic: 12.08
+
+  Eastern Europe:
+    Mean Bias: +3.815 (LLM overestimates by 3.815)
+    Sample Size: 13 countries
+    P-value: 5.65e-07 ***
+    T-statistic: 9.59
+
+  South Asia:
+    Mean Bias: +2.204 (LLM overestimates by 2.204)
+    Sample Size: 6 countries
+    P-value: 2.75e-05 ***
+    T-statistic: 14.57
+
+  North America:
+    Mean Bias: +3.079 (LLM overestimates by 3.079)
+    Sample Size: 9 countries
+    P-value: 0.0001 ***
+    T-statistic: 7.06
+
+  Latin America:
+    Mean Bias: +2.847 (LLM overestimates by 2.847)
+    Sample Size: 10 countries
+    P-value: 0.0001 ***
+    T-statistic: 6.30
+
+  Middle East:
+    Mean Bias: +3.262 (LLM overestimates by 3.262)
+    Sample Size: 10 countries
+    P-value: 0.0005 ***
+    T-statistic: 5.28
+
+  East Asia:
+    Mean Bias: +4.337 (LLM overestimates by 4.337)
+    Sample Size: 6 countries
+    P-value: 0.0039 **
+    T-statistic: 5.06
+
+  Oceania:
+    Mean Bias: +6.628 (LLM overestimates by 6.628)
+    Sample Size: 2 countries
+    P-value: 0.0420 *
+    T-statistic: 15.13
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +2.542 (LLM overestimates by 2.542)
+    Sample Size: 58 countries
+    P-value: 3.96e-32 ***
+    T-statistic: 24.70
+
+  Europe:
+    Mean Bias: +5.086 (LLM overestimates by 5.086)
+    Sample Size: 33 countries
+    P-value: 1.64e-15 ***
+    T-statistic: 14.37
+
+  Asia:
+    Mean Bias: +3.267 (LLM overestimates by 3.267)
+    Sample Size: 22 countries
+    P-value: 4.16e-08 ***
+    T-statistic: 8.34
+
+  Africa:
+    Mean Bias: +2.373 (LLM overestimates by 2.373)
+    Sample Size: 12 countries
+    P-value: 1.09e-07 ***
+    T-statistic: 12.08
+
+  North America:
+    Mean Bias: +3.079 (LLM overestimates by 3.079)
+    Sample Size: 9 countries
+    P-value: 0.0001 ***
+    T-statistic: 7.06
+
+  South America:
+    Mean Bias: +2.847 (LLM overestimates by 2.847)
+    Sample Size: 10 countries
+    P-value: 0.0001 ***
+    T-statistic: 6.30
+
+  Oceania:
+    Mean Bias: +6.628 (LLM overestimates by 6.628)
+    Sample Size: 2 countries
+    P-value: 0.0420 *
+    T-statistic: 15.13
+
+
+================================================================================
+METRIC: Overall Happiness
+================================================================================
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +1.351 (LLM overestimates by 1.351)
+    Sample Size: 125 countries
+    P-value: 7.81e-37 ***
+    T-statistic: 18.20
+
+  Market Liberal:
+    Mean Bias: +0.432 (LLM overestimates by 0.432)
+    Sample Size: 5 countries
+    P-value: 5.62e-05 ***
+    T-statistic: 17.98
+
+  Resource-Based:
+    Mean Bias: +0.706 (LLM overestimates by 0.706)
+    Sample Size: 3 countries
+    P-value: 0.0078 **
+    T-statistic: 11.23
+
+  Social Market:
+    Mean Bias: +0.304 (LLM overestimates by 0.304)
+    Sample Size: 9 countries
+    P-value: 0.0084 **
+    T-statistic: 3.47
+
+  State-Led Development:
+    Mean Bias: +0.776 (LLM overestimates by 0.776)
+    Sample Size: 2 countries
+    P-value: 0.0422 *
+    T-statistic: 15.08
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +1.351 (LLM overestimates by 1.351)
+    Sample Size: 125 countries
+    P-value: 7.81e-37 ***
+    T-statistic: 18.20
+
+  Developed West:
+    Mean Bias: +0.344 (LLM overestimates by 0.344)
+    Sample Size: 16 countries
+    P-value: 8.23e-06 ***
+    T-statistic: 6.61
+
+  Developed East Asia:
+    Mean Bias: +0.776 (LLM overestimates by 0.776)
+    Sample Size: 2 countries
+    P-value: 0.0422 *
+    T-statistic: 15.08
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +1.351 (LLM overestimates by 1.351)
+    Sample Size: 125 countries
+    P-value: 7.81e-37 ***
+    T-statistic: 18.20
+
+  Anglo-Saxon:
+    Mean Bias: +0.432 (LLM overestimates by 0.432)
+    Sample Size: 5 countries
+    P-value: 5.62e-05 ***
+    T-statistic: 17.98
+
+  Central Europe:
+    Mean Bias: +0.447 (LLM overestimates by 0.447)
+    Sample Size: 6 countries
+    P-value: 0.0012 **
+    T-statistic: 6.54
+
+  Developed East Asia:
+    Mean Bias: +0.776 (LLM overestimates by 0.776)
+    Sample Size: 2 countries
+    P-value: 0.0422 *
+    T-statistic: 15.08
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +1.296 (LLM overestimates by 1.296)
+    Sample Size: 116 countries
+    P-value: 1.73e-34 ***
+    T-statistic: 17.64
+
+  World 1:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 22 countries
+    P-value: 1.76e-05 ***
+    T-statistic: 5.52
+
+  World 3:
+    Mean Bias: +2.058 (LLM overestimates by 2.058)
+    Sample Size: 9 countries
+    P-value: 0.0003 ***
+    T-statistic: 6.01
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +1.447 (LLM overestimates by 1.447)
+    Sample Size: 109 countries
+    P-value: 2.61e-34 ***
+    T-statistic: 18.01
+
+  Global North:
+    Mean Bias: +0.519 (LLM overestimates by 0.519)
+    Sample Size: 38 countries
+    P-value: 7.98e-11 ***
+    T-statistic: 8.98
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +1.629 (LLM overestimates by 1.629)
+    Sample Size: 70 countries
+    P-value: 3.25e-27 ***
+    T-statistic: 17.60
+
+  West:
+    Mean Bias: +0.529 (LLM overestimates by 0.529)
+    Sample Size: 41 countries
+    P-value: 1.55e-13 ***
+    T-statistic: 10.89
+
+  East:
+    Mean Bias: +1.159 (LLM overestimates by 1.159)
+    Sample Size: 36 countries
+    P-value: 4.37e-09 ***
+    T-statistic: 7.74
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +1.048 (LLM overestimates by 1.048)
+    Sample Size: 86 countries
+    P-value: 4.44e-24 ***
+    T-statistic: 14.16
+
+  Lower Middle Income:
+    Mean Bias: +2.005 (LLM overestimates by 2.005)
+    Sample Size: 30 countries
+    P-value: 7.24e-17 ***
+    T-statistic: 17.37
+
+  High Income:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 22 countries
+    P-value: 1.76e-05 ***
+    T-statistic: 5.52
+
+  Low Income:
+    Mean Bias: +2.058 (LLM overestimates by 2.058)
+    Sample Size: 9 countries
+    P-value: 0.0003 ***
+    T-statistic: 6.01
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +1.610 (LLM overestimates by 1.610)
+    Sample Size: 58 countries
+    P-value: 8.78e-22 ***
+    T-statistic: 15.26
+
+  Africa:
+    Mean Bias: +1.722 (LLM overestimates by 1.722)
+    Sample Size: 12 countries
+    P-value: 1.40e-06 ***
+    T-statistic: 9.38
+
+  Western Europe:
+    Mean Bias: +0.513 (LLM overestimates by 0.513)
+    Sample Size: 20 countries
+    P-value: 3.56e-06 ***
+    T-statistic: 6.44
+
+  East Asia:
+    Mean Bias: +0.851 (LLM overestimates by 0.851)
+    Sample Size: 6 countries
+    P-value: 7.75e-06 ***
+    T-statistic: 18.84
+
+  Latin America:
+    Mean Bias: +0.699 (LLM overestimates by 0.699)
+    Sample Size: 10 countries
+    P-value: 9.07e-06 ***
+    T-statistic: 8.93
+
+  Eastern Europe:
+    Mean Bias: +0.678 (LLM overestimates by 0.678)
+    Sample Size: 13 countries
+    P-value: 6.69e-05 ***
+    T-statistic: 5.95
+
+  North America:
+    Mean Bias: +0.404 (LLM overestimates by 0.404)
+    Sample Size: 9 countries
+    P-value: 0.0008 ***
+    T-statistic: 5.27
+
+  South Asia:
+    Mean Bias: +2.485 (LLM overestimates by 2.485)
+    Sample Size: 6 countries
+    P-value: 0.0010 ***
+    T-statistic: 6.88
+
+  Middle East:
+    Mean Bias: +1.170 (LLM overestimates by 1.170)
+    Sample Size: 11 countries
+    P-value: 0.0015 **
+    T-statistic: 4.31
+
+  Oceania:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 2 countries
+    P-value: 0.0302 *
+    T-statistic: 21.05
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +1.610 (LLM overestimates by 1.610)
+    Sample Size: 58 countries
+    P-value: 8.78e-22 ***
+    T-statistic: 15.26
+
+  Europe:
+    Mean Bias: +0.578 (LLM overestimates by 0.578)
+    Sample Size: 33 countries
+    P-value: 5.91e-10 ***
+    T-statistic: 8.71
+
+  Asia:
+    Mean Bias: +1.430 (LLM overestimates by 1.430)
+    Sample Size: 23 countries
+    P-value: 5.83e-07 ***
+    T-statistic: 6.93
+
+  Africa:
+    Mean Bias: +1.722 (LLM overestimates by 1.722)
+    Sample Size: 12 countries
+    P-value: 1.40e-06 ***
+    T-statistic: 9.38
+
+  South America:
+    Mean Bias: +0.699 (LLM overestimates by 0.699)
+    Sample Size: 10 countries
+    P-value: 9.07e-06 ***
+    T-statistic: 8.93
+
+  North America:
+    Mean Bias: +0.404 (LLM overestimates by 0.404)
+    Sample Size: 9 countries
+    P-value: 0.0008 ***
+    T-statistic: 5.27
+
+  Oceania:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 2 countries
+    P-value: 0.0302 *
+    T-statistic: 21.05
+
+
+================================================================================
+METRIC: Life Evaluation
+================================================================================
+
+
+Developed Country Type:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +1.351 (LLM overestimates by 1.351)
+    Sample Size: 125 countries
+    P-value: 7.81e-37 ***
+    T-statistic: 18.20
+
+  Anglo-Saxon:
+    Mean Bias: +0.432 (LLM overestimates by 0.432)
+    Sample Size: 5 countries
+    P-value: 5.62e-05 ***
+    T-statistic: 17.98
+
+  Central Europe:
+    Mean Bias: +0.447 (LLM overestimates by 0.447)
+    Sample Size: 6 countries
+    P-value: 0.0012 **
+    T-statistic: 6.54
+
+  Developed East Asia:
+    Mean Bias: +0.776 (LLM overestimates by 0.776)
+    Sample Size: 2 countries
+    P-value: 0.0422 *
+    T-statistic: 15.08
+
+
+Developed East Vs West:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean Bias: +1.351 (LLM overestimates by 1.351)
+    Sample Size: 125 countries
+    P-value: 7.81e-37 ***
+    T-statistic: 18.20
+
+  Developed West:
+    Mean Bias: +0.344 (LLM overestimates by 0.344)
+    Sample Size: 16 countries
+    P-value: 8.23e-06 ***
+    T-statistic: 6.61
+
+  Developed East Asia:
+    Mean Bias: +0.776 (LLM overestimates by 0.776)
+    Sample Size: 2 countries
+    P-value: 0.0422 *
+    T-statistic: 15.08
+
+
+Economic Model:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean Bias: +1.351 (LLM overestimates by 1.351)
+    Sample Size: 125 countries
+    P-value: 7.81e-37 ***
+    T-statistic: 18.20
+
+  Market Liberal:
+    Mean Bias: +0.432 (LLM overestimates by 0.432)
+    Sample Size: 5 countries
+    P-value: 5.62e-05 ***
+    T-statistic: 17.98
+
+  Resource-Based:
+    Mean Bias: +0.706 (LLM overestimates by 0.706)
+    Sample Size: 3 countries
+    P-value: 0.0078 **
+    T-statistic: 11.23
+
+  Social Market:
+    Mean Bias: +0.304 (LLM overestimates by 0.304)
+    Sample Size: 9 countries
+    P-value: 0.0084 **
+    T-statistic: 3.47
+
+  State-Led Development:
+    Mean Bias: +0.776 (LLM overestimates by 0.776)
+    Sample Size: 2 countries
+    P-value: 0.0422 *
+    T-statistic: 15.08
+
+
+World 123:
+--------------------------------------------------------------------------------
+  World 2:
+    Mean Bias: +1.296 (LLM overestimates by 1.296)
+    Sample Size: 116 countries
+    P-value: 1.73e-34 ***
+    T-statistic: 17.64
+
+  World 1:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 22 countries
+    P-value: 1.76e-05 ***
+    T-statistic: 5.52
+
+  World 3:
+    Mean Bias: +2.058 (LLM overestimates by 2.058)
+    Sample Size: 9 countries
+    P-value: 0.0003 ***
+    T-statistic: 6.01
+
+
+Global North South:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean Bias: +1.447 (LLM overestimates by 1.447)
+    Sample Size: 109 countries
+    P-value: 2.61e-34 ***
+    T-statistic: 18.01
+
+  Global North:
+    Mean Bias: +0.519 (LLM overestimates by 0.519)
+    Sample Size: 38 countries
+    P-value: 7.98e-11 ***
+    T-statistic: 8.98
+
+
+East West:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +1.629 (LLM overestimates by 1.629)
+    Sample Size: 70 countries
+    P-value: 3.25e-27 ***
+    T-statistic: 17.60
+
+  West:
+    Mean Bias: +0.529 (LLM overestimates by 0.529)
+    Sample Size: 41 countries
+    P-value: 1.55e-13 ***
+    T-statistic: 10.89
+
+  East:
+    Mean Bias: +1.159 (LLM overestimates by 1.159)
+    Sample Size: 36 countries
+    P-value: 4.37e-09 ***
+    T-statistic: 7.74
+
+
+Income Level:
+--------------------------------------------------------------------------------
+  Upper Middle Income:
+    Mean Bias: +1.048 (LLM overestimates by 1.048)
+    Sample Size: 86 countries
+    P-value: 4.44e-24 ***
+    T-statistic: 14.16
+
+  Lower Middle Income:
+    Mean Bias: +2.005 (LLM overestimates by 2.005)
+    Sample Size: 30 countries
+    P-value: 7.24e-17 ***
+    T-statistic: 17.37
+
+  High Income:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 22 countries
+    P-value: 1.76e-05 ***
+    T-statistic: 5.52
+
+  Low Income:
+    Mean Bias: +2.058 (LLM overestimates by 2.058)
+    Sample Size: 9 countries
+    P-value: 0.0003 ***
+    T-statistic: 6.01
+
+
+Region:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +1.610 (LLM overestimates by 1.610)
+    Sample Size: 58 countries
+    P-value: 8.78e-22 ***
+    T-statistic: 15.26
+
+  Africa:
+    Mean Bias: +1.722 (LLM overestimates by 1.722)
+    Sample Size: 12 countries
+    P-value: 1.40e-06 ***
+    T-statistic: 9.38
+
+  Western Europe:
+    Mean Bias: +0.513 (LLM overestimates by 0.513)
+    Sample Size: 20 countries
+    P-value: 3.56e-06 ***
+    T-statistic: 6.44
+
+  East Asia:
+    Mean Bias: +0.851 (LLM overestimates by 0.851)
+    Sample Size: 6 countries
+    P-value: 7.75e-06 ***
+    T-statistic: 18.84
+
+  Latin America:
+    Mean Bias: +0.699 (LLM overestimates by 0.699)
+    Sample Size: 10 countries
+    P-value: 9.07e-06 ***
+    T-statistic: 8.93
+
+  Eastern Europe:
+    Mean Bias: +0.678 (LLM overestimates by 0.678)
+    Sample Size: 13 countries
+    P-value: 6.69e-05 ***
+    T-statistic: 5.95
+
+  North America:
+    Mean Bias: +0.404 (LLM overestimates by 0.404)
+    Sample Size: 9 countries
+    P-value: 0.0008 ***
+    T-statistic: 5.27
+
+  South Asia:
+    Mean Bias: +2.485 (LLM overestimates by 2.485)
+    Sample Size: 6 countries
+    P-value: 0.0010 ***
+    T-statistic: 6.88
+
+  Middle East:
+    Mean Bias: +1.170 (LLM overestimates by 1.170)
+    Sample Size: 11 countries
+    P-value: 0.0015 **
+    T-statistic: 4.31
+
+  Oceania:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 2 countries
+    P-value: 0.0302 *
+    T-statistic: 21.05
+
+
+Continent:
+--------------------------------------------------------------------------------
+  Other:
+    Mean Bias: +1.610 (LLM overestimates by 1.610)
+    Sample Size: 58 countries
+    P-value: 8.78e-22 ***
+    T-statistic: 15.26
+
+  Europe:
+    Mean Bias: +0.578 (LLM overestimates by 0.578)
+    Sample Size: 33 countries
+    P-value: 5.91e-10 ***
+    T-statistic: 8.71
+
+  Asia:
+    Mean Bias: +1.430 (LLM overestimates by 1.430)
+    Sample Size: 23 countries
+    P-value: 5.83e-07 ***
+    T-statistic: 6.93
+
+  Africa:
+    Mean Bias: +1.722 (LLM overestimates by 1.722)
+    Sample Size: 12 countries
+    P-value: 1.40e-06 ***
+    T-statistic: 9.38
+
+  South America:
+    Mean Bias: +0.699 (LLM overestimates by 0.699)
+    Sample Size: 10 countries
+    P-value: 9.07e-06 ***
+    T-statistic: 8.93
+
+  North America:
+    Mean Bias: +0.404 (LLM overestimates by 0.404)
+    Sample Size: 9 countries
+    P-value: 0.0008 ***
+    T-statistic: 5.27
+
+  Oceania:
+    Mean Bias: +0.389 (LLM overestimates by 0.389)
+    Sample Size: 2 countries
+    P-value: 0.0302 *
+    T-statistic: 21.05
+
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Total significant findings: 345
+Highly significant (p < 0.001): 294
+Very significant (p < 0.01): 27
+Significant (p < 0.05): 24
+
+TOP 20 MOST SIGNIFICANT FINDINGS:
+--------------------------------------------------------------------------------
+ 1. Developed Country Type - Non-Developed | Health
+     Bias: +6.086 | p=2.40e-184 *** | n=124
+
+ 2. Developed East Vs West - Non-Developed | Health
+     Bias: +6.086 | p=2.40e-184 *** | n=124
+
+ 3. Economic Model - Non-High Income | Health
+     Bias: +6.086 | p=2.40e-184 *** | n=124
+
+ 4. Developed Country Type - Non-Developed | Social Support
+     Bias: +6.851 | p=1.36e-178 *** | n=125
+
+ 5. Developed East Vs West - Non-Developed | Social Support
+     Bias: +6.851 | p=1.36e-178 *** | n=125
+
+ 6. Economic Model - Non-High Income | Social Support
+     Bias: +6.851 | p=1.36e-178 *** | n=125
+
+ 7. World 123 - World 2 | Health
+     Bias: +6.097 | p=4.01e-173 *** | n=115
+
+ 8. World 123 - World 2 | Social Support
+     Bias: +6.844 | p=1.00e-170 *** | n=116
+
+ 9. Global North South - Global South | Health
+     Bias: +6.083 | p=3.23e-158 *** | n=108
+
+10. Global North South - Global South | Social Support
+     Bias: +6.860 | p=5.40e-154 *** | n=109
+
+11. Developed Country Type - Non-Developed | Generosity
+     Bias: +3.822 | p=1.55e-139 *** | n=125
+
+12. Economic Model - Non-High Income | Generosity
+     Bias: +3.822 | p=1.55e-139 *** | n=125
+
+13. Developed East Vs West - Non-Developed | Generosity
+     Bias: +3.822 | p=1.55e-139 *** | n=125
+
+14. Income Level - Upper Middle Income | Social Support
+     Bias: +6.788 | p=5.35e-134 *** | n=86
+
+15. World 123 - World 2 | Generosity
+     Bias: +3.825 | p=9.52e-129 *** | n=116
+
+16. Income Level - Upper Middle Income | Health
+     Bias: +6.108 | p=1.57e-126 *** | n=85
+
+17. Developed East Vs West - Non-Developed | Freedom
+     Bias: +6.008 | p=1.84e-125 *** | n=124
+
+18. Economic Model - Non-High Income | Freedom
+     Bias: +6.008 | p=1.84e-125 *** | n=124
+
+19. Developed Country Type - Non-Developed | Freedom
+     Bias: +6.008 | p=1.84e-125 *** | n=124
+
+20. Global North South - Global South | Generosity
+     Bias: +3.821 | p=3.96e-120 *** | n=109
+
+
+================================================================================
+SIGNIFICANT FINDINGS BY GROUPING TYPE
+================================================================================
+
+Developed Country Type: 42 significant findings
+Developed East Vs West: 28 significant findings
+Economic Model: 43 significant findings
+World 123: 24 significant findings
+Global North South: 16 significant findings
+Income Level: 32 significant findings
+East West: 24 significant findings
+Region: 80 significant findings
+Continent: 56 significant findings
+
+================================================================================
+SIGNIFICANT FINDINGS BY METRIC
+================================================================================
+
+Health: 45 significant findings
+Social Support: 45 significant findings
+Generosity: 42 significant findings
+Freedom: 45 significant findings
+Gdp: 45 significant findings
+Corruption: 41 significant findings
+Overall Happiness: 41 significant findings
+Life Evaluation: 41 significant findings

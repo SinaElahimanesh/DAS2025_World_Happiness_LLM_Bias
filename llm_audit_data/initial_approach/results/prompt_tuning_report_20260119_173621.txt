@@ -1,0 +1,87 @@
+Prompt Tuning Results
+================================================================================
+
+Date: 2026-01-19 18:05:38
+
+Hyperparameters Used:
+  Temperature: 0.0
+  Chain of Thought: False
+  Model: gpt-4o-mini
+
+Tested Countries (10):
+  1. Bulgaria
+  2. North Macedonia
+  3. Tanzania
+  4. Pakistan
+  5. Saudi Arabia
+  6. Montenegro
+  7. Uruguay
+  8. Mauritius
+  9. Spain
+  10. Niger
+
+Number of Personas: 20
+Total Prompt Variations Tested: 7
+
+
+Prompt Variations Tested:
+--------------------------------------------------------------------------------
+Current/Baseline (current): Original detailed prompt with comprehensive instructions
+Simplified (simplified): Short, concise version with minimal instructions
+Concise Persona (concise_persona): Reduced persona embodiment instructions
+JSON Format (json_format): Output in JSON format instead of brackets
+Few-shot Examples (few_shot): Includes example responses in prompt
+Explicit Context (explicit_context): More explicit country context instructions
+Step-by-step (step_by_step): Structured reasoning approach
+
+
+Prompt Comparison:
+--------------------------------------------------------------------------------
+      prompt_name  mean_mae  mean_rmse  mean_correlation  combined_score  valid_response_rate  num_countries
+       Simplified  4.530514   4.579753          0.527993        0.074941                  1.0             10
+  Concise Persona  4.498371   4.545642          0.492430        0.042593                  1.0             10
+     Step-by-step  4.534086   4.578110          0.493582        0.040173                  1.0             10
+ Current/Baseline  4.305514   4.352374          0.469393        0.038841                  1.0             10
+ Explicit Context  4.533371   4.580047          0.487377        0.034040                  1.0             10
+Few-shot Examples  4.643371   4.687077          0.492558        0.028221                  1.0             10
+      JSON Format  4.524086   4.561809          0.387131       -0.065277                  1.0             10
+
+================================================================================
+BEST PROMPT:
+================================================================================
+Name: Simplified
+Key: simplified
+Description: Short, concise version with minimal instructions
+
+Performance Metrics:
+  Mean MAE: 4.531
+  Mean RMSE: 4.580
+  Mean Correlation: 0.528
+  Combined Score: 0.075
+  Valid Response Rate: 100.00%
+  Number of Countries: 10
+
+
+Detailed Metrics by Factor:
+--------------------------------------------------------------------------------
+overall_happiness_mae: 1.081
+overall_happiness_rmse: 1.336
+overall_happiness_correlation: 0.659
+gdp_mae: 3.994
+gdp_rmse: 4.001
+gdp_correlation: 0.769
+social_support_mae: 6.610
+social_support_rmse: 6.618
+social_support_correlation: 0.561
+health_mae: 6.314
+health_rmse: 6.315
+health_correlation: 0.778
+freedom_mae: 5.962
+freedom_rmse: 5.967
+freedom_correlation: 0.267
+generosity_mae: 4.214
+generosity_rmse: 4.218
+generosity_correlation: 0.306
+corruption_mae: 3.538
+corruption_rmse: 3.602
+corruption_correlation: 0.356

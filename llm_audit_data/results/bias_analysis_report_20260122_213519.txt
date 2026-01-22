@@ -1,0 +1,4931 @@
+================================================================================
+LLM Bias Analysis Report
+================================================================================
+
+Date: 2026-01-22 21:35:19
+
+Total countries analyzed: 147
+
+================================================================================
+STATISTICALLY SIGNIFICANT BIASES (p < 0.05)
+================================================================================
+
+
+GLOBAL NORTH SOUTH:
+--------------------------------------------------------------------------------
+  Global North - Overall Happiness:
+    Mean bias: -0.268
+    ANOVA p-value: 0.0011 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Overall Happiness:
+    Mean bias: +0.163
+    ANOVA p-value: 0.0011 (groups differ significantly)
+    vs Zero p-value: 0.0293 (bias is significantly non-zero)
+    Count: 109
+
+  Global North - Life Evaluation:
+    Mean bias: -0.268
+    ANOVA p-value: 0.0011 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Life Evaluation:
+    Mean bias: +0.163
+    ANOVA p-value: 0.0011 (groups differ significantly)
+    vs Zero p-value: 0.0293 (bias is significantly non-zero)
+    Count: 109
+
+  Global North - Gdp:
+    Mean bias: +4.192
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Gdp:
+    Mean bias: +3.449
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 109
+
+  Global North - Social Support:
+    Mean bias: +5.984
+    ANOVA p-value: 0.0797 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Social Support:
+    Mean bias: +5.900
+    ANOVA p-value: 0.0797 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 109
+
+  Global North - Health:
+    Mean bias: +5.809
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Health:
+    Mean bias: +5.566
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 108
+
+  Global North - Freedom:
+    Mean bias: +5.894
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Freedom:
+    Mean bias: +4.937
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 108
+
+  Global North - Generosity:
+    Mean bias: +3.680
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Generosity:
+    Mean bias: +3.296
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 109
+
+  Global North - Corruption:
+    Mean bias: +5.416
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 38
+
+  Global South - Corruption:
+    Mean bias: +2.668
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 108
+
+
+WORLD 123:
+--------------------------------------------------------------------------------
+  World 1 - Overall Happiness:
+    Mean bias: -0.351
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 22
+
+  World 1 - Life Evaluation:
+    Mean bias: -0.351
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 22
+
+  World 1 - Gdp:
+    Mean bias: +4.416
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  World 2 - Gdp:
+    Mean bias: +3.517
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 116
+
+  World 3 - Gdp:
+    Mean bias: +3.352
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  World 1 - Social Support:
+    Mean bias: +6.039
+    ANOVA p-value: 0.0381 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  World 2 - Social Support:
+    Mean bias: +5.895
+    ANOVA p-value: 0.0381 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 116
+
+  World 3 - Social Support:
+    Mean bias: +5.984
+    ANOVA p-value: 0.0381 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  World 1 - Health:
+    Mean bias: +5.852
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  World 2 - Health:
+    Mean bias: +5.606
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 115
+
+  World 3 - Health:
+    Mean bias: +5.385
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  World 1 - Freedom:
+    Mean bias: +5.954
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  World 2 - Freedom:
+    Mean bias: +5.104
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 115
+
+  World 3 - Freedom:
+    Mean bias: +4.361
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  World 1 - Generosity:
+    Mean bias: +3.845
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  World 2 - Generosity:
+    Mean bias: +3.329
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 116
+
+  World 3 - Generosity:
+    Mean bias: +3.156
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  World 1 - Corruption:
+    Mean bias: +6.217
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  World 2 - Corruption:
+    Mean bias: +2.941
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 115
+
+  World 3 - Corruption:
+    Mean bias: +2.103
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+
+CONTINENT:
+--------------------------------------------------------------------------------
+  Africa - Overall Happiness:
+    Mean bias: +0.435
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0425 (bias is significantly non-zero)
+    Count: 12
+
+  Europe - Overall Happiness:
+    Mean bias: -0.272
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Overall Happiness:
+    Mean bias: -0.728
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Overall Happiness:
+    Mean bias: -0.398
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0256 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Overall Happiness:
+    Mean bias: +0.293
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0039 (bias is significantly non-zero)
+    Count: 58
+
+  South America - Overall Happiness:
+    Mean bias: -0.525
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 10
+
+  Africa - Life Evaluation:
+    Mean bias: +0.435
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0425 (bias is significantly non-zero)
+    Count: 12
+
+  Europe - Life Evaluation:
+    Mean bias: -0.272
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Life Evaluation:
+    Mean bias: -0.728
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Life Evaluation:
+    Mean bias: -0.398
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0256 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Life Evaluation:
+    Mean bias: +0.293
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0039 (bias is significantly non-zero)
+    Count: 58
+
+  South America - Life Evaluation:
+    Mean bias: -0.525
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 10
+
+  Africa - Gdp:
+    Mean bias: +3.301
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  Asia - Gdp:
+    Mean bias: +3.710
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 23
+
+  Europe - Gdp:
+    Mean bias: +4.009
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Gdp:
+    Mean bias: +3.724
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Gdp:
+    Mean bias: +4.082
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0009 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Gdp:
+    Mean bias: +3.453
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South America - Gdp:
+    Mean bias: +3.606
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Africa - Social Support:
+    Mean bias: +5.932
+    ANOVA p-value: 0.9413 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  Asia - Social Support:
+    Mean bias: +5.954
+    ANOVA p-value: 0.9413 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 23
+
+  Europe - Social Support:
+    Mean bias: +5.936
+    ANOVA p-value: 0.9413 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Social Support:
+    Mean bias: +5.903
+    ANOVA p-value: 0.9413 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Social Support:
+    Mean bias: +5.956
+    ANOVA p-value: 0.9413 (groups differ significantly)
+    vs Zero p-value: 0.0024 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Social Support:
+    Mean bias: +5.916
+    ANOVA p-value: 0.9413 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South America - Social Support:
+    Mean bias: +5.834
+    ANOVA p-value: 0.9413 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Africa - Health:
+    Mean bias: +5.592
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  Asia - Health:
+    Mean bias: +5.560
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 23
+
+  Europe - Health:
+    Mean bias: +5.778
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Health:
+    Mean bias: +5.731
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Health:
+    Mean bias: +5.814
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Health:
+    Mean bias: +5.542
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 57
+
+  South America - Health:
+    Mean bias: +5.713
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Africa - Freedom:
+    Mean bias: +4.917
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  Asia - Freedom:
+    Mean bias: +4.858
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 23
+
+  Europe - Freedom:
+    Mean bias: +5.882
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Freedom:
+    Mean bias: +5.270
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Freedom:
+    Mean bias: +6.063
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0015 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Freedom:
+    Mean bias: +4.907
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 57
+
+  South America - Freedom:
+    Mean bias: +5.306
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Africa - Generosity:
+    Mean bias: +3.301
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  Asia - Generosity:
+    Mean bias: +3.479
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 23
+
+  Europe - Generosity:
+    Mean bias: +3.557
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Generosity:
+    Mean bias: +3.426
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Generosity:
+    Mean bias: +3.797
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0002 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Generosity:
+    Mean bias: +3.291
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South America - Generosity:
+    Mean bias: +3.279
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Africa - Corruption:
+    Mean bias: +2.552
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  Asia - Corruption:
+    Mean bias: +3.235
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  Europe - Corruption:
+    Mean bias: +4.987
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 33
+
+  North America - Corruption:
+    Mean bias: +3.109
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Corruption:
+    Mean bias: +6.603
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0412 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Corruption:
+    Mean bias: +2.703
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South America - Corruption:
+    Mean bias: +2.966
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 10
+
+
+REGION:
+--------------------------------------------------------------------------------
+  Africa - Overall Happiness:
+    Mean bias: +0.435
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0425 (bias is significantly non-zero)
+    Count: 12
+
+  Eastern Europe - Overall Happiness:
+    Mean bias: -0.307
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0053 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Overall Happiness:
+    Mean bias: -0.525
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 10
+
+  North America - Overall Happiness:
+    Mean bias: -0.728
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Overall Happiness:
+    Mean bias: -0.398
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0256 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Overall Happiness:
+    Mean bias: +0.293
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0039 (bias is significantly non-zero)
+    Count: 58
+
+  South Asia - Overall Happiness:
+    Mean bias: +1.101
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0181 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Overall Happiness:
+    Mean bias: -0.250
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0008 (bias is significantly non-zero)
+    Count: 20
+
+  Africa - Life Evaluation:
+    Mean bias: +0.435
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0425 (bias is significantly non-zero)
+    Count: 12
+
+  Eastern Europe - Life Evaluation:
+    Mean bias: -0.307
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0053 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Life Evaluation:
+    Mean bias: -0.525
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 10
+
+  North America - Life Evaluation:
+    Mean bias: -0.728
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Life Evaluation:
+    Mean bias: -0.398
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0256 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Life Evaluation:
+    Mean bias: +0.293
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0039 (bias is significantly non-zero)
+    Count: 58
+
+  South Asia - Life Evaluation:
+    Mean bias: +1.101
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0181 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Life Evaluation:
+    Mean bias: -0.250
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0008 (bias is significantly non-zero)
+    Count: 20
+
+  Africa - Gdp:
+    Mean bias: +3.301
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  East Asia - Gdp:
+    Mean bias: +3.924
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Eastern Europe - Gdp:
+    Mean bias: +3.659
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Gdp:
+    Mean bias: +3.606
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Middle East - Gdp:
+    Mean bias: +3.768
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 11
+
+  North America - Gdp:
+    Mean bias: +3.724
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Gdp:
+    Mean bias: +4.082
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0009 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Gdp:
+    Mean bias: +3.453
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South Asia - Gdp:
+    Mean bias: +3.388
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Gdp:
+    Mean bias: +4.237
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 20
+
+  Africa - Social Support:
+    Mean bias: +5.932
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  East Asia - Social Support:
+    Mean bias: +5.767
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Eastern Europe - Social Support:
+    Mean bias: +5.737
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Social Support:
+    Mean bias: +5.834
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Middle East - Social Support:
+    Mean bias: +5.899
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 11
+
+  North America - Social Support:
+    Mean bias: +5.903
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Social Support:
+    Mean bias: +5.956
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0024 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Social Support:
+    Mean bias: +5.916
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South Asia - Social Support:
+    Mean bias: +6.243
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Social Support:
+    Mean bias: +6.065
+    ANOVA p-value: 0.0010 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 20
+
+  Africa - Health:
+    Mean bias: +5.592
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  East Asia - Health:
+    Mean bias: +5.594
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Eastern Europe - Health:
+    Mean bias: +5.710
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Health:
+    Mean bias: +5.713
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Middle East - Health:
+    Mean bias: +5.607
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 11
+
+  North America - Health:
+    Mean bias: +5.731
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Health:
+    Mean bias: +5.814
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Health:
+    Mean bias: +5.542
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 57
+
+  South Asia - Health:
+    Mean bias: +5.438
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Health:
+    Mean bias: +5.822
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 20
+
+  Africa - Freedom:
+    Mean bias: +4.917
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  East Asia - Freedom:
+    Mean bias: +5.285
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Eastern Europe - Freedom:
+    Mean bias: +5.652
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Freedom:
+    Mean bias: +5.306
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Middle East - Freedom:
+    Mean bias: +4.785
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 11
+
+  North America - Freedom:
+    Mean bias: +5.270
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Freedom:
+    Mean bias: +6.063
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0015 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Freedom:
+    Mean bias: +4.907
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 57
+
+  South Asia - Freedom:
+    Mean bias: +4.566
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Freedom:
+    Mean bias: +6.031
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 20
+
+  Africa - Generosity:
+    Mean bias: +3.301
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  East Asia - Generosity:
+    Mean bias: +3.406
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Eastern Europe - Generosity:
+    Mean bias: +3.363
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Generosity:
+    Mean bias: +3.279
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 10
+
+  Middle East - Generosity:
+    Mean bias: +3.661
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 11
+
+  North America - Generosity:
+    Mean bias: +3.426
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Generosity:
+    Mean bias: +3.797
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0002 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Generosity:
+    Mean bias: +3.291
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South Asia - Generosity:
+    Mean bias: +3.219
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Generosity:
+    Mean bias: +3.683
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 20
+
+  Africa - Corruption:
+    Mean bias: +2.552
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 12
+
+  East Asia - Corruption:
+    Mean bias: +4.407
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0031 (bias is significantly non-zero)
+    Count: 6
+
+  Eastern Europe - Corruption:
+    Mean bias: +3.863
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 13
+
+  Latin America - Corruption:
+    Mean bias: +2.966
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 10
+
+  Middle East - Corruption:
+    Mean bias: +3.100
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0002 (bias is significantly non-zero)
+    Count: 10
+
+  North America - Corruption:
+    Mean bias: +3.109
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 9
+
+  Oceania - Corruption:
+    Mean bias: +6.603
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0412 (bias is significantly non-zero)
+    Count: 2
+
+  Other - Corruption:
+    Mean bias: +2.703
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 58
+
+  South Asia - Corruption:
+    Mean bias: +2.286
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Western Europe - Corruption:
+    Mean bias: +5.718
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 20
+
+
+INCOME LEVEL:
+--------------------------------------------------------------------------------
+  High Income - Overall Happiness:
+    Mean bias: -0.351
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 22
+
+  Lower Middle Income - Overall Happiness:
+    Mean bias: +0.606
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 30
+
+  High Income - Life Evaluation:
+    Mean bias: -0.351
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0003 (bias is significantly non-zero)
+    Count: 22
+
+  Lower Middle Income - Life Evaluation:
+    Mean bias: +0.606
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 30
+
+  High Income - Gdp:
+    Mean bias: +4.416
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  Low Income - Gdp:
+    Mean bias: +3.352
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Lower Middle Income - Gdp:
+    Mean bias: +3.383
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 30
+
+  Upper Middle Income - Gdp:
+    Mean bias: +3.564
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 86
+
+  High Income - Social Support:
+    Mean bias: +6.039
+    ANOVA p-value: 0.0001 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  Low Income - Social Support:
+    Mean bias: +5.984
+    ANOVA p-value: 0.0001 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Lower Middle Income - Social Support:
+    Mean bias: +6.043
+    ANOVA p-value: 0.0001 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 30
+
+  Upper Middle Income - Social Support:
+    Mean bias: +5.843
+    ANOVA p-value: 0.0001 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 86
+
+  High Income - Health:
+    Mean bias: +5.852
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  Low Income - Health:
+    Mean bias: +5.385
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Lower Middle Income - Health:
+    Mean bias: +5.497
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 30
+
+  Upper Middle Income - Health:
+    Mean bias: +5.644
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 85
+
+  High Income - Freedom:
+    Mean bias: +5.954
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  Low Income - Freedom:
+    Mean bias: +4.361
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Lower Middle Income - Freedom:
+    Mean bias: +4.867
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 29
+
+  Upper Middle Income - Freedom:
+    Mean bias: +5.184
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 86
+
+  High Income - Generosity:
+    Mean bias: +3.845
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  Low Income - Generosity:
+    Mean bias: +3.156
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Lower Middle Income - Generosity:
+    Mean bias: +3.298
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 30
+
+  Upper Middle Income - Generosity:
+    Mean bias: +3.339
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 86
+
+  High Income - Corruption:
+    Mean bias: +6.217
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 22
+
+  Low Income - Corruption:
+    Mean bias: +2.103
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  Lower Middle Income - Corruption:
+    Mean bias: +2.406
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 30
+
+  Upper Middle Income - Corruption:
+    Mean bias: +3.130
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 85
+
+
+EAST WEST:
+--------------------------------------------------------------------------------
+  Other - Overall Happiness:
+    Mean bias: +0.317
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0005 (bias is significantly non-zero)
+    Count: 70
+
+  West - Overall Happiness:
+    Mean bias: -0.429
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+  Other - Life Evaluation:
+    Mean bias: +0.317
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0005 (bias is significantly non-zero)
+    Count: 70
+
+  West - Life Evaluation:
+    Mean bias: -0.429
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+  East - Gdp:
+    Mean bias: +3.691
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 36
+
+  Other - Gdp:
+    Mean bias: +3.427
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 70
+
+  West - Gdp:
+    Mean bias: +3.963
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+  East - Social Support:
+    Mean bias: +5.876
+    ANOVA p-value: 0.2853 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 36
+
+  Other - Social Support:
+    Mean bias: +5.919
+    ANOVA p-value: 0.2853 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 70
+
+  West - Social Support:
+    Mean bias: +5.968
+    ANOVA p-value: 0.2853 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+  East - Health:
+    Mean bias: +5.614
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 36
+
+  Other - Health:
+    Mean bias: +5.551
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 69
+
+  West - Health:
+    Mean bias: +5.775
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+  East - Freedom:
+    Mean bias: +5.145
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 36
+
+  Other - Freedom:
+    Mean bias: +4.909
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 69
+
+  West - Freedom:
+    Mean bias: +5.689
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+  East - Generosity:
+    Mean bias: +3.437
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 36
+
+  Other - Generosity:
+    Mean bias: +3.293
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 70
+
+  West - Generosity:
+    Mean bias: +3.533
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+  East - Corruption:
+    Mean bias: +3.468
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 35
+
+  Other - Corruption:
+    Mean bias: +2.677
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 70
+
+  West - Corruption:
+    Mean bias: +4.517
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 41
+
+
+DEVELOPED EAST VS WEST:
+--------------------------------------------------------------------------------
+  Developed West - Overall Happiness:
+    Mean bias: -0.377
+    ANOVA p-value: 0.0272 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Developed West - Life Evaluation:
+    Mean bias: -0.377
+    ANOVA p-value: 0.0272 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Developed East Asia - Gdp:
+    Mean bias: +4.115
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0221 (bias is significantly non-zero)
+    Count: 2
+
+  Developed West - Gdp:
+    Mean bias: +4.391
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Non-Developed - Gdp:
+    Mean bias: +3.505
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Other Developed - Gdp:
+    Mean bias: +4.668
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0010 (bias is significantly non-zero)
+    Count: 4
+
+  Developed East Asia - Social Support:
+    Mean bias: +5.805
+    ANOVA p-value: 0.0583 (groups differ significantly)
+    vs Zero p-value: 0.0088 (bias is significantly non-zero)
+    Count: 2
+
+  Developed West - Social Support:
+    Mean bias: +6.072
+    ANOVA p-value: 0.0583 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Non-Developed - Social Support:
+    Mean bias: +5.901
+    ANOVA p-value: 0.0583 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Other Developed - Social Support:
+    Mean bias: +6.024
+    ANOVA p-value: 0.0583 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 4
+
+  Developed East Asia - Health:
+    Mean bias: +5.620
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0097 (bias is significantly non-zero)
+    Count: 2
+
+  Developed West - Health:
+    Mean bias: +5.898
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Non-Developed - Health:
+    Mean bias: +5.590
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Other Developed - Health:
+    Mean bias: +5.785
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 4
+
+  Developed East Asia - Freedom:
+    Mean bias: +5.572
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0157 (bias is significantly non-zero)
+    Count: 2
+
+  Developed West - Freedom:
+    Mean bias: +6.155
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Non-Developed - Freedom:
+    Mean bias: +5.050
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Other Developed - Freedom:
+    Mean bias: +5.340
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 4
+
+  Developed East Asia - Generosity:
+    Mean bias: +3.531
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0315 (bias is significantly non-zero)
+    Count: 2
+
+  Developed West - Generosity:
+    Mean bias: +3.826
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Non-Developed - Generosity:
+    Mean bias: +3.316
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Other Developed - Generosity:
+    Mean bias: +4.076
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0002 (bias is significantly non-zero)
+    Count: 4
+
+  Developed West - Corruption:
+    Mean bias: +6.590
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 16
+
+  Non-Developed - Corruption:
+    Mean bias: +2.881
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Other Developed - Corruption:
+    Mean bias: +4.385
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0135 (bias is significantly non-zero)
+    Count: 4
+
+
+DEVELOPED COUNTRY TYPE:
+--------------------------------------------------------------------------------
+  Anglo-Saxon - Overall Happiness:
+    Mean bias: -0.400
+    ANOVA p-value: 0.0849 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Overall Happiness:
+    Mean bias: -0.222
+    ANOVA p-value: 0.0849 (groups differ significantly)
+    vs Zero p-value: 0.0311 (bias is significantly non-zero)
+    Count: 6
+
+  Nordic - Overall Happiness:
+    Mean bias: -0.541
+    ANOVA p-value: 0.0849 (groups differ significantly)
+    vs Zero p-value: 0.0031 (bias is significantly non-zero)
+    Count: 5
+
+  Anglo-Saxon - Life Evaluation:
+    Mean bias: -0.400
+    ANOVA p-value: 0.0849 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Life Evaluation:
+    Mean bias: -0.222
+    ANOVA p-value: 0.0849 (groups differ significantly)
+    vs Zero p-value: 0.0311 (bias is significantly non-zero)
+    Count: 6
+
+  Nordic - Life Evaluation:
+    Mean bias: -0.541
+    ANOVA p-value: 0.0849 (groups differ significantly)
+    vs Zero p-value: 0.0031 (bias is significantly non-zero)
+    Count: 5
+
+  Anglo-Saxon - Gdp:
+    Mean bias: +3.971
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Gdp:
+    Mean bias: +4.544
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Developed East Asia - Gdp:
+    Mean bias: +4.115
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0221 (bias is significantly non-zero)
+    Count: 2
+
+  Middle East Developed - Gdp:
+    Mean bias: +4.668
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0010 (bias is significantly non-zero)
+    Count: 4
+
+  Non-Developed - Gdp:
+    Mean bias: +3.505
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Nordic - Gdp:
+    Mean bias: +4.626
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Anglo-Saxon - Social Support:
+    Mean bias: +5.929
+    ANOVA p-value: 0.0769 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Social Support:
+    Mean bias: +6.108
+    ANOVA p-value: 0.0769 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Developed East Asia - Social Support:
+    Mean bias: +5.805
+    ANOVA p-value: 0.0769 (groups differ significantly)
+    vs Zero p-value: 0.0088 (bias is significantly non-zero)
+    Count: 2
+
+  Middle East Developed - Social Support:
+    Mean bias: +6.024
+    ANOVA p-value: 0.0769 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 4
+
+  Non-Developed - Social Support:
+    Mean bias: +5.901
+    ANOVA p-value: 0.0769 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Nordic - Social Support:
+    Mean bias: +6.170
+    ANOVA p-value: 0.0769 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Anglo-Saxon - Health:
+    Mean bias: +5.818
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Health:
+    Mean bias: +5.878
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Developed East Asia - Health:
+    Mean bias: +5.620
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0097 (bias is significantly non-zero)
+    Count: 2
+
+  Middle East Developed - Health:
+    Mean bias: +5.785
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 4
+
+  Non-Developed - Health:
+    Mean bias: +5.590
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Nordic - Health:
+    Mean bias: +6.003
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Anglo-Saxon - Freedom:
+    Mean bias: +6.003
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Freedom:
+    Mean bias: +6.140
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Developed East Asia - Freedom:
+    Mean bias: +5.572
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0157 (bias is significantly non-zero)
+    Count: 2
+
+  Middle East Developed - Freedom:
+    Mean bias: +5.340
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0001 (bias is significantly non-zero)
+    Count: 4
+
+  Non-Developed - Freedom:
+    Mean bias: +5.050
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Nordic - Freedom:
+    Mean bias: +6.324
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Anglo-Saxon - Generosity:
+    Mean bias: +3.777
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Generosity:
+    Mean bias: +3.800
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Developed East Asia - Generosity:
+    Mean bias: +3.531
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0315 (bias is significantly non-zero)
+    Count: 2
+
+  Middle East Developed - Generosity:
+    Mean bias: +4.076
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0002 (bias is significantly non-zero)
+    Count: 4
+
+  Non-Developed - Generosity:
+    Mean bias: +3.316
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Nordic - Generosity:
+    Mean bias: +3.907
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Anglo-Saxon - Corruption:
+    Mean bias: +5.592
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0009 (bias is significantly non-zero)
+    Count: 5
+
+  Central Europe - Corruption:
+    Mean bias: +6.576
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 6
+
+  Middle East Developed - Corruption:
+    Mean bias: +4.385
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0135 (bias is significantly non-zero)
+    Count: 4
+
+  Non-Developed - Corruption:
+    Mean bias: +2.881
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Nordic - Corruption:
+    Mean bias: +7.604
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+
+ECONOMIC MODEL:
+--------------------------------------------------------------------------------
+  Market Liberal - Overall Happiness:
+    Mean bias: -0.400
+    ANOVA p-value: 0.0573 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Social Market - Overall Happiness:
+    Mean bias: -0.371
+    ANOVA p-value: 0.0573 (groups differ significantly)
+    vs Zero p-value: 0.0021 (bias is significantly non-zero)
+    Count: 9
+
+  Market Liberal - Life Evaluation:
+    Mean bias: -0.400
+    ANOVA p-value: 0.0573 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Social Market - Life Evaluation:
+    Mean bias: -0.371
+    ANOVA p-value: 0.0573 (groups differ significantly)
+    vs Zero p-value: 0.0021 (bias is significantly non-zero)
+    Count: 9
+
+  Market Liberal - Gdp:
+    Mean bias: +3.971
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Non-High Income - Gdp:
+    Mean bias: +3.505
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Other High Income - Gdp:
+    Mean bias: +4.383
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0069 (bias is significantly non-zero)
+    Count: 3
+
+  Resource-Based - Gdp:
+    Mean bias: +4.995
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0022 (bias is significantly non-zero)
+    Count: 3
+
+  Social Market - Gdp:
+    Mean bias: +4.549
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  State-Led Development - Gdp:
+    Mean bias: +4.115
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0221 (bias is significantly non-zero)
+    Count: 2
+
+  Market Liberal - Social Support:
+    Mean bias: +5.929
+    ANOVA p-value: 0.0764 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Non-High Income - Social Support:
+    Mean bias: +5.901
+    ANOVA p-value: 0.0764 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Other High Income - Social Support:
+    Mean bias: +6.000
+    ANOVA p-value: 0.0764 (groups differ significantly)
+    vs Zero p-value: 0.0012 (bias is significantly non-zero)
+    Count: 3
+
+  Resource-Based - Social Support:
+    Mean bias: +6.171
+    ANOVA p-value: 0.0764 (groups differ significantly)
+    vs Zero p-value: 0.0005 (bias is significantly non-zero)
+    Count: 3
+
+  Social Market - Social Support:
+    Mean bias: +6.120
+    ANOVA p-value: 0.0764 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  State-Led Development - Social Support:
+    Mean bias: +5.805
+    ANOVA p-value: 0.0764 (groups differ significantly)
+    vs Zero p-value: 0.0088 (bias is significantly non-zero)
+    Count: 2
+
+  Market Liberal - Health:
+    Mean bias: +5.818
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Non-High Income - Health:
+    Mean bias: +5.590
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Other High Income - Health:
+    Mean bias: +5.870
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0005 (bias is significantly non-zero)
+    Count: 3
+
+  Resource-Based - Health:
+    Mean bias: +5.845
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0004 (bias is significantly non-zero)
+    Count: 3
+
+  Social Market - Health:
+    Mean bias: +5.920
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  State-Led Development - Health:
+    Mean bias: +5.620
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0097 (bias is significantly non-zero)
+    Count: 2
+
+  Market Liberal - Freedom:
+    Mean bias: +6.003
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Non-High Income - Freedom:
+    Mean bias: +5.050
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Other High Income - Freedom:
+    Mean bias: +5.916
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0036 (bias is significantly non-zero)
+    Count: 3
+
+  Resource-Based - Freedom:
+    Mean bias: +5.386
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0018 (bias is significantly non-zero)
+    Count: 3
+
+  Social Market - Freedom:
+    Mean bias: +6.213
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  State-Led Development - Freedom:
+    Mean bias: +5.572
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0157 (bias is significantly non-zero)
+    Count: 2
+
+  Market Liberal - Generosity:
+    Mean bias: +3.777
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 5
+
+  Non-High Income - Generosity:
+    Mean bias: +3.316
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 125
+
+  Other High Income - Generosity:
+    Mean bias: +3.846
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0009 (bias is significantly non-zero)
+    Count: 3
+
+  Resource-Based - Generosity:
+    Mean bias: +4.224
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0007 (bias is significantly non-zero)
+    Count: 3
+
+  Social Market - Generosity:
+    Mean bias: +3.825
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+  State-Led Development - Generosity:
+    Mean bias: +3.531
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0315 (bias is significantly non-zero)
+    Count: 2
+
+  Market Liberal - Corruption:
+    Mean bias: +5.592
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0009 (bias is significantly non-zero)
+    Count: 5
+
+  Non-High Income - Corruption:
+    Mean bias: +2.881
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 124
+
+  Resource-Based - Corruption:
+    Mean bias: +4.842
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0393 (bias is significantly non-zero)
+    Count: 3
+
+  Social Market - Corruption:
+    Mean bias: +6.948
+    ANOVA p-value: 0.0000 (groups differ significantly)
+    vs Zero p-value: 0.0000 (bias is significantly non-zero)
+    Count: 9
+
+
+================================================================================
+PAIRWISE SIGNIFICANT DIFFERENCES BETWEEN GROUPS
+================================================================================
+
+(For each grouping, pairs of groups with significantly different biases)
+
+
+GLOBAL NORTH SOUTH:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+WORLD 123:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+CONTINENT:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+REGION:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+INCOME LEVEL:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+EAST WEST:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+DEVELOPED EAST VS WEST:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+DEVELOPED COUNTRY TYPE:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+ECONOMIC MODEL:
+--------------------------------------------------------------------------------
+  Overall Happiness:
+    (Pairwise comparisons available in detailed data)
+  Life Evaluation:
+    (Pairwise comparisons available in detailed data)
+  Gdp:
+    (Pairwise comparisons available in detailed data)
+  Social Support:
+    (Pairwise comparisons available in detailed data)
+  Health:
+    (Pairwise comparisons available in detailed data)
+  Freedom:
+    (Pairwise comparisons available in detailed data)
+  Generosity:
+    (Pairwise comparisons available in detailed data)
+  Corruption:
+    (Pairwise comparisons available in detailed data)
+
+================================================================================
+ANALYSIS BY: Global North vs Global South
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean bias: +0.163 ± 0.771
+    Median bias: +0.045
+    Countries: 109
+    vs Real Data p-value: 0.0293 * (LLM vs Real)
+    ANOVA p-value: 0.0011 ** (between groups)
+
+  Global North:
+    Mean bias: -0.268 ± 0.350
+    Median bias: -0.267
+    Countries: 38
+    vs Real Data p-value: 3.38e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0011 ** (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean bias: +0.163 ± 0.771
+    Median bias: +0.045
+    Countries: 109
+    vs Real Data p-value: 0.0293 * (LLM vs Real)
+    ANOVA p-value: 0.0011 ** (between groups)
+
+  Global North:
+    Mean bias: -0.268 ± 0.350
+    Median bias: -0.267
+    Countries: 38
+    vs Real Data p-value: 3.38e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0011 ** (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +4.192 ± 0.455
+    Median bias: +4.082
+    Countries: 38
+    vs Real Data p-value: 1.31e-37 *** (LLM vs Real)
+    ANOVA p-value: 5.96e-16 *** (between groups)
+
+  Global South:
+    Mean bias: +3.449 ± 0.425
+    Median bias: +3.504
+    Countries: 109
+    vs Real Data p-value: 1.35e-100 *** (LLM vs Real)
+    ANOVA p-value: 5.96e-16 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +5.984 ± 0.187
+    Median bias: +5.984
+    Countries: 38
+    vs Real Data p-value: 1.51e-57 *** (LLM vs Real)
+    ANOVA p-value: 0.0797 (between groups)
+
+  Global South:
+    Mean bias: +5.900 ± 0.272
+    Median bias: +5.886
+    Countries: 109
+    vs Real Data p-value: 2.02e-146 *** (LLM vs Real)
+    ANOVA p-value: 0.0797 (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +5.809 ± 0.138
+    Median bias: +5.811
+    Countries: 38
+    vs Real Data p-value: 6.47e-62 *** (LLM vs Real)
+    ANOVA p-value: 1.71e-09 *** (between groups)
+
+  Global South:
+    Mean bias: +5.566 ± 0.217
+    Median bias: +5.577
+    Countries: 108
+    vs Real Data p-value: 6.65e-153 *** (LLM vs Real)
+    ANOVA p-value: 1.71e-09 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +5.894 ± 0.338
+    Median bias: +5.916
+    Countries: 38
+    vs Real Data p-value: 8.82e-48 *** (LLM vs Real)
+    ANOVA p-value: 7.44e-15 *** (between groups)
+
+  Global South:
+    Mean bias: +4.937 ± 0.648
+    Median bias: +5.117
+    Countries: 108
+    vs Real Data p-value: 8.65e-97 *** (LLM vs Real)
+    ANOVA p-value: 7.44e-15 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +3.680 ± 0.284
+    Median bias: +3.673
+    Countries: 38
+    vs Real Data p-value: 4.74e-43 *** (LLM vs Real)
+    ANOVA p-value: 2.62e-17 *** (between groups)
+
+  Global South:
+    Mean bias: +3.296 ± 0.180
+    Median bias: +3.278
+    Countries: 109
+    vs Real Data p-value: 1.33e-138 *** (LLM vs Real)
+    ANOVA p-value: 2.62e-17 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +5.416 ± 1.586
+    Median bias: +5.473
+    Countries: 38
+    vs Real Data p-value: 3.47e-22 *** (LLM vs Real)
+    ANOVA p-value: 1.09e-26 *** (between groups)
+
+  Global South:
+    Mean bias: +2.668 ± 0.871
+    Median bias: +2.527
+    Countries: 108
+    vs Real Data p-value: 2.07e-56 *** (LLM vs Real)
+    ANOVA p-value: 1.09e-26 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: World 1/2/3 Classification
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  World 3:
+    Mean bias: +0.642 ± 0.993
+    Median bias: +0.389
+    Countries: 9
+    vs Real Data p-value: 0.0885 (LLM vs Real)
+    ANOVA p-value: 0.0010 *** (between groups)
+
+  World 2:
+    Mean bias: +0.082 ± 0.699
+    Median bias: -0.003
+    Countries: 116
+    vs Real Data p-value: 0.2088 (LLM vs Real)
+    ANOVA p-value: 0.0010 *** (between groups)
+
+  World 1:
+    Mean bias: -0.351 ± 0.377
+    Median bias: -0.335
+    Countries: 22
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 *** (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  World 3:
+    Mean bias: +0.642 ± 0.993
+    Median bias: +0.389
+    Countries: 9
+    vs Real Data p-value: 0.0885 (LLM vs Real)
+    ANOVA p-value: 0.0010 *** (between groups)
+
+  World 2:
+    Mean bias: +0.082 ± 0.699
+    Median bias: -0.003
+    Countries: 116
+    vs Real Data p-value: 0.2088 (LLM vs Real)
+    ANOVA p-value: 0.0010 *** (between groups)
+
+  World 1:
+    Mean bias: -0.351 ± 0.377
+    Median bias: -0.335
+    Countries: 22
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 *** (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +4.416 ± 0.438
+    Median bias: +4.426
+    Countries: 22
+    vs Real Data p-value: 7.93e-23 *** (LLM vs Real)
+    ANOVA p-value: 4.09e-15 *** (between groups)
+
+  World 2:
+    Mean bias: +3.517 ± 0.432
+    Median bias: +3.580
+    Countries: 116
+    vs Real Data p-value: 3.62e-107 *** (LLM vs Real)
+    ANOVA p-value: 4.09e-15 *** (between groups)
+
+  World 3:
+    Mean bias: +3.352 ± 0.432
+    Median bias: +3.504
+    Countries: 9
+    vs Real Data p-value: 1.23e-08 *** (LLM vs Real)
+    ANOVA p-value: 4.09e-15 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +6.039 ± 0.193
+    Median bias: +6.039
+    Countries: 22
+    vs Real Data p-value: 3.96e-33 *** (LLM vs Real)
+    ANOVA p-value: 0.0381 * (between groups)
+
+  World 3:
+    Mean bias: +5.984 ± 0.475
+    Median bias: +5.980
+    Countries: 9
+    vs Real Data p-value: 2.63e-10 *** (LLM vs Real)
+    ANOVA p-value: 0.0381 * (between groups)
+
+  World 2:
+    Mean bias: +5.895 ± 0.237
+    Median bias: +5.890
+    Countries: 116
+    vs Real Data p-value: 1.51e-162 *** (LLM vs Real)
+    ANOVA p-value: 0.0381 * (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +5.852 ± 0.153
+    Median bias: +5.821
+    Countries: 22
+    vs Real Data p-value: 5.85e-35 *** (LLM vs Real)
+    ANOVA p-value: 7.76e-09 *** (between groups)
+
+  World 2:
+    Mean bias: +5.606 ± 0.203
+    Median bias: +5.649
+    Countries: 115
+    vs Real Data p-value: 2.08e-166 *** (LLM vs Real)
+    ANOVA p-value: 7.76e-09 *** (between groups)
+
+  World 3:
+    Mean bias: +5.385 ± 0.251
+    Median bias: +5.404
+    Countries: 9
+    vs Real Data p-value: 3.76e-12 *** (LLM vs Real)
+    ANOVA p-value: 7.76e-09 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +5.954 ± 0.394
+    Median bias: +6.048
+    Countries: 22
+    vs Real Data p-value: 1.78e-26 *** (LLM vs Real)
+    ANOVA p-value: 2.77e-10 *** (between groups)
+
+  World 2:
+    Mean bias: +5.104 ± 0.641
+    Median bias: +5.233
+    Countries: 115
+    vs Real Data p-value: 3.59e-105 *** (LLM vs Real)
+    ANOVA p-value: 2.77e-10 *** (between groups)
+
+  World 3:
+    Mean bias: +4.361 ± 0.791
+    Median bias: +4.590
+    Countries: 9
+    vs Real Data p-value: 1.81e-07 *** (LLM vs Real)
+    ANOVA p-value: 2.77e-10 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +3.845 ± 0.236
+    Median bias: +3.800
+    Countries: 22
+    vs Real Data p-value: 3.46e-27 *** (LLM vs Real)
+    ANOVA p-value: 1.95e-23 *** (between groups)
+
+  World 2:
+    Mean bias: +3.329 ± 0.180
+    Median bias: +3.316
+    Countries: 116
+    vs Real Data p-value: 8.22e-148 *** (LLM vs Real)
+    ANOVA p-value: 1.95e-23 *** (between groups)
+
+  World 3:
+    Mean bias: +3.156 ± 0.171
+    Median bias: +3.093
+    Countries: 9
+    vs Real Data p-value: 1.26e-11 *** (LLM vs Real)
+    ANOVA p-value: 1.95e-23 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +6.217 ± 1.495
+    Median bias: +6.475
+    Countries: 22
+    vs Real Data p-value: 6.23e-15 *** (LLM vs Real)
+    ANOVA p-value: 9.25e-26 *** (between groups)
+
+  World 2:
+    Mean bias: +2.941 ± 1.040
+    Median bias: +2.648
+    Countries: 115
+    vs Real Data p-value: 2.01e-56 *** (LLM vs Real)
+    ANOVA p-value: 9.25e-26 *** (between groups)
+
+  World 3:
+    Mean bias: +2.103 ± 0.542
+    Median bias: +2.147
+    Countries: 9
+    vs Real Data p-value: 2.71e-06 *** (LLM vs Real)
+    ANOVA p-value: 9.25e-26 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: Continent
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Africa:
+    Mean bias: +0.435 ± 0.656
+    Median bias: +0.594
+    Countries: 12
+    vs Real Data p-value: 0.0425 * (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Asia:
+    Mean bias: +0.303 ± 0.814
+    Median bias: +0.129
+    Countries: 23
+    vs Real Data p-value: 0.0876 (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Other:
+    Mean bias: +0.293 ± 0.740
+    Median bias: +0.175
+    Countries: 58
+    vs Real Data p-value: 0.0039 ** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Europe:
+    Mean bias: -0.272 ± 0.295
+    Median bias: -0.248
+    Countries: 33
+    vs Real Data p-value: 8.32e-06 *** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Oceania:
+    Mean bias: -0.398 ± 0.023
+    Median bias: -0.398
+    Countries: 2
+    vs Real Data p-value: 0.0256 * (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  South America:
+    Mean bias: -0.525 ± 0.287
+    Median bias: -0.419
+    Countries: 10
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  North America:
+    Mean bias: -0.728 ± 0.290
+    Median bias: -0.699
+    Countries: 9
+    vs Real Data p-value: 6.63e-05 *** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Africa:
+    Mean bias: +0.435 ± 0.656
+    Median bias: +0.594
+    Countries: 12
+    vs Real Data p-value: 0.0425 * (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Asia:
+    Mean bias: +0.303 ± 0.814
+    Median bias: +0.129
+    Countries: 23
+    vs Real Data p-value: 0.0876 (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Other:
+    Mean bias: +0.293 ± 0.740
+    Median bias: +0.175
+    Countries: 58
+    vs Real Data p-value: 0.0039 ** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Europe:
+    Mean bias: -0.272 ± 0.295
+    Median bias: -0.248
+    Countries: 33
+    vs Real Data p-value: 8.32e-06 *** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  Oceania:
+    Mean bias: -0.398 ± 0.023
+    Median bias: -0.398
+    Countries: 2
+    vs Real Data p-value: 0.0256 * (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  South America:
+    Mean bias: -0.525 ± 0.287
+    Median bias: -0.419
+    Countries: 10
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+  North America:
+    Mean bias: -0.728 ± 0.290
+    Median bias: -0.699
+    Countries: 9
+    vs Real Data p-value: 6.63e-05 *** (LLM vs Real)
+    ANOVA p-value: 1.28e-07 *** (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +4.082 ± 0.008
+    Median bias: +4.082
+    Countries: 2
+    vs Real Data p-value: 0.0009 *** (LLM vs Real)
+    ANOVA p-value: 2.11e-05 *** (between groups)
+
+  Europe:
+    Mean bias: +4.009 ± 0.501
+    Median bias: +3.955
+    Countries: 33
+    vs Real Data p-value: 8.36e-31 *** (LLM vs Real)
+    ANOVA p-value: 2.11e-05 *** (between groups)
+
+  North America:
+    Mean bias: +3.724 ± 0.177
+    Median bias: +3.803
+    Countries: 9
+    vs Real Data p-value: 4.34e-12 *** (LLM vs Real)
+    ANOVA p-value: 2.11e-05 *** (between groups)
+
+  Asia:
+    Mean bias: +3.710 ± 0.806
+    Median bias: +3.801
+    Countries: 23
+    vs Real Data p-value: 1.66e-16 *** (LLM vs Real)
+    ANOVA p-value: 2.11e-05 *** (between groups)
+
+  South America:
+    Mean bias: +3.606 ± 0.447
+    Median bias: +3.724
+    Countries: 10
+    vs Real Data p-value: 1.04e-09 *** (LLM vs Real)
+    ANOVA p-value: 2.11e-05 *** (between groups)
+
+  Other:
+    Mean bias: +3.453 ± 0.363
+    Median bias: +3.433
+    Countries: 58
+    vs Real Data p-value: 8.65e-58 *** (LLM vs Real)
+    ANOVA p-value: 2.11e-05 *** (between groups)
+
+  Africa:
+    Mean bias: +3.301 ± 0.465
+    Median bias: +3.284
+    Countries: 12
+    vs Real Data p-value: 5.74e-11 *** (LLM vs Real)
+    ANOVA p-value: 2.11e-05 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +5.956 ± 0.032
+    Median bias: +5.956
+    Countries: 2
+    vs Real Data p-value: 0.0024 ** (LLM vs Real)
+    ANOVA p-value: 0.9413 (between groups)
+
+  Asia:
+    Mean bias: +5.954 ± 0.352
+    Median bias: +5.943
+    Countries: 23
+    vs Real Data p-value: 9.70e-29 *** (LLM vs Real)
+    ANOVA p-value: 0.9413 (between groups)
+
+  Europe:
+    Mean bias: +5.936 ± 0.214
+    Median bias: +5.970
+    Countries: 33
+    vs Real Data p-value: 5.56e-48 *** (LLM vs Real)
+    ANOVA p-value: 0.9413 (between groups)
+
+  Africa:
+    Mean bias: +5.932 ± 0.285
+    Median bias: +5.860
+    Countries: 12
+    vs Real Data p-value: 4.53e-16 *** (LLM vs Real)
+    ANOVA p-value: 0.9413 (between groups)
+
+  Other:
+    Mean bias: +5.916 ± 0.264
+    Median bias: +5.900
+    Countries: 58
+    vs Real Data p-value: 6.92e-79 *** (LLM vs Real)
+    ANOVA p-value: 0.9413 (between groups)
+
+  North America:
+    Mean bias: +5.903 ± 0.138
+    Median bias: +5.916
+    Countries: 9
+    vs Real Data p-value: 1.50e-14 *** (LLM vs Real)
+    ANOVA p-value: 0.9413 (between groups)
+
+  South America:
+    Mean bias: +5.834 ± 0.124
+    Median bias: +5.870
+    Countries: 10
+    vs Real Data p-value: 1.47e-16 *** (LLM vs Real)
+    ANOVA p-value: 0.9413 (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +5.814 ± 0.001
+    Median bias: +5.814
+    Countries: 2
+    vs Real Data p-value: 5.47e-05 *** (LLM vs Real)
+    ANOVA p-value: 1.35e-05 *** (between groups)
+
+  Europe:
+    Mean bias: +5.778 ± 0.166
+    Median bias: +5.772
+    Countries: 33
+    vs Real Data p-value: 4.31e-51 *** (LLM vs Real)
+    ANOVA p-value: 1.35e-05 *** (between groups)
+
+  North America:
+    Mean bias: +5.731 ± 0.125
+    Median bias: +5.735
+    Countries: 9
+    vs Real Data p-value: 8.47e-15 *** (LLM vs Real)
+    ANOVA p-value: 1.35e-05 *** (between groups)
+
+  South America:
+    Mean bias: +5.713 ± 0.173
+    Median bias: +5.728
+    Countries: 10
+    vs Real Data p-value: 3.35e-15 *** (LLM vs Real)
+    ANOVA p-value: 1.35e-05 *** (between groups)
+
+  Africa:
+    Mean bias: +5.592 ± 0.216
+    Median bias: +5.598
+    Countries: 12
+    vs Real Data p-value: 4.22e-17 *** (LLM vs Real)
+    ANOVA p-value: 1.35e-05 *** (between groups)
+
+  Asia:
+    Mean bias: +5.560 ± 0.269
+    Median bias: +5.562
+    Countries: 23
+    vs Real Data p-value: 1.19e-30 *** (LLM vs Real)
+    ANOVA p-value: 1.35e-05 *** (between groups)
+
+  Other:
+    Mean bias: +5.542 ± 0.210
+    Median bias: +5.532
+    Countries: 57
+    vs Real Data p-value: 1.71e-81 *** (LLM vs Real)
+    ANOVA p-value: 1.35e-05 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.063 ± 0.021
+    Median bias: +6.063
+    Countries: 2
+    vs Real Data p-value: 0.0015 ** (LLM vs Real)
+    ANOVA p-value: 8.94e-11 *** (between groups)
+
+  Europe:
+    Mean bias: +5.882 ± 0.403
+    Median bias: +5.894
+    Countries: 33
+    vs Real Data p-value: 4.50e-39 *** (LLM vs Real)
+    ANOVA p-value: 8.94e-11 *** (between groups)
+
+  South America:
+    Mean bias: +5.306 ± 0.438
+    Median bias: +5.379
+    Countries: 10
+    vs Real Data p-value: 2.82e-11 *** (LLM vs Real)
+    ANOVA p-value: 8.94e-11 *** (between groups)
+
+  North America:
+    Mean bias: +5.270 ± 0.711
+    Median bias: +5.426
+    Countries: 9
+    vs Real Data p-value: 1.76e-08 *** (LLM vs Real)
+    ANOVA p-value: 8.94e-11 *** (between groups)
+
+  Africa:
+    Mean bias: +4.917 ± 0.508
+    Median bias: +5.062
+    Countries: 12
+    vs Real Data p-value: 1.99e-12 *** (LLM vs Real)
+    ANOVA p-value: 8.94e-11 *** (between groups)
+
+  Other:
+    Mean bias: +4.907 ± 0.635
+    Median bias: +5.057
+    Countries: 57
+    vs Real Data p-value: 7.51e-52 *** (LLM vs Real)
+    ANOVA p-value: 8.94e-11 *** (between groups)
+
+  Asia:
+    Mean bias: +4.858 ± 0.772
+    Median bias: +5.116
+    Countries: 23
+    vs Real Data p-value: 2.14e-19 *** (LLM vs Real)
+    ANOVA p-value: 8.94e-11 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +3.797 ± 0.001
+    Median bias: +3.797
+    Countries: 2
+    vs Real Data p-value: 0.0002 *** (LLM vs Real)
+    ANOVA p-value: 8.79e-06 *** (between groups)
+
+  Europe:
+    Mean bias: +3.557 ± 0.274
+    Median bias: +3.457
+    Countries: 33
+    vs Real Data p-value: 1.90e-37 *** (LLM vs Real)
+    ANOVA p-value: 8.79e-06 *** (between groups)
+
+  Asia:
+    Mean bias: +3.479 ± 0.394
+    Median bias: +3.356
+    Countries: 23
+    vs Real Data p-value: 1.43e-22 *** (LLM vs Real)
+    ANOVA p-value: 8.79e-06 *** (between groups)
+
+  North America:
+    Mean bias: +3.426 ± 0.222
+    Median bias: +3.378
+    Countries: 9
+    vs Real Data p-value: 5.33e-11 *** (LLM vs Real)
+    ANOVA p-value: 8.79e-06 *** (between groups)
+
+  Africa:
+    Mean bias: +3.301 ± 0.173
+    Median bias: +3.302
+    Countries: 12
+    vs Real Data p-value: 1.18e-15 *** (LLM vs Real)
+    ANOVA p-value: 8.79e-06 *** (between groups)
+
+  Other:
+    Mean bias: +3.291 ± 0.169
+    Median bias: +3.274
+    Countries: 58
+    vs Real Data p-value: 1.74e-75 *** (LLM vs Real)
+    ANOVA p-value: 8.79e-06 *** (between groups)
+
+  South America:
+    Mean bias: +3.279 ± 0.151
+    Median bias: +3.300
+    Countries: 10
+    vs Real Data p-value: 1.52e-13 *** (LLM vs Real)
+    ANOVA p-value: 8.79e-06 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.603 ± 0.605
+    Median bias: +6.603
+    Countries: 2
+    vs Real Data p-value: 0.0412 * (LLM vs Real)
+    ANOVA p-value: 3.40e-12 *** (between groups)
+
+  Europe:
+    Mean bias: +4.987 ± 1.792
+    Median bias: +4.851
+    Countries: 33
+    vs Real Data p-value: 8.20e-17 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-12 *** (between groups)
+
+  Asia:
+    Mean bias: +3.235 ± 1.697
+    Median bias: +2.811
+    Countries: 22
+    vs Real Data p-value: 1.33e-08 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-12 *** (between groups)
+
+  North America:
+    Mean bias: +3.109 ± 1.263
+    Median bias: +2.948
+    Countries: 9
+    vs Real Data p-value: 7.71e-05 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-12 *** (between groups)
+
+  South America:
+    Mean bias: +2.966 ± 1.470
+    Median bias: +2.565
+    Countries: 10
+    vs Real Data p-value: 0.0001 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-12 *** (between groups)
+
+  Other:
+    Mean bias: +2.703 ± 0.855
+    Median bias: +2.534
+    Countries: 58
+    vs Real Data p-value: 1.53e-31 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-12 *** (between groups)
+
+  Africa:
+    Mean bias: +2.552 ± 0.688
+    Median bias: +2.439
+    Countries: 12
+    vs Real Data p-value: 5.71e-08 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-12 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: Region
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  South Asia:
+    Mean bias: +1.101 ± 0.780
+    Median bias: +1.312
+    Countries: 6
+    vs Real Data p-value: 0.0181 * (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Africa:
+    Mean bias: +0.435 ± 0.656
+    Median bias: +0.594
+    Countries: 12
+    vs Real Data p-value: 0.0425 * (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Other:
+    Mean bias: +0.293 ± 0.740
+    Median bias: +0.175
+    Countries: 58
+    vs Real Data p-value: 0.0039 ** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Middle East:
+    Mean bias: +0.114 ± 0.771
+    Median bias: +0.146
+    Countries: 11
+    vs Real Data p-value: 0.6332 (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  East Asia:
+    Mean bias: -0.148 ± 0.182
+    Median bias: -0.177
+    Countries: 6
+    vs Real Data p-value: 0.1034 (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Western Europe:
+    Mean bias: -0.250 ± 0.280
+    Median bias: -0.267
+    Countries: 20
+    vs Real Data p-value: 0.0008 *** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Eastern Europe:
+    Mean bias: -0.307 ± 0.326
+    Median bias: -0.217
+    Countries: 13
+    vs Real Data p-value: 0.0053 ** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Oceania:
+    Mean bias: -0.398 ± 0.023
+    Median bias: -0.398
+    Countries: 2
+    vs Real Data p-value: 0.0256 * (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Latin America:
+    Mean bias: -0.525 ± 0.287
+    Median bias: -0.419
+    Countries: 10
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  North America:
+    Mean bias: -0.728 ± 0.290
+    Median bias: -0.699
+    Countries: 9
+    vs Real Data p-value: 6.63e-05 *** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  South Asia:
+    Mean bias: +1.101 ± 0.780
+    Median bias: +1.312
+    Countries: 6
+    vs Real Data p-value: 0.0181 * (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Africa:
+    Mean bias: +0.435 ± 0.656
+    Median bias: +0.594
+    Countries: 12
+    vs Real Data p-value: 0.0425 * (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Other:
+    Mean bias: +0.293 ± 0.740
+    Median bias: +0.175
+    Countries: 58
+    vs Real Data p-value: 0.0039 ** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Middle East:
+    Mean bias: +0.114 ± 0.771
+    Median bias: +0.146
+    Countries: 11
+    vs Real Data p-value: 0.6332 (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  East Asia:
+    Mean bias: -0.148 ± 0.182
+    Median bias: -0.177
+    Countries: 6
+    vs Real Data p-value: 0.1034 (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Western Europe:
+    Mean bias: -0.250 ± 0.280
+    Median bias: -0.267
+    Countries: 20
+    vs Real Data p-value: 0.0008 *** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Eastern Europe:
+    Mean bias: -0.307 ± 0.326
+    Median bias: -0.217
+    Countries: 13
+    vs Real Data p-value: 0.0053 ** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Oceania:
+    Mean bias: -0.398 ± 0.023
+    Median bias: -0.398
+    Countries: 2
+    vs Real Data p-value: 0.0256 * (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  Latin America:
+    Mean bias: -0.525 ± 0.287
+    Median bias: -0.419
+    Countries: 10
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+  North America:
+    Mean bias: -0.728 ± 0.290
+    Median bias: -0.699
+    Countries: 9
+    vs Real Data p-value: 6.63e-05 *** (LLM vs Real)
+    ANOVA p-value: 4.89e-09 *** (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Western Europe:
+    Mean bias: +4.237 ± 0.460
+    Median bias: +4.261
+    Countries: 20
+    vs Real Data p-value: 4.79e-20 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  Oceania:
+    Mean bias: +4.082 ± 0.008
+    Median bias: +4.082
+    Countries: 2
+    vs Real Data p-value: 0.0009 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  East Asia:
+    Mean bias: +3.924 ± 0.248
+    Median bias: +3.946
+    Countries: 6
+    vs Real Data p-value: 2.18e-07 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  Middle East:
+    Mean bias: +3.768 ± 1.090
+    Median bias: +3.690
+    Countries: 11
+    vs Real Data p-value: 4.48e-07 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  North America:
+    Mean bias: +3.724 ± 0.177
+    Median bias: +3.803
+    Countries: 9
+    vs Real Data p-value: 4.34e-12 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  Eastern Europe:
+    Mean bias: +3.659 ± 0.338
+    Median bias: +3.671
+    Countries: 13
+    vs Real Data p-value: 5.13e-14 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  Latin America:
+    Mean bias: +3.606 ± 0.447
+    Median bias: +3.724
+    Countries: 10
+    vs Real Data p-value: 1.04e-09 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  Other:
+    Mean bias: +3.453 ± 0.363
+    Median bias: +3.433
+    Countries: 58
+    vs Real Data p-value: 8.65e-58 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  South Asia:
+    Mean bias: +3.388 ± 0.481
+    Median bias: +3.348
+    Countries: 6
+    vs Real Data p-value: 1.19e-05 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+  Africa:
+    Mean bias: +3.301 ± 0.465
+    Median bias: +3.284
+    Countries: 12
+    vs Real Data p-value: 5.74e-11 *** (LLM vs Real)
+    ANOVA p-value: 4.84e-07 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  South Asia:
+    Mean bias: +6.243 ± 0.325
+    Median bias: +6.255
+    Countries: 6
+    vs Real Data p-value: 8.22e-08 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  Western Europe:
+    Mean bias: +6.065 ± 0.123
+    Median bias: +6.039
+    Countries: 20
+    vs Real Data p-value: 7.52e-34 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  Oceania:
+    Mean bias: +5.956 ± 0.032
+    Median bias: +5.956
+    Countries: 2
+    vs Real Data p-value: 0.0024 ** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  Africa:
+    Mean bias: +5.932 ± 0.285
+    Median bias: +5.860
+    Countries: 12
+    vs Real Data p-value: 4.53e-16 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  Other:
+    Mean bias: +5.916 ± 0.264
+    Median bias: +5.900
+    Countries: 58
+    vs Real Data p-value: 6.92e-79 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  North America:
+    Mean bias: +5.903 ± 0.138
+    Median bias: +5.916
+    Countries: 9
+    vs Real Data p-value: 1.50e-14 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  Middle East:
+    Mean bias: +5.899 ± 0.360
+    Median bias: +5.943
+    Countries: 11
+    vs Real Data p-value: 1.09e-13 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  Latin America:
+    Mean bias: +5.834 ± 0.124
+    Median bias: +5.870
+    Countries: 10
+    vs Real Data p-value: 1.47e-16 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  East Asia:
+    Mean bias: +5.767 ± 0.179
+    Median bias: +5.791
+    Countries: 6
+    vs Real Data p-value: 6.24e-09 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+  Eastern Europe:
+    Mean bias: +5.737 ± 0.166
+    Median bias: +5.761
+    Countries: 13
+    vs Real Data p-value: 4.81e-20 *** (LLM vs Real)
+    ANOVA p-value: 0.0010 ** (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  Western Europe:
+    Mean bias: +5.822 ± 0.157
+    Median bias: +5.778
+    Countries: 20
+    vs Real Data p-value: 1.64e-31 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  Oceania:
+    Mean bias: +5.814 ± 0.001
+    Median bias: +5.814
+    Countries: 2
+    vs Real Data p-value: 5.47e-05 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  North America:
+    Mean bias: +5.731 ± 0.125
+    Median bias: +5.735
+    Countries: 9
+    vs Real Data p-value: 8.47e-15 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  Latin America:
+    Mean bias: +5.713 ± 0.173
+    Median bias: +5.728
+    Countries: 10
+    vs Real Data p-value: 3.35e-15 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  Eastern Europe:
+    Mean bias: +5.710 ± 0.163
+    Median bias: +5.730
+    Countries: 13
+    vs Real Data p-value: 4.21e-20 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  Middle East:
+    Mean bias: +5.607 ± 0.347
+    Median bias: +5.606
+    Countries: 11
+    vs Real Data p-value: 1.24e-13 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  East Asia:
+    Mean bias: +5.594 ± 0.131
+    Median bias: +5.582
+    Countries: 6
+    vs Real Data p-value: 1.54e-09 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  Africa:
+    Mean bias: +5.592 ± 0.216
+    Median bias: +5.598
+    Countries: 12
+    vs Real Data p-value: 4.22e-17 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  Other:
+    Mean bias: +5.542 ± 0.210
+    Median bias: +5.532
+    Countries: 57
+    vs Real Data p-value: 1.71e-81 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+  South Asia:
+    Mean bias: +5.438 ± 0.191
+    Median bias: +5.463
+    Countries: 6
+    vs Real Data p-value: 1.16e-08 *** (LLM vs Real)
+    ANOVA p-value: 2.20e-05 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.063 ± 0.021
+    Median bias: +6.063
+    Countries: 2
+    vs Real Data p-value: 0.0015 ** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  Western Europe:
+    Mean bias: +6.031 ± 0.257
+    Median bias: +5.980
+    Countries: 20
+    vs Real Data p-value: 9.89e-28 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  Eastern Europe:
+    Mean bias: +5.652 ± 0.484
+    Median bias: +5.786
+    Countries: 13
+    vs Real Data p-value: 2.10e-14 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  Latin America:
+    Mean bias: +5.306 ± 0.438
+    Median bias: +5.379
+    Countries: 10
+    vs Real Data p-value: 2.82e-11 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  East Asia:
+    Mean bias: +5.285 ± 0.368
+    Median bias: +5.333
+    Countries: 6
+    vs Real Data p-value: 3.51e-07 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  North America:
+    Mean bias: +5.270 ± 0.711
+    Median bias: +5.426
+    Countries: 9
+    vs Real Data p-value: 1.76e-08 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  Africa:
+    Mean bias: +4.917 ± 0.508
+    Median bias: +5.062
+    Countries: 12
+    vs Real Data p-value: 1.99e-12 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  Other:
+    Mean bias: +4.907 ± 0.635
+    Median bias: +5.057
+    Countries: 57
+    vs Real Data p-value: 7.51e-52 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  Middle East:
+    Mean bias: +4.785 ± 0.813
+    Median bias: +4.945
+    Countries: 11
+    vs Real Data p-value: 2.73e-09 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+  South Asia:
+    Mean bias: +4.566 ± 0.912
+    Median bias: +4.883
+    Countries: 6
+    vs Real Data p-value: 6.39e-05 *** (LLM vs Real)
+    ANOVA p-value: 9.31e-11 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +3.797 ± 0.001
+    Median bias: +3.797
+    Countries: 2
+    vs Real Data p-value: 0.0002 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  Western Europe:
+    Mean bias: +3.683 ± 0.247
+    Median bias: +3.673
+    Countries: 20
+    vs Real Data p-value: 5.52e-24 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  Middle East:
+    Mean bias: +3.661 ± 0.482
+    Median bias: +3.631
+    Countries: 11
+    vs Real Data p-value: 2.21e-10 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  North America:
+    Mean bias: +3.426 ± 0.222
+    Median bias: +3.378
+    Countries: 9
+    vs Real Data p-value: 5.33e-11 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  East Asia:
+    Mean bias: +3.406 ± 0.210
+    Median bias: +3.399
+    Countries: 6
+    vs Real Data p-value: 1.89e-07 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  Eastern Europe:
+    Mean bias: +3.363 ± 0.192
+    Median bias: +3.357
+    Countries: 13
+    vs Real Data p-value: 1.63e-16 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  Africa:
+    Mean bias: +3.301 ± 0.173
+    Median bias: +3.302
+    Countries: 12
+    vs Real Data p-value: 1.18e-15 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  Other:
+    Mean bias: +3.291 ± 0.169
+    Median bias: +3.274
+    Countries: 58
+    vs Real Data p-value: 1.74e-75 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  Latin America:
+    Mean bias: +3.279 ± 0.151
+    Median bias: +3.300
+    Countries: 10
+    vs Real Data p-value: 1.52e-13 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+  South Asia:
+    Mean bias: +3.219 ± 0.124
+    Median bias: +3.264
+    Countries: 6
+    vs Real Data p-value: 1.82e-08 *** (LLM vs Real)
+    ANOVA p-value: 3.71e-10 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.603 ± 0.605
+    Median bias: +6.603
+    Countries: 2
+    vs Real Data p-value: 0.0412 * (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  Western Europe:
+    Mean bias: +5.718 ± 1.678
+    Median bias: +5.939
+    Countries: 20
+    vs Real Data p-value: 4.16e-12 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  East Asia:
+    Mean bias: +4.407 ± 2.030
+    Median bias: +3.556
+    Countries: 6
+    vs Real Data p-value: 0.0031 ** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  Eastern Europe:
+    Mean bias: +3.863 ± 1.360
+    Median bias: +3.485
+    Countries: 13
+    vs Real Data p-value: 2.77e-07 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  North America:
+    Mean bias: +3.109 ± 1.263
+    Median bias: +2.948
+    Countries: 9
+    vs Real Data p-value: 7.71e-05 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  Middle East:
+    Mean bias: +3.100 ± 1.677
+    Median bias: +3.034
+    Countries: 10
+    vs Real Data p-value: 0.0002 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  Latin America:
+    Mean bias: +2.966 ± 1.470
+    Median bias: +2.565
+    Countries: 10
+    vs Real Data p-value: 0.0001 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  Other:
+    Mean bias: +2.703 ± 0.855
+    Median bias: +2.534
+    Countries: 58
+    vs Real Data p-value: 1.53e-31 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  Africa:
+    Mean bias: +2.552 ± 0.688
+    Median bias: +2.439
+    Countries: 12
+    vs Real Data p-value: 5.71e-08 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+  South Asia:
+    Mean bias: +2.286 ± 0.386
+    Median bias: +2.289
+    Countries: 6
+    vs Real Data p-value: 2.81e-05 *** (LLM vs Real)
+    ANOVA p-value: 1.31e-15 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: Income Level
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Low Income:
+    Mean bias: +0.642 ± 0.993
+    Median bias: +0.389
+    Countries: 9
+    vs Real Data p-value: 0.0885 (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+  Lower Middle Income:
+    Mean bias: +0.606 ± 0.617
+    Median bias: +0.644
+    Countries: 30
+    vs Real Data p-value: 8.80e-06 *** (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: -0.101 ± 0.634
+    Median bias: -0.207
+    Countries: 86
+    vs Real Data p-value: 0.1446 (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+  High Income:
+    Mean bias: -0.351 ± 0.377
+    Median bias: -0.335
+    Countries: 22
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Low Income:
+    Mean bias: +0.642 ± 0.993
+    Median bias: +0.389
+    Countries: 9
+    vs Real Data p-value: 0.0885 (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+  Lower Middle Income:
+    Mean bias: +0.606 ± 0.617
+    Median bias: +0.644
+    Countries: 30
+    vs Real Data p-value: 8.80e-06 *** (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: -0.101 ± 0.634
+    Median bias: -0.207
+    Countries: 86
+    vs Real Data p-value: 0.1446 (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+  High Income:
+    Mean bias: -0.351 ± 0.377
+    Median bias: -0.335
+    Countries: 22
+    vs Real Data p-value: 0.0003 *** (LLM vs Real)
+    ANOVA p-value: 1.19e-08 *** (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +4.416 ± 0.438
+    Median bias: +4.426
+    Countries: 22
+    vs Real Data p-value: 7.93e-23 *** (LLM vs Real)
+    ANOVA p-value: 4.39e-15 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: +3.564 ± 0.450
+    Median bias: +3.634
+    Countries: 86
+    vs Real Data p-value: 1.12e-78 *** (LLM vs Real)
+    ANOVA p-value: 4.39e-15 *** (between groups)
+
+  Lower Middle Income:
+    Mean bias: +3.383 ± 0.348
+    Median bias: +3.324
+    Countries: 30
+    vs Real Data p-value: 1.82e-30 *** (LLM vs Real)
+    ANOVA p-value: 4.39e-15 *** (between groups)
+
+  Low Income:
+    Mean bias: +3.352 ± 0.432
+    Median bias: +3.504
+    Countries: 9
+    vs Real Data p-value: 1.23e-08 *** (LLM vs Real)
+    ANOVA p-value: 4.39e-15 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Lower Middle Income:
+    Mean bias: +6.043 ± 0.292
+    Median bias: +5.998
+    Countries: 30
+    vs Real Data p-value: 5.75e-40 *** (LLM vs Real)
+    ANOVA p-value: 9.44e-05 *** (between groups)
+
+  High Income:
+    Mean bias: +6.039 ± 0.193
+    Median bias: +6.039
+    Countries: 22
+    vs Real Data p-value: 3.96e-33 *** (LLM vs Real)
+    ANOVA p-value: 9.44e-05 *** (between groups)
+
+  Low Income:
+    Mean bias: +5.984 ± 0.475
+    Median bias: +5.980
+    Countries: 9
+    vs Real Data p-value: 2.63e-10 *** (LLM vs Real)
+    ANOVA p-value: 9.44e-05 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: +5.843 ± 0.192
+    Median bias: +5.860
+    Countries: 86
+    vs Real Data p-value: 3.98e-128 *** (LLM vs Real)
+    ANOVA p-value: 9.44e-05 *** (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +5.852 ± 0.153
+    Median bias: +5.821
+    Countries: 22
+    vs Real Data p-value: 5.85e-35 *** (LLM vs Real)
+    ANOVA p-value: 8.76e-11 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: +5.644 ± 0.200
+    Median bias: +5.661
+    Countries: 85
+    vs Real Data p-value: 5.88e-124 *** (LLM vs Real)
+    ANOVA p-value: 8.76e-11 *** (between groups)
+
+  Lower Middle Income:
+    Mean bias: +5.497 ± 0.173
+    Median bias: +5.519
+    Countries: 30
+    vs Real Data p-value: 2.47e-45 *** (LLM vs Real)
+    ANOVA p-value: 8.76e-11 *** (between groups)
+
+  Low Income:
+    Mean bias: +5.385 ± 0.251
+    Median bias: +5.404
+    Countries: 9
+    vs Real Data p-value: 3.76e-12 *** (LLM vs Real)
+    ANOVA p-value: 8.76e-11 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +5.954 ± 0.394
+    Median bias: +6.048
+    Countries: 22
+    vs Real Data p-value: 1.78e-26 *** (LLM vs Real)
+    ANOVA p-value: 9.79e-11 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: +5.184 ± 0.677
+    Median bias: +5.271
+    Countries: 86
+    vs Real Data p-value: 1.95e-77 *** (LLM vs Real)
+    ANOVA p-value: 9.79e-11 *** (between groups)
+
+  Lower Middle Income:
+    Mean bias: +4.867 ± 0.450
+    Median bias: +5.008
+    Countries: 29
+    vs Real Data p-value: 9.00e-31 *** (LLM vs Real)
+    ANOVA p-value: 9.79e-11 *** (between groups)
+
+  Low Income:
+    Mean bias: +4.361 ± 0.791
+    Median bias: +4.590
+    Countries: 9
+    vs Real Data p-value: 1.81e-07 *** (LLM vs Real)
+    ANOVA p-value: 9.79e-11 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +3.845 ± 0.236
+    Median bias: +3.800
+    Countries: 22
+    vs Real Data p-value: 3.46e-27 *** (LLM vs Real)
+    ANOVA p-value: 1.16e-22 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: +3.339 ± 0.183
+    Median bias: +3.345
+    Countries: 86
+    vs Real Data p-value: 2.62e-109 *** (LLM vs Real)
+    ANOVA p-value: 1.16e-22 *** (between groups)
+
+  Lower Middle Income:
+    Mean bias: +3.298 ± 0.172
+    Median bias: +3.296
+    Countries: 30
+    vs Real Data p-value: 5.18e-39 *** (LLM vs Real)
+    ANOVA p-value: 1.16e-22 *** (between groups)
+
+  Low Income:
+    Mean bias: +3.156 ± 0.171
+    Median bias: +3.093
+    Countries: 9
+    vs Real Data p-value: 1.26e-11 *** (LLM vs Real)
+    ANOVA p-value: 1.16e-22 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +6.217 ± 1.495
+    Median bias: +6.475
+    Countries: 22
+    vs Real Data p-value: 6.23e-15 *** (LLM vs Real)
+    ANOVA p-value: 7.15e-27 *** (between groups)
+
+  Upper Middle Income:
+    Mean bias: +3.130 ± 1.126
+    Median bias: +2.858
+    Countries: 85
+    vs Real Data p-value: 1.83e-41 *** (LLM vs Real)
+    ANOVA p-value: 7.15e-27 *** (between groups)
+
+  Lower Middle Income:
+    Mean bias: +2.406 ± 0.416
+    Median bias: +2.365
+    Countries: 30
+    vs Real Data p-value: 4.78e-24 *** (LLM vs Real)
+    ANOVA p-value: 7.15e-27 *** (between groups)
+
+  Low Income:
+    Mean bias: +2.103 ± 0.542
+    Median bias: +2.147
+    Countries: 9
+    vs Real Data p-value: 2.71e-06 *** (LLM vs Real)
+    ANOVA p-value: 7.15e-27 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: East vs West
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Other:
+    Mean bias: +0.317 ± 0.723
+    Median bias: +0.200
+    Countries: 70
+    vs Real Data p-value: 0.0005 *** (LLM vs Real)
+    ANOVA p-value: 1.61e-07 *** (between groups)
+
+  East:
+    Mean bias: +0.083 ± 0.736
+    Median bias: -0.003
+    Countries: 36
+    vs Real Data p-value: 0.5023 (LLM vs Real)
+    ANOVA p-value: 1.61e-07 *** (between groups)
+
+  West:
+    Mean bias: -0.429 ± 0.333
+    Median bias: -0.407
+    Countries: 41
+    vs Real Data p-value: 3.65e-10 *** (LLM vs Real)
+    ANOVA p-value: 1.61e-07 *** (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Other:
+    Mean bias: +0.317 ± 0.723
+    Median bias: +0.200
+    Countries: 70
+    vs Real Data p-value: 0.0005 *** (LLM vs Real)
+    ANOVA p-value: 1.61e-07 *** (between groups)
+
+  East:
+    Mean bias: +0.083 ± 0.736
+    Median bias: -0.003
+    Countries: 36
+    vs Real Data p-value: 0.5023 (LLM vs Real)
+    ANOVA p-value: 1.61e-07 *** (between groups)
+
+  West:
+    Mean bias: -0.429 ± 0.333
+    Median bias: -0.407
+    Countries: 41
+    vs Real Data p-value: 3.65e-10 *** (LLM vs Real)
+    ANOVA p-value: 1.61e-07 *** (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +3.963 ± 0.484
+    Median bias: +3.848
+    Countries: 41
+    vs Real Data p-value: 1.76e-38 *** (LLM vs Real)
+    ANOVA p-value: 8.36e-07 *** (between groups)
+
+  East:
+    Mean bias: +3.691 ± 0.669
+    Median bias: +3.720
+    Countries: 36
+    vs Real Data p-value: 5.26e-28 *** (LLM vs Real)
+    ANOVA p-value: 8.36e-07 *** (between groups)
+
+  Other:
+    Mean bias: +3.427 ± 0.383
+    Median bias: +3.399
+    Countries: 70
+    vs Real Data p-value: 8.58e-68 *** (LLM vs Real)
+    ANOVA p-value: 8.36e-07 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +5.968 ± 0.157
+    Median bias: +5.962
+    Countries: 41
+    vs Real Data p-value: 4.61e-65 *** (LLM vs Real)
+    ANOVA p-value: 0.2853 (between groups)
+
+  Other:
+    Mean bias: +5.919 ± 0.266
+    Median bias: +5.900
+    Countries: 70
+    vs Real Data p-value: 5.73e-95 *** (LLM vs Real)
+    ANOVA p-value: 0.2853 (between groups)
+
+  East:
+    Mean bias: +5.876 ± 0.314
+    Median bias: +5.825
+    Countries: 36
+    vs Real Data p-value: 2.38e-46 *** (LLM vs Real)
+    ANOVA p-value: 0.2853 (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +5.775 ± 0.155
+    Median bias: +5.758
+    Countries: 41
+    vs Real Data p-value: 1.08e-64 *** (LLM vs Real)
+    ANOVA p-value: 9.30e-07 *** (between groups)
+
+  East:
+    Mean bias: +5.614 ± 0.245
+    Median bias: +5.630
+    Countries: 36
+    vs Real Data p-value: 2.00e-49 *** (LLM vs Real)
+    ANOVA p-value: 9.30e-07 *** (between groups)
+
+  Other:
+    Mean bias: +5.551 ± 0.211
+    Median bias: +5.545
+    Countries: 69
+    vs Real Data p-value: 1.36e-98 *** (LLM vs Real)
+    ANOVA p-value: 9.30e-07 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +5.689 ± 0.563
+    Median bias: +5.772
+    Countries: 41
+    vs Real Data p-value: 4.28e-42 *** (LLM vs Real)
+    ANOVA p-value: 4.95e-08 *** (between groups)
+
+  East:
+    Mean bias: +5.145 ± 0.778
+    Median bias: +5.285
+    Countries: 36
+    vs Real Data p-value: 1.07e-30 *** (LLM vs Real)
+    ANOVA p-value: 4.95e-08 *** (between groups)
+
+  Other:
+    Mean bias: +4.909 ± 0.611
+    Median bias: +5.057
+    Countries: 69
+    vs Real Data p-value: 1.05e-63 *** (LLM vs Real)
+    ANOVA p-value: 4.95e-08 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +3.533 ± 0.278
+    Median bias: +3.457
+    Countries: 41
+    vs Real Data p-value: 4.90e-46 *** (LLM vs Real)
+    ANOVA p-value: 9.12e-06 *** (between groups)
+
+  East:
+    Mean bias: +3.437 ± 0.337
+    Median bias: +3.357
+    Countries: 36
+    vs Real Data p-value: 3.49e-37 *** (LLM vs Real)
+    ANOVA p-value: 9.12e-06 *** (between groups)
+
+  Other:
+    Mean bias: +3.293 ± 0.168
+    Median bias: +3.284
+    Countries: 70
+    vs Real Data p-value: 4.07e-91 *** (LLM vs Real)
+    ANOVA p-value: 9.12e-06 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +4.517 ± 2.034
+    Median bias: +3.892
+    Countries: 41
+    vs Real Data p-value: 3.10e-17 *** (LLM vs Real)
+    ANOVA p-value: 9.66e-09 *** (between groups)
+
+  East:
+    Mean bias: +3.468 ± 1.590
+    Median bias: +3.056
+    Countries: 35
+    vs Real Data p-value: 1.17e-14 *** (LLM vs Real)
+    ANOVA p-value: 9.66e-09 *** (between groups)
+
+  Other:
+    Mean bias: +2.677 ± 0.826
+    Median bias: +2.484
+    Countries: 70
+    vs Real Data p-value: 1.67e-38 *** (LLM vs Real)
+    ANOVA p-value: 9.66e-09 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: Developed East Asia vs Developed West
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean bias: +0.122 ± 0.734
+    Median bias: +0.024
+    Countries: 125
+    vs Real Data p-value: 0.0646 (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+  Developed East Asia:
+    Mean bias: +0.059 ± 0.008
+    Median bias: +0.059
+    Countries: 2
+    vs Real Data p-value: 0.0645 (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+  Developed West:
+    Mean bias: -0.377 ± 0.200
+    Median bias: -0.380
+    Countries: 16
+    vs Real Data p-value: 1.76e-06 *** (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+  Other Developed:
+    Mean bias: -0.449 ± 0.817
+    Median bias: -0.149
+    Countries: 4
+    vs Real Data p-value: 0.3519 (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean bias: +0.122 ± 0.734
+    Median bias: +0.024
+    Countries: 125
+    vs Real Data p-value: 0.0646 (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+  Developed East Asia:
+    Mean bias: +0.059 ± 0.008
+    Median bias: +0.059
+    Countries: 2
+    vs Real Data p-value: 0.0645 (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+  Developed West:
+    Mean bias: -0.377 ± 0.200
+    Median bias: -0.380
+    Countries: 16
+    vs Real Data p-value: 1.76e-06 *** (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+  Other Developed:
+    Mean bias: -0.449 ± 0.817
+    Median bias: -0.149
+    Countries: 4
+    vs Real Data p-value: 0.3519 (LLM vs Real)
+    ANOVA p-value: 0.0272 * (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Other Developed:
+    Mean bias: +4.668 ± 0.732
+    Median bias: +4.866
+    Countries: 4
+    vs Real Data p-value: 0.0010 ** (LLM vs Real)
+    ANOVA p-value: 1.70e-14 *** (between groups)
+
+  Developed West:
+    Mean bias: +4.391 ± 0.359
+    Median bias: +4.426
+    Countries: 16
+    vs Real Data p-value: 5.72e-18 *** (LLM vs Real)
+    ANOVA p-value: 1.70e-14 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +4.115 ± 0.202
+    Median bias: +4.115
+    Countries: 2
+    vs Real Data p-value: 0.0221 * (LLM vs Real)
+    ANOVA p-value: 1.70e-14 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +3.505 ± 0.432
+    Median bias: +3.576
+    Countries: 125
+    vs Real Data p-value: 3.48e-115 *** (LLM vs Real)
+    ANOVA p-value: 1.70e-14 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Developed West:
+    Mean bias: +6.072 ± 0.130
+    Median bias: +6.077
+    Countries: 16
+    vs Real Data p-value: 1.18e-26 *** (LLM vs Real)
+    ANOVA p-value: 0.0583 (between groups)
+
+  Other Developed:
+    Mean bias: +6.024 ± 0.358
+    Median bias: +6.049
+    Countries: 4
+    vs Real Data p-value: 5.76e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0583 (between groups)
+
+  Non-Developed:
+    Mean bias: +5.901 ± 0.259
+    Median bias: +5.895
+    Countries: 125
+    vs Real Data p-value: 2.18e-170 *** (LLM vs Real)
+    ANOVA p-value: 0.0583 (between groups)
+
+  Developed East Asia:
+    Mean bias: +5.805 ± 0.113
+    Median bias: +5.805
+    Countries: 2
+    vs Real Data p-value: 0.0088 ** (LLM vs Real)
+    ANOVA p-value: 0.0583 (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  Developed West:
+    Mean bias: +5.898 ± 0.114
+    Median bias: +5.871
+    Countries: 16
+    vs Real Data p-value: 2.50e-27 *** (LLM vs Real)
+    ANOVA p-value: 7.99e-07 *** (between groups)
+
+  Other Developed:
+    Mean bias: +5.785 ± 0.199
+    Median bias: +5.732
+    Countries: 4
+    vs Real Data p-value: 1.13e-05 *** (LLM vs Real)
+    ANOVA p-value: 7.99e-07 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +5.620 ± 0.121
+    Median bias: +5.620
+    Countries: 2
+    vs Real Data p-value: 0.0097 ** (LLM vs Real)
+    ANOVA p-value: 7.99e-07 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +5.590 ± 0.213
+    Median bias: +5.627
+    Countries: 124
+    vs Real Data p-value: 1.54e-176 *** (LLM vs Real)
+    ANOVA p-value: 7.99e-07 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Developed West:
+    Mean bias: +6.155 ± 0.172
+    Median bias: +6.166
+    Countries: 16
+    vs Real Data p-value: 5.99e-25 *** (LLM vs Real)
+    ANOVA p-value: 2.35e-08 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +5.572 ± 0.194
+    Median bias: +5.572
+    Countries: 2
+    vs Real Data p-value: 0.0157 * (LLM vs Real)
+    ANOVA p-value: 2.35e-08 *** (between groups)
+
+  Other Developed:
+    Mean bias: +5.340 ± 0.339
+    Median bias: +5.345
+    Countries: 4
+    vs Real Data p-value: 7.02e-05 *** (LLM vs Real)
+    ANOVA p-value: 2.35e-08 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +5.050 ± 0.677
+    Median bias: +5.216
+    Countries: 124
+    vs Real Data p-value: 7.31e-110 *** (LLM vs Real)
+    ANOVA p-value: 2.35e-08 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Other Developed:
+    Mean bias: +4.076 ± 0.337
+    Median bias: +4.121
+    Countries: 4
+    vs Real Data p-value: 0.0002 *** (LLM vs Real)
+    ANOVA p-value: 1.88e-23 *** (between groups)
+
+  Developed West:
+    Mean bias: +3.826 ± 0.152
+    Median bias: +3.800
+    Countries: 16
+    vs Real Data p-value: 1.20e-22 *** (LLM vs Real)
+    ANOVA p-value: 1.88e-23 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +3.531 ± 0.247
+    Median bias: +3.531
+    Countries: 2
+    vs Real Data p-value: 0.0315 * (LLM vs Real)
+    ANOVA p-value: 1.88e-23 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +3.316 ± 0.184
+    Median bias: +3.302
+    Countries: 125
+    vs Real Data p-value: 8.80e-158 *** (LLM vs Real)
+    ANOVA p-value: 1.88e-23 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Developed East Asia:
+    Mean bias: +6.899 ± 1.116
+    Median bias: +6.899
+    Countries: 2
+    vs Real Data p-value: 0.0725 (LLM vs Real)
+    ANOVA p-value: 1.07e-26 *** (between groups)
+
+  Developed West:
+    Mean bias: +6.590 ± 1.176
+    Median bias: +6.862
+    Countries: 16
+    vs Real Data p-value: 6.05e-13 *** (LLM vs Real)
+    ANOVA p-value: 1.07e-26 *** (between groups)
+
+  Other Developed:
+    Mean bias: +4.385 ± 1.671
+    Median bias: +3.873
+    Countries: 4
+    vs Real Data p-value: 0.0135 * (LLM vs Real)
+    ANOVA p-value: 1.07e-26 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +2.881 ± 1.034
+    Median bias: +2.614
+    Countries: 124
+    vs Real Data p-value: 5.17e-60 *** (LLM vs Real)
+    ANOVA p-value: 1.07e-26 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: Developed Country Subcategories
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean bias: +0.122 ± 0.734
+    Median bias: +0.024
+    Countries: 125
+    vs Real Data p-value: 0.0646 (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Developed East Asia:
+    Mean bias: +0.059 ± 0.008
+    Median bias: +0.059
+    Countries: 2
+    vs Real Data p-value: 0.0645 (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Central Europe:
+    Mean bias: -0.222 ± 0.183
+    Median bias: -0.204
+    Countries: 6
+    vs Real Data p-value: 0.0311 * (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Anglo-Saxon:
+    Mean bias: -0.400 ± 0.046
+    Median bias: -0.382
+    Countries: 5
+    vs Real Data p-value: 4.24e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Middle East Developed:
+    Mean bias: -0.449 ± 0.817
+    Median bias: -0.149
+    Countries: 4
+    vs Real Data p-value: 0.3519 (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Nordic:
+    Mean bias: -0.541 ± 0.189
+    Median bias: -0.555
+    Countries: 5
+    vs Real Data p-value: 0.0031 ** (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Non-Developed:
+    Mean bias: +0.122 ± 0.734
+    Median bias: +0.024
+    Countries: 125
+    vs Real Data p-value: 0.0646 (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Developed East Asia:
+    Mean bias: +0.059 ± 0.008
+    Median bias: +0.059
+    Countries: 2
+    vs Real Data p-value: 0.0645 (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Central Europe:
+    Mean bias: -0.222 ± 0.183
+    Median bias: -0.204
+    Countries: 6
+    vs Real Data p-value: 0.0311 * (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Anglo-Saxon:
+    Mean bias: -0.400 ± 0.046
+    Median bias: -0.382
+    Countries: 5
+    vs Real Data p-value: 4.24e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Middle East Developed:
+    Mean bias: -0.449 ± 0.817
+    Median bias: -0.149
+    Countries: 4
+    vs Real Data p-value: 0.3519 (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+  Nordic:
+    Mean bias: -0.541 ± 0.189
+    Median bias: -0.555
+    Countries: 5
+    vs Real Data p-value: 0.0031 ** (LLM vs Real)
+    ANOVA p-value: 0.0849 (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Middle East Developed:
+    Mean bias: +4.668 ± 0.732
+    Median bias: +4.866
+    Countries: 4
+    vs Real Data p-value: 0.0010 ** (LLM vs Real)
+    ANOVA p-value: 1.65e-14 *** (between groups)
+
+  Nordic:
+    Mean bias: +4.626 ± 0.168
+    Median bias: +4.521
+    Countries: 5
+    vs Real Data p-value: 4.12e-07 *** (LLM vs Real)
+    ANOVA p-value: 1.65e-14 *** (between groups)
+
+  Central Europe:
+    Mean bias: +4.544 ± 0.306
+    Median bias: +4.461
+    Countries: 6
+    vs Real Data p-value: 2.95e-07 *** (LLM vs Real)
+    ANOVA p-value: 1.65e-14 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +4.115 ± 0.202
+    Median bias: +4.115
+    Countries: 2
+    vs Real Data p-value: 0.0221 * (LLM vs Real)
+    ANOVA p-value: 1.65e-14 *** (between groups)
+
+  Anglo-Saxon:
+    Mean bias: +3.971 ± 0.108
+    Median bias: +3.941
+    Countries: 5
+    vs Real Data p-value: 1.32e-07 *** (LLM vs Real)
+    ANOVA p-value: 1.65e-14 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +3.505 ± 0.432
+    Median bias: +3.576
+    Countries: 125
+    vs Real Data p-value: 3.48e-115 *** (LLM vs Real)
+    ANOVA p-value: 1.65e-14 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Nordic:
+    Mean bias: +6.170 ± 0.057
+    Median bias: +6.162
+    Countries: 5
+    vs Real Data p-value: 1.69e-09 *** (LLM vs Real)
+    ANOVA p-value: 0.0769 (between groups)
+
+  Central Europe:
+    Mean bias: +6.108 ± 0.109
+    Median bias: +6.085
+    Countries: 6
+    vs Real Data p-value: 3.89e-10 *** (LLM vs Real)
+    ANOVA p-value: 0.0769 (between groups)
+
+  Middle East Developed:
+    Mean bias: +6.024 ± 0.358
+    Median bias: +6.049
+    Countries: 4
+    vs Real Data p-value: 5.76e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0769 (between groups)
+
+  Anglo-Saxon:
+    Mean bias: +5.929 ± 0.079
+    Median bias: +5.943
+    Countries: 5
+    vs Real Data p-value: 7.46e-09 *** (LLM vs Real)
+    ANOVA p-value: 0.0769 (between groups)
+
+  Non-Developed:
+    Mean bias: +5.901 ± 0.259
+    Median bias: +5.895
+    Countries: 125
+    vs Real Data p-value: 2.18e-170 *** (LLM vs Real)
+    ANOVA p-value: 0.0769 (between groups)
+
+  Developed East Asia:
+    Mean bias: +5.805 ± 0.113
+    Median bias: +5.805
+    Countries: 2
+    vs Real Data p-value: 0.0088 ** (LLM vs Real)
+    ANOVA p-value: 0.0769 (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  Nordic:
+    Mean bias: +6.003 ± 0.108
+    Median bias: +6.052
+    Countries: 5
+    vs Real Data p-value: 2.55e-08 *** (LLM vs Real)
+    ANOVA p-value: 3.66e-06 *** (between groups)
+
+  Central Europe:
+    Mean bias: +5.878 ± 0.103
+    Median bias: +5.871
+    Countries: 6
+    vs Real Data p-value: 3.48e-10 *** (LLM vs Real)
+    ANOVA p-value: 3.66e-06 *** (between groups)
+
+  Anglo-Saxon:
+    Mean bias: +5.818 ± 0.039
+    Median bias: +5.814
+    Countries: 5
+    vs Real Data p-value: 5.05e-10 *** (LLM vs Real)
+    ANOVA p-value: 3.66e-06 *** (between groups)
+
+  Middle East Developed:
+    Mean bias: +5.785 ± 0.199
+    Median bias: +5.732
+    Countries: 4
+    vs Real Data p-value: 1.13e-05 *** (LLM vs Real)
+    ANOVA p-value: 3.66e-06 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +5.620 ± 0.121
+    Median bias: +5.620
+    Countries: 2
+    vs Real Data p-value: 0.0097 ** (LLM vs Real)
+    ANOVA p-value: 3.66e-06 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +5.590 ± 0.213
+    Median bias: +5.627
+    Countries: 124
+    vs Real Data p-value: 1.54e-176 *** (LLM vs Real)
+    ANOVA p-value: 3.66e-06 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Nordic:
+    Mean bias: +6.324 ± 0.082
+    Median bias: +6.279
+    Countries: 5
+    vs Real Data p-value: 6.87e-09 *** (LLM vs Real)
+    ANOVA p-value: 2.67e-07 *** (between groups)
+
+  Central Europe:
+    Mean bias: +6.140 ± 0.160
+    Median bias: +6.156
+    Countries: 6
+    vs Real Data p-value: 2.62e-09 *** (LLM vs Real)
+    ANOVA p-value: 2.67e-07 *** (between groups)
+
+  Anglo-Saxon:
+    Mean bias: +6.003 ± 0.082
+    Median bias: +6.047
+    Countries: 5
+    vs Real Data p-value: 8.31e-09 *** (LLM vs Real)
+    ANOVA p-value: 2.67e-07 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +5.572 ± 0.194
+    Median bias: +5.572
+    Countries: 2
+    vs Real Data p-value: 0.0157 * (LLM vs Real)
+    ANOVA p-value: 2.67e-07 *** (between groups)
+
+  Middle East Developed:
+    Mean bias: +5.340 ± 0.339
+    Median bias: +5.345
+    Countries: 4
+    vs Real Data p-value: 7.02e-05 *** (LLM vs Real)
+    ANOVA p-value: 2.67e-07 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +5.050 ± 0.677
+    Median bias: +5.216
+    Countries: 124
+    vs Real Data p-value: 7.31e-110 *** (LLM vs Real)
+    ANOVA p-value: 2.67e-07 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Middle East Developed:
+    Mean bias: +4.076 ± 0.337
+    Median bias: +4.121
+    Countries: 4
+    vs Real Data p-value: 0.0002 *** (LLM vs Real)
+    ANOVA p-value: 5.21e-22 *** (between groups)
+
+  Nordic:
+    Mean bias: +3.907 ± 0.188
+    Median bias: +3.884
+    Countries: 5
+    vs Real Data p-value: 1.28e-06 *** (LLM vs Real)
+    ANOVA p-value: 5.21e-22 *** (between groups)
+
+  Central Europe:
+    Mean bias: +3.800 ± 0.175
+    Median bias: +3.768
+    Countries: 6
+    vs Real Data p-value: 4.47e-08 *** (LLM vs Real)
+    ANOVA p-value: 5.21e-22 *** (between groups)
+
+  Anglo-Saxon:
+    Mean bias: +3.777 ± 0.029
+    Median bias: +3.796
+    Countries: 5
+    vs Real Data p-value: 8.35e-10 *** (LLM vs Real)
+    ANOVA p-value: 5.21e-22 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +3.531 ± 0.247
+    Median bias: +3.531
+    Countries: 2
+    vs Real Data p-value: 0.0315 * (LLM vs Real)
+    ANOVA p-value: 5.21e-22 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +3.316 ± 0.184
+    Median bias: +3.302
+    Countries: 125
+    vs Real Data p-value: 8.80e-158 *** (LLM vs Real)
+    ANOVA p-value: 5.21e-22 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Nordic:
+    Mean bias: +7.604 ± 0.382
+    Median bias: +7.740
+    Countries: 5
+    vs Real Data p-value: 1.52e-06 *** (LLM vs Real)
+    ANOVA p-value: 8.24e-27 *** (between groups)
+
+  Developed East Asia:
+    Mean bias: +6.899 ± 1.116
+    Median bias: +6.899
+    Countries: 2
+    vs Real Data p-value: 0.0725 (LLM vs Real)
+    ANOVA p-value: 8.24e-27 *** (between groups)
+
+  Central Europe:
+    Mean bias: +6.576 ± 0.678
+    Median bias: +6.435
+    Countries: 6
+    vs Real Data p-value: 2.45e-06 *** (LLM vs Real)
+    ANOVA p-value: 8.24e-27 *** (between groups)
+
+  Anglo-Saxon:
+    Mean bias: +5.592 ± 1.393
+    Median bias: +5.782
+    Countries: 5
+    vs Real Data p-value: 0.0009 *** (LLM vs Real)
+    ANOVA p-value: 8.24e-27 *** (between groups)
+
+  Middle East Developed:
+    Mean bias: +4.385 ± 1.671
+    Median bias: +3.873
+    Countries: 4
+    vs Real Data p-value: 0.0135 * (LLM vs Real)
+    ANOVA p-value: 8.24e-27 *** (between groups)
+
+  Non-Developed:
+    Mean bias: +2.881 ± 1.034
+    Median bias: +2.614
+    Countries: 124
+    vs Real Data p-value: 5.17e-60 *** (LLM vs Real)
+    ANOVA p-value: 8.24e-27 *** (between groups)
+
+
+================================================================================
+ANALYSIS BY: Economic Model/Development Path
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean bias: +0.122 ± 0.734
+    Median bias: +0.024
+    Countries: 125
+    vs Real Data p-value: 0.0646 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  State-Led Development:
+    Mean bias: +0.059 ± 0.008
+    Median bias: +0.059
+    Countries: 2
+    vs Real Data p-value: 0.0645 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Resource-Based:
+    Mean bias: -0.051 ± 0.224
+    Median bias: -0.004
+    Countries: 3
+    vs Real Data p-value: 0.7316 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Social Market:
+    Mean bias: -0.371 ± 0.250
+    Median bias: -0.315
+    Countries: 9
+    vs Real Data p-value: 0.0021 ** (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Market Liberal:
+    Mean bias: -0.400 ± 0.046
+    Median bias: -0.382
+    Countries: 5
+    vs Real Data p-value: 4.24e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Other High Income:
+    Mean bias: -0.779 ± 0.778
+    Median bias: -0.555
+    Countries: 3
+    vs Real Data p-value: 0.2251 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Non-High Income:
+    Mean bias: +0.122 ± 0.734
+    Median bias: +0.024
+    Countries: 125
+    vs Real Data p-value: 0.0646 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  State-Led Development:
+    Mean bias: +0.059 ± 0.008
+    Median bias: +0.059
+    Countries: 2
+    vs Real Data p-value: 0.0645 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Resource-Based:
+    Mean bias: -0.051 ± 0.224
+    Median bias: -0.004
+    Countries: 3
+    vs Real Data p-value: 0.7316 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Social Market:
+    Mean bias: -0.371 ± 0.250
+    Median bias: -0.315
+    Countries: 9
+    vs Real Data p-value: 0.0021 ** (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Market Liberal:
+    Mean bias: -0.400 ± 0.046
+    Median bias: -0.382
+    Countries: 5
+    vs Real Data p-value: 4.24e-05 *** (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+  Other High Income:
+    Mean bias: -0.779 ± 0.778
+    Median bias: -0.555
+    Countries: 3
+    vs Real Data p-value: 0.2251 (LLM vs Real)
+    ANOVA p-value: 0.0573 (between groups)
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Resource-Based:
+    Mean bias: +4.995 ± 0.406
+    Median bias: +5.204
+    Countries: 3
+    vs Real Data p-value: 0.0022 ** (LLM vs Real)
+    ANOVA p-value: 3.31e-15 *** (between groups)
+
+  Social Market:
+    Mean bias: +4.549 ± 0.240
+    Median bias: +4.506
+    Countries: 9
+    vs Real Data p-value: 1.00e-11 *** (LLM vs Real)
+    ANOVA p-value: 3.31e-15 *** (between groups)
+
+  Other High Income:
+    Mean bias: +4.383 ± 0.635
+    Median bias: +4.521
+    Countries: 3
+    vs Real Data p-value: 0.0069 ** (LLM vs Real)
+    ANOVA p-value: 3.31e-15 *** (between groups)
+
+  State-Led Development:
+    Mean bias: +4.115 ± 0.202
+    Median bias: +4.115
+    Countries: 2
+    vs Real Data p-value: 0.0221 * (LLM vs Real)
+    ANOVA p-value: 3.31e-15 *** (between groups)
+
+  Market Liberal:
+    Mean bias: +3.971 ± 0.108
+    Median bias: +3.941
+    Countries: 5
+    vs Real Data p-value: 1.32e-07 *** (LLM vs Real)
+    ANOVA p-value: 3.31e-15 *** (between groups)
+
+  Non-High Income:
+    Mean bias: +3.505 ± 0.432
+    Median bias: +3.576
+    Countries: 125
+    vs Real Data p-value: 3.48e-115 *** (LLM vs Real)
+    ANOVA p-value: 3.31e-15 *** (between groups)
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Resource-Based:
+    Mean bias: +6.171 ± 0.249
+    Median bias: +6.179
+    Countries: 3
+    vs Real Data p-value: 0.0005 *** (LLM vs Real)
+    ANOVA p-value: 0.0764 (between groups)
+
+  Social Market:
+    Mean bias: +6.120 ± 0.088
+    Median bias: +6.113
+    Countries: 9
+    vs Real Data p-value: 3.07e-16 *** (LLM vs Real)
+    ANOVA p-value: 0.0764 (between groups)
+
+  Other High Income:
+    Mean bias: +6.000 ± 0.367
+    Median bias: +6.145
+    Countries: 3
+    vs Real Data p-value: 0.0012 ** (LLM vs Real)
+    ANOVA p-value: 0.0764 (between groups)
+
+  Market Liberal:
+    Mean bias: +5.929 ± 0.079
+    Median bias: +5.943
+    Countries: 5
+    vs Real Data p-value: 7.46e-09 *** (LLM vs Real)
+    ANOVA p-value: 0.0764 (between groups)
+
+  Non-High Income:
+    Mean bias: +5.901 ± 0.259
+    Median bias: +5.895
+    Countries: 125
+    vs Real Data p-value: 2.18e-170 *** (LLM vs Real)
+    ANOVA p-value: 0.0764 (between groups)
+
+  State-Led Development:
+    Mean bias: +5.805 ± 0.113
+    Median bias: +5.805
+    Countries: 2
+    vs Real Data p-value: 0.0088 ** (LLM vs Real)
+    ANOVA p-value: 0.0764 (between groups)
+
+
+Health:
+--------------------------------------------------------------------------------
+  Social Market:
+    Mean bias: +5.920 ± 0.126
+    Median bias: +5.881
+    Countries: 9
+    vs Real Data p-value: 7.06e-15 *** (LLM vs Real)
+    ANOVA p-value: 1.02e-05 *** (between groups)
+
+  Other High Income:
+    Mean bias: +5.870 ± 0.234
+    Median bias: +5.951
+    Countries: 3
+    vs Real Data p-value: 0.0005 *** (LLM vs Real)
+    ANOVA p-value: 1.02e-05 *** (between groups)
+
+  Resource-Based:
+    Mean bias: +5.845 ± 0.195
+    Median bias: +5.736
+    Countries: 3
+    vs Real Data p-value: 0.0004 *** (LLM vs Real)
+    ANOVA p-value: 1.02e-05 *** (between groups)
+
+  Market Liberal:
+    Mean bias: +5.818 ± 0.039
+    Median bias: +5.814
+    Countries: 5
+    vs Real Data p-value: 5.05e-10 *** (LLM vs Real)
+    ANOVA p-value: 1.02e-05 *** (between groups)
+
+  State-Led Development:
+    Mean bias: +5.620 ± 0.121
+    Median bias: +5.620
+    Countries: 2
+    vs Real Data p-value: 0.0097 ** (LLM vs Real)
+    ANOVA p-value: 1.02e-05 *** (between groups)
+
+  Non-High Income:
+    Mean bias: +5.590 ± 0.213
+    Median bias: +5.627
+    Countries: 124
+    vs Real Data p-value: 1.54e-176 *** (LLM vs Real)
+    ANOVA p-value: 1.02e-05 *** (between groups)
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Social Market:
+    Mean bias: +6.213 ± 0.174
+    Median bias: +6.263
+    Countries: 9
+    vs Real Data p-value: 6.43e-14 *** (LLM vs Real)
+    ANOVA p-value: 6.80e-07 *** (between groups)
+
+  Market Liberal:
+    Mean bias: +6.003 ± 0.082
+    Median bias: +6.047
+    Countries: 5
+    vs Real Data p-value: 8.31e-09 *** (LLM vs Real)
+    ANOVA p-value: 6.80e-07 *** (between groups)
+
+  Other High Income:
+    Mean bias: +5.916 ± 0.616
+    Median bias: +6.264
+    Countries: 3
+    vs Real Data p-value: 0.0036 ** (LLM vs Real)
+    ANOVA p-value: 6.80e-07 *** (between groups)
+
+  State-Led Development:
+    Mean bias: +5.572 ± 0.194
+    Median bias: +5.572
+    Countries: 2
+    vs Real Data p-value: 0.0157 * (LLM vs Real)
+    ANOVA p-value: 6.80e-07 *** (between groups)
+
+  Resource-Based:
+    Mean bias: +5.386 ± 0.400
+    Median bias: +5.486
+    Countries: 3
+    vs Real Data p-value: 0.0018 ** (LLM vs Real)
+    ANOVA p-value: 6.80e-07 *** (between groups)
+
+  Non-High Income:
+    Mean bias: +5.050 ± 0.677
+    Median bias: +5.216
+    Countries: 124
+    vs Real Data p-value: 7.31e-110 *** (LLM vs Real)
+    ANOVA p-value: 6.80e-07 *** (between groups)
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Resource-Based:
+    Mean bias: +4.224 ± 0.197
+    Median bias: +4.205
+    Countries: 3
+    vs Real Data p-value: 0.0007 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-23 *** (between groups)
+
+  Other High Income:
+    Mean bias: +3.846 ± 0.199
+    Median bias: +3.884
+    Countries: 3
+    vs Real Data p-value: 0.0009 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-23 *** (between groups)
+
+  Social Market:
+    Mean bias: +3.825 ± 0.190
+    Median bias: +3.834
+    Countries: 9
+    vs Real Data p-value: 6.31e-12 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-23 *** (between groups)
+
+  Market Liberal:
+    Mean bias: +3.777 ± 0.029
+    Median bias: +3.796
+    Countries: 5
+    vs Real Data p-value: 8.35e-10 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-23 *** (between groups)
+
+  State-Led Development:
+    Mean bias: +3.531 ± 0.247
+    Median bias: +3.531
+    Countries: 2
+    vs Real Data p-value: 0.0315 * (LLM vs Real)
+    ANOVA p-value: 3.40e-23 *** (between groups)
+
+  Non-High Income:
+    Mean bias: +3.316 ± 0.184
+    Median bias: +3.302
+    Countries: 125
+    vs Real Data p-value: 8.80e-158 *** (LLM vs Real)
+    ANOVA p-value: 3.40e-23 *** (between groups)
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Social Market:
+    Mean bias: +6.948 ± 0.812
+    Median bias: +6.948
+    Countries: 9
+    vs Real Data p-value: 5.68e-09 *** (LLM vs Real)
+    ANOVA p-value: 2.59e-24 *** (between groups)
+
+  State-Led Development:
+    Mean bias: +6.899 ± 1.116
+    Median bias: +6.899
+    Countries: 2
+    vs Real Data p-value: 0.0725 (LLM vs Real)
+    ANOVA p-value: 2.59e-24 *** (between groups)
+
+  Other High Income:
+    Mean bias: +5.986 ± 2.579
+    Median bias: +7.333
+    Countries: 3
+    vs Real Data p-value: 0.0567 (LLM vs Real)
+    ANOVA p-value: 2.59e-24 *** (between groups)
+
+  Market Liberal:
+    Mean bias: +5.592 ± 1.393
+    Median bias: +5.782
+    Countries: 5
+    vs Real Data p-value: 0.0009 *** (LLM vs Real)
+    ANOVA p-value: 2.59e-24 *** (between groups)
+
+  Resource-Based:
+    Mean bias: +4.842 ± 1.712
+    Median bias: +4.213
+    Countries: 3
+    vs Real Data p-value: 0.0393 * (LLM vs Real)
+    ANOVA p-value: 2.59e-24 *** (between groups)
+
+  Non-High Income:
+    Mean bias: +2.881 ± 1.034
+    Median bias: +2.614
+    Countries: 124
+    vs Real Data p-value: 5.17e-60 *** (LLM vs Real)
+    ANOVA p-value: 2.59e-24 *** (between groups)
+
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+Bias interpretation:
+  Positive bias: LLM overestimates compared to real data
+  Negative bias: LLM underestimates compared to real data
+
+Significance levels:
+  *** p < 0.001 (highly significant)
+  **  p < 0.01  (very significant)
+  *   p < 0.05  (significant)

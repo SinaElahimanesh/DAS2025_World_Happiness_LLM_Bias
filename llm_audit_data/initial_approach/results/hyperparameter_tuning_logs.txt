@@ -1,0 +1,194 @@
+================================================================================
+Hyperparameter Tuning for LLM Happiness Survey
+================================================================================
+
+Loading countries...
+Found 168 total countries
+
+Selected 10 random countries for testing:
+  1. Tanzania
+  2. Cameroon
+  3. Israel
+  4. Nepal
+  5. Armenia
+  6. Dominican Republic
+  7. Norway
+  8. Egypt
+  9. Swaziland
+  10. Ecuador
+
+Loading real World Happiness Report data...
+Loaded real data for 147 countries
+
+Loading personas...
+Found 20 personas
+
+================================================================================
+Testing Hyperparameter Combinations
+================================================================================
+
+--------------------------------------------------------------------------------
+Combination 1/6
+--------------------------------------------------------------------------------
+
+    Testing: temp=0.0, CoT=True
+      Country 1/10: Tanzania
+      Country 2/10: Cameroon
+      Country 3/10: Israel
+      Country 4/10: Nepal
+      Country 5/10: Armenia
+      Country 6/10: Dominican Republic
+      Country 7/10: Norway
+      Country 8/10: Egypt
+      Country 9/10: Swaziland
+      Country 10/10: Ecuador
+
+    Calculating comparison metrics...
+    Mean MAE: 4.533
+    Mean RMSE: 4.571
+    Mean Correlation: 0.571
+    Combined Score: 0.118
+
+--------------------------------------------------------------------------------
+Combination 2/6
+--------------------------------------------------------------------------------
+
+    Testing: temp=0.0, CoT=False
+      Country 1/10: Tanzania
+      Country 2/10: Cameroon
+      Country 3/10: Israel
+      Country 4/10: Nepal
+      Country 5/10: Armenia
+      Country 6/10: Dominican Republic
+      Country 7/10: Norway
+      Country 8/10: Egypt
+      Country 9/10: Swaziland
+      Country 10/10: Ecuador
+
+    Calculating comparison metrics...
+    Mean MAE: 4.490
+    Mean RMSE: 4.530
+    Mean Correlation: 0.789
+    Combined Score: 0.340
+
+--------------------------------------------------------------------------------
+Combination 3/6
+--------------------------------------------------------------------------------
+
+    Testing: temp=0.5, CoT=True
+      Country 1/10: Tanzania
+      Country 2/10: Cameroon
+      Country 3/10: Israel
+      Country 4/10: Nepal
+      Country 5/10: Armenia
+      Country 6/10: Dominican Republic
+      Country 7/10: Norway
+      Country 8/10: Egypt
+      Country 9/10: Swaziland
+      Country 10/10: Ecuador
+
+    Calculating comparison metrics...
+    Mean MAE: 4.544
+    Mean RMSE: 4.582
+    Mean Correlation: 0.622
+    Combined Score: 0.168
+
+--------------------------------------------------------------------------------
+Combination 4/6
+--------------------------------------------------------------------------------
+
+    Testing: temp=0.5, CoT=False
+      Country 1/10: Tanzania
+      Country 2/10: Cameroon
+      Country 3/10: Israel
+      Country 4/10: Nepal
+      Country 5/10: Armenia
+      Country 6/10: Dominican Republic
+      Country 7/10: Norway
+      Country 8/10: Egypt
+      Country 9/10: Swaziland
+      Country 10/10: Ecuador
+
+    Calculating comparison metrics...
+    Mean MAE: 4.497
+    Mean RMSE: 4.537
+    Mean Correlation: 0.685
+    Combined Score: 0.235
+
+--------------------------------------------------------------------------------
+Combination 5/6
+--------------------------------------------------------------------------------
+
+    Testing: temp=0.9, CoT=True
+      Country 1/10: Tanzania
+      Country 2/10: Cameroon
+      Country 3/10: Israel
+      Country 4/10: Nepal
+      Country 5/10: Armenia
+      Country 6/10: Dominican Republic
+      Country 7/10: Norway
+      Country 8/10: Egypt
+      Country 9/10: Swaziland
+      Country 10/10: Ecuador
+
+    Calculating comparison metrics...
+    Mean MAE: 4.570
+    Mean RMSE: 4.608
+    Mean Correlation: 0.749
+    Combined Score: 0.292
+
+--------------------------------------------------------------------------------
+Combination 6/6
+--------------------------------------------------------------------------------
+
+    Testing: temp=0.9, CoT=False
+      Country 1/10: Tanzania
+      Country 2/10: Cameroon
+      Country 3/10: Israel
+      Country 4/10: Nepal
+      Country 5/10: Armenia
+      Country 6/10: Dominican Republic
+      Country 7/10: Norway
+      Country 8/10: Egypt
+      Country 9/10: Swaziland
+      Country 10/10: Ecuador
+
+    Calculating comparison metrics...
+    Mean MAE: 4.539
+    Mean RMSE: 4.583
+    Mean Correlation: 0.605
+    Combined Score: 0.151
+
+================================================================================
+Results Summary
+================================================================================
+
+Hyperparameter Comparison (sorted by Combined Score):
+ temperature  use_chain_of_thought  mean_mae  mean_rmse  mean_correlation  combined_score  num_countries
+         0.0                 False  4.489698   4.529643          0.788951        0.339982              9
+         0.9                  True  4.569857   4.608320          0.749181        0.292196              9
+         0.5                 False  4.496841   4.536750          0.684816        0.235132              9
+         0.5                  True  4.544460   4.581793          0.622094        0.167648              9
+         0.9                 False  4.538905   4.582734          0.604719        0.150829              9
+         0.0                  True  4.533349   4.570869          0.571098        0.117763              9
+
+================================================================================
+BEST HYPERPARAMETERS:
+================================================================================
+Temperature: 0.0
+Use Chain of Thought: False
+
+Performance Metrics:
+  Mean MAE: 4.490
+  Mean RMSE: 4.530
+  Mean Correlation: 0.789
+  Combined Score: 0.340
+  Number of Countries: 9
+
+Detailed results saved to: results/hyperparameter_tuning_results_20260119_163126.csv
+Metrics summary saved to: results/hyperparameter_tuning_metrics_20260119_163126.csv
+Summary report saved to: results/hyperparameter_tuning_report_20260119_163126.txt
+
+================================================================================
+Hyperparameter Tuning Complete!
+================================================================================

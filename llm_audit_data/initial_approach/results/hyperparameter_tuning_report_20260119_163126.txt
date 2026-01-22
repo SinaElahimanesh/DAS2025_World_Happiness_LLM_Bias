@@ -1,0 +1,68 @@
+Hyperparameter Tuning Results
+================================================================================
+
+Date: 2026-01-19 16:31:26
+
+Tested Countries (10):
+  1. Tanzania
+  2. Cameroon
+  3. Israel
+  4. Nepal
+  5. Armenia
+  6. Dominican Republic
+  7. Norway
+  8. Egypt
+  9. Swaziland
+  10. Ecuador
+
+Number of Personas: 20
+Total Combinations Tested: 3 temperatures × 2 CoT options = 6
+
+
+Hyperparameter Comparison:
+--------------------------------------------------------------------------------
+ temperature  use_chain_of_thought  mean_mae  mean_rmse  mean_correlation  combined_score  num_countries
+         0.0                 False  4.489698   4.529643          0.788951        0.339982              9
+         0.9                  True  4.569857   4.608320          0.749181        0.292196              9
+         0.5                 False  4.496841   4.536750          0.684816        0.235132              9
+         0.5                  True  4.544460   4.581793          0.622094        0.167648              9
+         0.9                 False  4.538905   4.582734          0.604719        0.150829              9
+         0.0                  True  4.533349   4.570869          0.571098        0.117763              9
+
+================================================================================
+BEST HYPERPARAMETERS:
+================================================================================
+Temperature: 0.0
+Use Chain of Thought: False
+
+Performance Metrics:
+  Mean MAE: 4.490
+  Mean RMSE: 4.530
+  Mean Correlation: 0.789
+  Combined Score: 0.340
+  Number of Countries: 9
+
+
+Detailed Metrics by Factor:
+--------------------------------------------------------------------------------
+overall_happiness_mae: 1.175
+overall_happiness_rmse: 1.405
+overall_happiness_correlation: 0.819
+gdp_mae: 3.847
+gdp_rmse: 3.855
+gdp_correlation: 0.785
+social_support_mae: 6.761
+social_support_rmse: 6.764
+social_support_correlation: 0.796
+health_mae: 6.008
+health_rmse: 6.009
+health_correlation: 0.830
+freedom_mae: 5.829
+freedom_rmse: 5.833
+freedom_correlation: 0.777
+generosity_mae: 4.662
+generosity_rmse: 4.665
+generosity_correlation: 0.736
+corruption_mae: 3.146
+corruption_rmse: 3.177
+corruption_correlation: 0.779

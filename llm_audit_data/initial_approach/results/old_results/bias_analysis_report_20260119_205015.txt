@@ -1,0 +1,1587 @@
+================================================================================
+LLM Bias Analysis Report
+================================================================================
+
+Date: 2026-01-19 20:50:15
+
+Total countries analyzed: 147
+
+
+================================================================================
+ANALYSIS BY: Global North vs Global South
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean bias: +1.447 ± 0.839
+    Median bias: +1.368
+    Countries: 109
+    p-value: 0.1000
+
+  Global North:
+    Mean bias: +0.519 ± 0.356
+    Median bias: +0.497
+    Countries: 38
+    p-value: 0.1000
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean bias: +1.447 ± 0.839
+    Median bias: +1.368
+    Countries: 109
+    p-value: 0.1000
+
+  Global North:
+    Mean bias: +0.519 ± 0.356
+    Median bias: +0.497
+    Countries: 38
+    p-value: 0.1000
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +4.650 ± 0.377
+    Median bias: +4.597
+    Countries: 38
+    p-value: 0.1000
+
+  Global South:
+    Mean bias: +3.950 ± 0.565
+    Median bias: +4.079
+    Countries: 109
+    p-value: 0.1000
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Global South:
+    Mean bias: +6.860 ± 0.269
+    Median bias: +6.846
+    Countries: 109
+    p-value: 0.1000
+
+  Global North:
+    Mean bias: +6.853 ± 0.170
+    Median bias: +6.859
+    Countries: 38
+    p-value: 0.1000
+
+
+Health:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +6.156 ± 0.149
+    Median bias: +6.155
+    Countries: 38
+    p-value: 0.1000
+
+  Global South:
+    Mean bias: +6.083 ± 0.211
+    Median bias: +6.084
+    Countries: 108
+    p-value: 0.1000
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +6.613 ± 0.252
+    Median bias: +6.617
+    Countries: 38
+    p-value: 0.1000
+
+  Global South:
+    Mean bias: +5.929 ± 0.601
+    Median bias: +6.073
+    Countries: 108
+    p-value: 0.1000
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +4.083 ± 0.358
+    Median bias: +4.094
+    Countries: 38
+    p-value: 0.1000
+
+  Global South:
+    Mean bias: +3.821 ± 0.309
+    Median bias: +3.777
+    Countries: 109
+    p-value: 0.1000
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Global North:
+    Mean bias: +5.584 ± 1.747
+    Median bias: +5.580
+    Countries: 38
+    p-value: 0.1000
+
+  Global South:
+    Mean bias: +2.526 ± 0.828
+    Median bias: +2.402
+    Countries: 108
+    p-value: 0.1000
+
+
+================================================================================
+ANALYSIS BY: World 1/2/3 Classification
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  World 3:
+    Mean bias: +2.058 ± 1.028
+    Median bias: +1.654
+    Countries: 9
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +1.296 ± 0.791
+    Median bias: +1.137
+    Countries: 116
+    p-value: 0.1000
+
+  World 1:
+    Mean bias: +0.389 ± 0.331
+    Median bias: +0.431
+    Countries: 22
+    p-value: 0.1000
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  World 3:
+    Mean bias: +2.058 ± 1.028
+    Median bias: +1.654
+    Countries: 9
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +1.296 ± 0.791
+    Median bias: +1.137
+    Countries: 116
+    p-value: 0.1000
+
+  World 1:
+    Mean bias: +0.389 ± 0.331
+    Median bias: +0.431
+    Countries: 22
+    p-value: 0.1000
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +4.830 ± 0.369
+    Median bias: +4.870
+    Countries: 22
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +4.029 ± 0.547
+    Median bias: +4.137
+    Countries: 116
+    p-value: 0.1000
+
+  World 3:
+    Mean bias: +3.741 ± 0.601
+    Median bias: +3.755
+    Countries: 9
+    p-value: 0.1000
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  World 3:
+    Mean bias: +6.942 ± 0.490
+    Median bias: +6.935
+    Countries: 9
+    p-value: 0.1000
+
+  World 1:
+    Mean bias: +6.899 ± 0.162
+    Median bias: +6.888
+    Countries: 22
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +6.844 ± 0.234
+    Median bias: +6.836
+    Countries: 116
+    p-value: 0.1000
+
+
+Health:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +6.189 ± 0.168
+    Median bias: +6.179
+    Countries: 22
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +6.097 ± 0.193
+    Median bias: +6.085
+    Countries: 115
+    p-value: 0.1000
+
+  World 3:
+    Mean bias: +5.945 ± 0.258
+    Median bias: +5.888
+    Countries: 9
+    p-value: 0.1000
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +6.667 ± 0.293
+    Median bias: +6.774
+    Countries: 22
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +6.055 ± 0.569
+    Median bias: +6.160
+    Countries: 115
+    p-value: 0.1000
+
+  World 3:
+    Mean bias: +5.405 ± 0.682
+    Median bias: +5.565
+    Countries: 9
+    p-value: 0.1000
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +4.271 ± 0.320
+    Median bias: +4.260
+    Countries: 22
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +3.825 ± 0.304
+    Median bias: +3.774
+    Countries: 116
+    p-value: 0.1000
+
+  World 3:
+    Mean bias: +3.779 ± 0.232
+    Median bias: +3.740
+    Countries: 9
+    p-value: 0.1000
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  World 1:
+    Mean bias: +6.524 ± 1.577
+    Median bias: +6.702
+    Countries: 22
+    p-value: 0.1000
+
+  World 2:
+    Mean bias: +2.816 ± 1.039
+    Median bias: +2.556
+    Countries: 115
+    p-value: 0.1000
+
+  World 3:
+    Mean bias: +1.960 ± 0.487
+    Median bias: +2.092
+    Countries: 9
+    p-value: 0.1000
+
+
+================================================================================
+ANALYSIS BY: Continent
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Africa:
+    Mean bias: +1.722 ± 0.636
+    Median bias: +1.856
+    Countries: 12
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +1.610 ± 0.804
+    Median bias: +1.459
+    Countries: 58
+    p-value: 0.1000
+
+  Asia:
+    Mean bias: +1.430 ± 0.989
+    Median bias: +1.078
+    Countries: 23
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +0.699 ± 0.248
+    Median bias: +0.724
+    Countries: 10
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +0.578 ± 0.381
+    Median bias: +0.492
+    Countries: 33
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +0.404 ± 0.230
+    Median bias: +0.443
+    Countries: 9
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +0.389 ± 0.026
+    Median bias: +0.389
+    Countries: 2
+    p-value: 0.1000
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Africa:
+    Mean bias: +1.722 ± 0.636
+    Median bias: +1.856
+    Countries: 12
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +1.610 ± 0.804
+    Median bias: +1.459
+    Countries: 58
+    p-value: 0.1000
+
+  Asia:
+    Mean bias: +1.430 ± 0.989
+    Median bias: +1.078
+    Countries: 23
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +0.699 ± 0.248
+    Median bias: +0.724
+    Countries: 10
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +0.578 ± 0.381
+    Median bias: +0.492
+    Countries: 33
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +0.404 ± 0.230
+    Median bias: +0.443
+    Countries: 9
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +0.389 ± 0.026
+    Median bias: +0.389
+    Countries: 2
+    p-value: 0.1000
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +4.620 ± 0.075
+    Median bias: +4.620
+    Countries: 2
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +4.481 ± 0.455
+    Median bias: +4.446
+    Countries: 33
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +4.314 ± 0.224
+    Median bias: +4.375
+    Countries: 9
+    p-value: 0.1000
+
+  Asia:
+    Mean bias: +4.107 ± 0.929
+    Median bias: +4.366
+    Countries: 23
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +4.099 ± 0.576
+    Median bias: +4.274
+    Countries: 10
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +3.985 ± 0.475
+    Median bias: +4.078
+    Countries: 58
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +3.731 ± 0.572
+    Median bias: +3.711
+    Countries: 12
+    p-value: 0.1000
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Asia:
+    Mean bias: +6.897 ± 0.367
+    Median bias: +6.910
+    Countries: 23
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +6.883 ± 0.254
+    Median bias: +6.867
+    Countries: 58
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +6.877 ± 0.282
+    Median bias: +6.785
+    Countries: 12
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +6.871 ± 0.114
+    Median bias: +6.893
+    Countries: 9
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +6.826 ± 0.046
+    Median bias: +6.826
+    Countries: 2
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +6.799 ± 0.163
+    Median bias: +6.835
+    Countries: 33
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +6.792 ± 0.136
+    Median bias: +6.841
+    Countries: 10
+    p-value: 0.1000
+
+
+Health:
+--------------------------------------------------------------------------------
+  North America:
+    Mean bias: +6.189 ± 0.104
+    Median bias: +6.184
+    Countries: 9
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +6.182 ± 0.163
+    Median bias: +6.181
+    Countries: 10
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +6.157 ± 0.025
+    Median bias: +6.157
+    Countries: 2
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +6.152 ± 0.141
+    Median bias: +6.166
+    Countries: 33
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +6.089 ± 0.202
+    Median bias: +6.077
+    Countries: 57
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +6.052 ± 0.226
+    Median bias: +6.075
+    Countries: 12
+    p-value: 0.1000
+
+  Asia:
+    Mean bias: +6.013 ± 0.260
+    Median bias: +5.993
+    Countries: 23
+    p-value: 0.1000
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.723 ± 0.042
+    Median bias: +6.723
+    Countries: 2
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +6.599 ± 0.269
+    Median bias: +6.614
+    Countries: 33
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +6.235 ± 0.404
+    Median bias: +6.348
+    Countries: 10
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +6.202 ± 0.672
+    Median bias: +6.376
+    Countries: 9
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +5.924 ± 0.598
+    Median bias: +6.032
+    Countries: 57
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +5.879 ± 0.446
+    Median bias: +5.949
+    Countries: 12
+    p-value: 0.1000
+
+  Asia:
+    Mean bias: +5.826 ± 0.712
+    Median bias: +6.056
+    Countries: 23
+    p-value: 0.1000
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +4.375 ± 0.009
+    Median bias: +4.375
+    Countries: 2
+    p-value: 0.1000
+
+  Asia:
+    Mean bias: +4.009 ± 0.458
+    Median bias: +3.929
+    Countries: 23
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +3.911 ± 0.323
+    Median bias: +3.847
+    Countries: 33
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +3.877 ± 0.258
+    Median bias: +3.771
+    Countries: 9
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +3.870 ± 0.335
+    Median bias: +3.921
+    Countries: 12
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +3.853 ± 0.319
+    Median bias: +3.855
+    Countries: 58
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +3.684 ± 0.126
+    Median bias: +3.681
+    Countries: 10
+    p-value: 0.1000
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.628 ± 0.619
+    Median bias: +6.628
+    Countries: 2
+    p-value: 0.1000
+
+  Europe:
+    Mean bias: +5.086 ± 2.032
+    Median bias: +4.541
+    Countries: 33
+    p-value: 0.1000
+
+  Asia:
+    Mean bias: +3.267 ± 1.836
+    Median bias: +2.700
+    Countries: 22
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +3.079 ± 1.307
+    Median bias: +3.053
+    Countries: 9
+    p-value: 0.1000
+
+  South America:
+    Mean bias: +2.847 ± 1.429
+    Median bias: +2.491
+    Countries: 10
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +2.542 ± 0.784
+    Median bias: +2.385
+    Countries: 58
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +2.373 ± 0.680
+    Median bias: +2.173
+    Countries: 12
+    p-value: 0.1000
+
+
+================================================================================
+ANALYSIS BY: Region
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  South Asia:
+    Mean bias: +2.485 ± 0.885
+    Median bias: +2.590
+    Countries: 6
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +1.722 ± 0.636
+    Median bias: +1.856
+    Countries: 12
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +1.610 ± 0.804
+    Median bias: +1.459
+    Countries: 58
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +1.170 ± 0.901
+    Median bias: +1.078
+    Countries: 11
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +0.851 ± 0.111
+    Median bias: +0.835
+    Countries: 6
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +0.699 ± 0.248
+    Median bias: +0.724
+    Countries: 10
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +0.678 ± 0.411
+    Median bias: +0.743
+    Countries: 13
+    p-value: 0.1000
+
+  Western Europe:
+    Mean bias: +0.513 ± 0.356
+    Median bias: +0.462
+    Countries: 20
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +0.404 ± 0.230
+    Median bias: +0.443
+    Countries: 9
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +0.389 ± 0.026
+    Median bias: +0.389
+    Countries: 2
+    p-value: 0.1000
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  South Asia:
+    Mean bias: +2.485 ± 0.885
+    Median bias: +2.590
+    Countries: 6
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +1.722 ± 0.636
+    Median bias: +1.856
+    Countries: 12
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +1.610 ± 0.804
+    Median bias: +1.459
+    Countries: 58
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +1.170 ± 0.901
+    Median bias: +1.078
+    Countries: 11
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +0.851 ± 0.111
+    Median bias: +0.835
+    Countries: 6
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +0.699 ± 0.248
+    Median bias: +0.724
+    Countries: 10
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +0.678 ± 0.411
+    Median bias: +0.743
+    Countries: 13
+    p-value: 0.1000
+
+  Western Europe:
+    Mean bias: +0.513 ± 0.356
+    Median bias: +0.462
+    Countries: 20
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +0.404 ± 0.230
+    Median bias: +0.443
+    Countries: 9
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +0.389 ± 0.026
+    Median bias: +0.389
+    Countries: 2
+    p-value: 0.1000
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  Western Europe:
+    Mean bias: +4.675 ± 0.386
+    Median bias: +4.713
+    Countries: 20
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +4.620 ± 0.075
+    Median bias: +4.620
+    Countries: 2
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +4.491 ± 0.204
+    Median bias: +4.536
+    Countries: 6
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +4.314 ± 0.224
+    Median bias: +4.375
+    Countries: 9
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +4.182 ± 0.397
+    Median bias: +4.291
+    Countries: 13
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +4.099 ± 0.576
+    Median bias: +4.274
+    Countries: 10
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +4.026 ± 1.251
+    Median bias: +4.090
+    Countries: 11
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +3.985 ± 0.475
+    Median bias: +4.078
+    Countries: 58
+    p-value: 0.1000
+
+  South Asia:
+    Mean bias: +3.869 ± 0.606
+    Median bias: +3.748
+    Countries: 6
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +3.731 ± 0.572
+    Median bias: +3.711
+    Countries: 12
+    p-value: 0.1000
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  South Asia:
+    Mean bias: +7.201 ± 0.355
+    Median bias: +7.240
+    Countries: 6
+    p-value: 0.1000
+
+  Western Europe:
+    Mean bias: +6.905 ± 0.090
+    Median bias: +6.921
+    Countries: 20
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +6.883 ± 0.254
+    Median bias: +6.867
+    Countries: 58
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +6.877 ± 0.282
+    Median bias: +6.785
+    Countries: 12
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +6.871 ± 0.114
+    Median bias: +6.893
+    Countries: 9
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +6.838 ± 0.368
+    Median bias: +6.936
+    Countries: 11
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +6.826 ± 0.046
+    Median bias: +6.826
+    Countries: 2
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +6.792 ± 0.136
+    Median bias: +6.841
+    Countries: 10
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +6.702 ± 0.179
+    Median bias: +6.703
+    Countries: 6
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +6.636 ± 0.105
+    Median bias: +6.644
+    Countries: 13
+    p-value: 0.1000
+
+
+Health:
+--------------------------------------------------------------------------------
+  North America:
+    Mean bias: +6.189 ± 0.104
+    Median bias: +6.184
+    Countries: 9
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +6.182 ± 0.163
+    Median bias: +6.181
+    Countries: 10
+    p-value: 0.1000
+
+  Western Europe:
+    Mean bias: +6.163 ± 0.147
+    Median bias: +6.142
+    Countries: 20
+    p-value: 0.1000
+
+  Oceania:
+    Mean bias: +6.157 ± 0.025
+    Median bias: +6.157
+    Countries: 2
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +6.136 ± 0.137
+    Median bias: +6.183
+    Countries: 13
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +6.089 ± 0.202
+    Median bias: +6.077
+    Countries: 57
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +6.056 ± 0.194
+    Median bias: +6.053
+    Countries: 6
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +6.052 ± 0.226
+    Median bias: +6.075
+    Countries: 12
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +6.002 ± 0.337
+    Median bias: +5.922
+    Countries: 11
+    p-value: 0.1000
+
+  South Asia:
+    Mean bias: +5.988 ± 0.171
+    Median bias: +5.941
+    Countries: 6
+    p-value: 0.1000
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.723 ± 0.042
+    Median bias: +6.723
+    Countries: 2
+    p-value: 0.1000
+
+  Western Europe:
+    Mean bias: +6.694 ± 0.203
+    Median bias: +6.667
+    Countries: 20
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +6.454 ± 0.299
+    Median bias: +6.539
+    Countries: 13
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +6.235 ± 0.404
+    Median bias: +6.348
+    Countries: 10
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +6.205 ± 0.263
+    Median bias: +6.254
+    Countries: 6
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +6.202 ± 0.672
+    Median bias: +6.376
+    Countries: 9
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +5.924 ± 0.598
+    Median bias: +6.032
+    Countries: 57
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +5.879 ± 0.446
+    Median bias: +5.949
+    Countries: 12
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +5.757 ± 0.819
+    Median bias: +5.950
+    Countries: 11
+    p-value: 0.1000
+
+  South Asia:
+    Mean bias: +5.575 ± 0.750
+    Median bias: +5.842
+    Countries: 6
+    p-value: 0.1000
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +4.375 ± 0.009
+    Median bias: +4.375
+    Countries: 2
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +4.246 ± 0.530
+    Median bias: +4.376
+    Countries: 11
+    p-value: 0.1000
+
+  Western Europe:
+    Mean bias: +4.056 ± 0.244
+    Median bias: +4.062
+    Countries: 20
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +3.877 ± 0.258
+    Median bias: +3.771
+    Countries: 9
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +3.870 ± 0.335
+    Median bias: +3.921
+    Countries: 12
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +3.853 ± 0.319
+    Median bias: +3.855
+    Countries: 58
+    p-value: 0.1000
+
+  South Asia:
+    Mean bias: +3.836 ± 0.158
+    Median bias: +3.812
+    Countries: 6
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +3.749 ± 0.315
+    Median bias: +3.801
+    Countries: 6
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +3.687 ± 0.308
+    Median bias: +3.667
+    Countries: 13
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +3.684 ± 0.126
+    Median bias: +3.681
+    Countries: 10
+    p-value: 0.1000
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  Oceania:
+    Mean bias: +6.628 ± 0.619
+    Median bias: +6.628
+    Countries: 2
+    p-value: 0.1000
+
+  Western Europe:
+    Mean bias: +5.911 ± 1.958
+    Median bias: +6.187
+    Countries: 20
+    p-value: 0.1000
+
+  East Asia:
+    Mean bias: +4.337 ± 2.100
+    Median bias: +3.359
+    Countries: 6
+    p-value: 0.1000
+
+  Eastern Europe:
+    Mean bias: +3.815 ± 1.435
+    Median bias: +3.300
+    Countries: 13
+    p-value: 0.1000
+
+  Middle East:
+    Mean bias: +3.262 ± 1.955
+    Median bias: +2.821
+    Countries: 10
+    p-value: 0.1000
+
+  North America:
+    Mean bias: +3.079 ± 1.307
+    Median bias: +3.053
+    Countries: 9
+    p-value: 0.1000
+
+  Latin America:
+    Mean bias: +2.847 ± 1.429
+    Median bias: +2.491
+    Countries: 10
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +2.542 ± 0.784
+    Median bias: +2.385
+    Countries: 58
+    p-value: 0.1000
+
+  Africa:
+    Mean bias: +2.373 ± 0.680
+    Median bias: +2.173
+    Countries: 12
+    p-value: 0.1000
+
+  South Asia:
+    Mean bias: +2.204 ± 0.370
+    Median bias: +2.159
+    Countries: 6
+    p-value: 0.1000
+
+
+================================================================================
+ANALYSIS BY: Income Level
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Low Income:
+    Mean bias: +2.058 ± 1.028
+    Median bias: +1.654
+    Countries: 9
+    p-value: 0.1000
+
+  Lower Middle Income:
+    Mean bias: +2.005 ± 0.632
+    Median bias: +2.034
+    Countries: 30
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +1.048 ± 0.687
+    Median bias: +0.958
+    Countries: 86
+    p-value: 0.1000
+
+  High Income:
+    Mean bias: +0.389 ± 0.331
+    Median bias: +0.431
+    Countries: 22
+    p-value: 0.1000
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Low Income:
+    Mean bias: +2.058 ± 1.028
+    Median bias: +1.654
+    Countries: 9
+    p-value: 0.1000
+
+  Lower Middle Income:
+    Mean bias: +2.005 ± 0.632
+    Median bias: +2.034
+    Countries: 30
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +1.048 ± 0.687
+    Median bias: +0.958
+    Countries: 86
+    p-value: 0.1000
+
+  High Income:
+    Mean bias: +0.389 ± 0.331
+    Median bias: +0.431
+    Countries: 22
+    p-value: 0.1000
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +4.830 ± 0.369
+    Median bias: +4.870
+    Countries: 22
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +4.089 ± 0.562
+    Median bias: +4.229
+    Countries: 86
+    p-value: 0.1000
+
+  Lower Middle Income:
+    Mean bias: +3.857 ± 0.467
+    Median bias: +3.865
+    Countries: 30
+    p-value: 0.1000
+
+  Low Income:
+    Mean bias: +3.741 ± 0.601
+    Median bias: +3.755
+    Countries: 9
+    p-value: 0.1000
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Lower Middle Income:
+    Mean bias: +7.006 ± 0.273
+    Median bias: +6.967
+    Countries: 30
+    p-value: 0.1000
+
+  Low Income:
+    Mean bias: +6.942 ± 0.490
+    Median bias: +6.935
+    Countries: 9
+    p-value: 0.1000
+
+  High Income:
+    Mean bias: +6.899 ± 0.162
+    Median bias: +6.888
+    Countries: 22
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +6.788 ± 0.190
+    Median bias: +6.777
+    Countries: 86
+    p-value: 0.1000
+
+
+Health:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +6.189 ± 0.168
+    Median bias: +6.179
+    Countries: 22
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +6.108 ± 0.201
+    Median bias: +6.102
+    Countries: 85
+    p-value: 0.1000
+
+  Lower Middle Income:
+    Mean bias: +6.067 ± 0.165
+    Median bias: +6.054
+    Countries: 30
+    p-value: 0.1000
+
+  Low Income:
+    Mean bias: +5.945 ± 0.258
+    Median bias: +5.888
+    Countries: 9
+    p-value: 0.1000
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +6.667 ± 0.293
+    Median bias: +6.774
+    Countries: 22
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +6.102 ± 0.620
+    Median bias: +6.246
+    Countries: 86
+    p-value: 0.1000
+
+  Lower Middle Income:
+    Mean bias: +5.916 ± 0.355
+    Median bias: +6.029
+    Countries: 29
+    p-value: 0.1000
+
+  Low Income:
+    Mean bias: +5.405 ± 0.682
+    Median bias: +5.565
+    Countries: 9
+    p-value: 0.1000
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +4.271 ± 0.320
+    Median bias: +4.260
+    Countries: 22
+    p-value: 0.1000
+
+  Lower Middle Income:
+    Mean bias: +3.921 ± 0.319
+    Median bias: +3.926
+    Countries: 30
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +3.792 ± 0.293
+    Median bias: +3.744
+    Countries: 86
+    p-value: 0.1000
+
+  Low Income:
+    Mean bias: +3.779 ± 0.232
+    Median bias: +3.740
+    Countries: 9
+    p-value: 0.1000
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  High Income:
+    Mean bias: +6.524 ± 1.577
+    Median bias: +6.702
+    Countries: 22
+    p-value: 0.1000
+
+  Upper Middle Income:
+    Mean bias: +3.023 ± 1.117
+    Median bias: +2.711
+    Countries: 85
+    p-value: 0.1000
+
+  Lower Middle Income:
+    Mean bias: +2.230 ± 0.391
+    Median bias: +2.168
+    Countries: 30
+    p-value: 0.1000
+
+  Low Income:
+    Mean bias: +1.960 ± 0.487
+    Median bias: +2.092
+    Countries: 9
+    p-value: 0.1000
+
+
+================================================================================
+ANALYSIS BY: East vs West
+================================================================================
+
+
+Overall Happiness:
+--------------------------------------------------------------------------------
+  Other:
+    Mean bias: +1.629 ± 0.775
+    Median bias: +1.477
+    Countries: 70
+    p-value: 0.1000
+
+  East:
+    Mean bias: +1.159 ± 0.898
+    Median bias: +0.920
+    Countries: 36
+    p-value: 0.1000
+
+  West:
+    Mean bias: +0.529 ± 0.311
+    Median bias: +0.492
+    Countries: 41
+    p-value: 0.1000
+
+
+Life Evaluation:
+--------------------------------------------------------------------------------
+  Other:
+    Mean bias: +1.629 ± 0.775
+    Median bias: +1.477
+    Countries: 70
+    p-value: 0.1000
+
+  East:
+    Mean bias: +1.159 ± 0.898
+    Median bias: +0.920
+    Countries: 36
+    p-value: 0.1000
+
+  West:
+    Mean bias: +0.529 ± 0.311
+    Median bias: +0.492
+    Countries: 41
+    p-value: 0.1000
+
+
+Gdp:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +4.453 ± 0.466
+    Median bias: +4.416
+    Countries: 41
+    p-value: 0.1000
+
+  East:
+    Mean bias: +4.134 ± 0.774
+    Median bias: +4.301
+    Countries: 36
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +3.941 ± 0.498
+    Median bias: +4.030
+    Countries: 70
+    p-value: 0.1000
+
+
+Social Support:
+--------------------------------------------------------------------------------
+  Other:
+    Mean bias: +6.882 ± 0.257
+    Median bias: +6.863
+    Countries: 70
+    p-value: 0.1000
+
+  West:
+    Mean bias: +6.866 ± 0.113
+    Median bias: +6.868
+    Countries: 41
+    p-value: 0.1000
+
+  East:
+    Mean bias: +6.803 ± 0.324
+    Median bias: +6.703
+    Countries: 36
+    p-value: 0.1000
+
+
+Health:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +6.173 ± 0.136
+    Median bias: +6.175
+    Countries: 41
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +6.083 ± 0.205
+    Median bias: +6.077
+    Countries: 69
+    p-value: 0.1000
+
+  East:
+    Mean bias: +6.057 ± 0.229
+    Median bias: +6.109
+    Countries: 36
+    p-value: 0.1000
+
+
+Freedom:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +6.475 ± 0.453
+    Median bias: +6.538
+    Countries: 41
+    p-value: 0.1000
+
+  East:
+    Mean bias: +6.053 ± 0.665
+    Median bias: +6.149
+    Countries: 36
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +5.917 ± 0.572
+    Median bias: +6.032
+    Countries: 69
+    p-value: 0.1000
+
+
+Generosity:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +3.942 ± 0.281
+    Median bias: +3.856
+    Countries: 41
+    p-value: 0.1000
+
+  East:
+    Mean bias: +3.893 ± 0.435
+    Median bias: +3.749
+    Countries: 36
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +3.856 ± 0.319
+    Median bias: +3.855
+    Countries: 70
+    p-value: 0.1000
+
+
+Corruption:
+--------------------------------------------------------------------------------
+  West:
+    Mean bias: +4.577 ± 2.233
+    Median bias: +3.905
+    Countries: 41
+    p-value: 0.1000
+
+  East:
+    Mean bias: +3.470 ± 1.697
+    Median bias: +2.892
+    Countries: 35
+    p-value: 0.1000
+
+  Other:
+    Mean bias: +2.513 ± 0.765
+    Median bias: +2.361
+    Countries: 70
+    p-value: 0.1000
+
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+Bias interpretation:
+  Positive bias: LLM overestimates compared to real data
+  Negative bias: LLM underestimates compared to real data
+
+Significance levels:
+  *** p < 0.001 (highly significant)
+  **  p < 0.01  (very significant)
+  *   p < 0.05  (significant)

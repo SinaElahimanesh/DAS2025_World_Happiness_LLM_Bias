@@ -1,0 +1,7 @@
+Few-shot examples selected from real data:
+  Highest (rank #1): Finland (happiness: 7.74)
+  Medium-high (top 25%): El Salvador (happiness: 6.49)
+  Medium (median): Bolivia (happiness: 5.87)
+  Medium-low (bottom 25%): Ukraine (happiness: 4.68)
+  Lowest (rank #last): Afghanistan (happiness: 1.36)
+Processing 20 personas for Bangladesh (one at a time)

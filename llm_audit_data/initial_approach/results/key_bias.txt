@@ -1,0 +1,54 @@
+Key bias findings:
+1. Global North vs Global South:
+Global South: +1.447 overestimation (109 countries)
+Global North: +0.519 overestimation (38 countries)
+The LLM overestimates happiness more for Global South countries
+2. World 1/2/3 classification:
+World 3 (Least Developed): +2.058 overestimation (9 countries)
+World 2 (Developing): +1.296 overestimation (116 countries)
+World 1 (Highly Developed): +0.389 overestimation (22 countries)
+Strong pattern: overestimation increases with lower development levels
+3. By continent:
+Africa: +1.722 overestimation (highest)
+Asia: +1.430 overestimation
+Europe: +0.578 overestimation
+North America: +0.404 overestimation
+Oceania: +0.389 overestimation (lowest)
+4. Corruption perception bias:
+High Income: +6.524 overestimation
+Low Income: +1.960 overestimation
+The LLM systematically overestimates corruption perceptions, especially for high-income countries
+5. East vs West:
+West: +0.529 overestimation
+East: +1.159 overestimation
+The LLM overestimates more for Eastern countries
+Files created:
+results/bias_summary_[timestamp].csv - Summary statistics by group
+results/bias_analysis_data_[timestamp].csv - Full dataset with all groupings
+results/bias_analysis_report_[timestamp].txt - Detailed text report
+Main finding: The LLM systematically overestimates happiness scores, with larger overestimations for less developed countries (World 3, Global South, Africa). This suggests a bias where the model tends to be more optimistic about developing countries' happiness levels compared to real-world data.
+
+
+
+
+New findings: developed country comparisons
+1. Developed East Asia vs Developed West:
+Developed West: +0.344 overestimation (16 countries: US, Canada, Western Europe, Oceania)
+Developed East Asia: +0.776 overestimation (2 countries: Japan, South Korea, Singapore, Taiwan, Hong Kong)
+Developed East Asia is overestimated more than Developed West.
+2. Developed country subcategories:
+Nordic: +0.132 overestimation (5 countries: Denmark, Finland, Iceland, Norway, Sweden) — lowest
+Anglo-Saxon: +0.432 overestimation (5 countries: US, UK, Canada, Ireland, Australia, New Zealand)
+Central Europe: +0.447 overestimation (6 countries: Germany, Austria, Switzerland, Benelux)
+Developed East Asia: +0.776 overestimation (2 countries)
+Middle East Developed: +0.378 overestimation (4 countries: Israel, UAE, Qatar, etc.)
+3. Economic model/development path:
+Social Market (Continental Europe): +0.304 overestimation (9 countries) — lowest
+Market Liberal (Anglo-Saxon): +0.432 overestimation (5 countries)
+Resource-Based (Oil-rich): +0.706 overestimation (3 countries: UAE, Qatar, Kuwait, Saudi, Norway)
+State-Led Development (East Asian model): +0.776 overestimation (2 countries: Japan, South Korea, Singapore)
+Key insights:
+Nordic countries show the smallest bias (+0.132).
+Developed East Asia shows higher bias (+0.776) than Developed West (+0.344).
+Social Market economies (Continental Europe) show lower bias (+0.304) than Market Liberal (+0.432).
+All developed country categories still show overestimation; none show underestimation.

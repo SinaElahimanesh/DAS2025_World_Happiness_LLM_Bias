@@ -1,0 +1,53 @@
+LLM vs Real Data Comparison Statistics
+================================================================================
+
+Total countries compared: 147
+
+OVERALL HAPPINESS:
+  Mean Difference (LLM - Real): 0.052
+  Std Dev of Differences: 0.712
+  Mean Absolute Difference: 0.536
+  Correlation: 0.817
+
+LIFE EVALUATION:
+  Mean Difference (LLM - Real): 0.052
+  Std Dev of Differences: 0.712
+  Mean Absolute Difference: 0.536
+  Correlation: 0.817
+
+GDP:
+  Mean Difference (LLM - Real): 3.641
+  Std Dev of Differences: 0.541
+  Mean Absolute Difference: 3.641
+  Correlation: 0.839
+
+SOCIAL SUPPORT:
+  Mean Difference (LLM - Real): 5.922
+  Std Dev of Differences: 0.255
+  Mean Absolute Difference: 5.922
+  Correlation: 0.698
+
+HEALTH:
+  Mean Difference (LLM - Real): 5.629
+  Std Dev of Differences: 0.226
+  Mean Absolute Difference: 5.629
+  Correlation: 0.761
+
+FREEDOM:
+  Mean Difference (LLM - Real): 5.186
+  Std Dev of Differences: 0.719
+  Mean Absolute Difference: 5.186
+  Correlation: 0.560
+
+GENEROSITY:
+  Mean Difference (LLM - Real): 3.395
+  Std Dev of Differences: 0.270
+  Mean Absolute Difference: 3.395
+  Correlation: 0.361
+
+CORRUPTION:
+  Mean Difference (LLM - Real): 3.383
+  Std Dev of Differences: 1.632
+  Mean Absolute Difference: 3.383
+  Correlation: 0.733
+
