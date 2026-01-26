@@ -2,7 +2,7 @@
 
 **Saarland University - Data and Society Seminar (Winter 2025)**
 
-**Team:** Sina Elahi Manesh, Yassal Arif, Akash Chavanta
+**Team:** Sina Elahi Manesh, Yassal Arif, Akash Chavan
 
 ---
 
