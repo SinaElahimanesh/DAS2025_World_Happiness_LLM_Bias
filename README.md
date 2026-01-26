@@ -555,4 +555,4 @@ This project is for academic purposes as part of the Data and Society Seminar at
 
 - **Sina Elahi Manesh**
 - **Yassal Arif**
-- **Akash Chavanta**
+- **Akash Chavan**
