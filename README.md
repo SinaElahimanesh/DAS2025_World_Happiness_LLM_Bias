@@ -4,9 +4,9 @@
 
 **Team:** Sina Elahi Manesh, Yassal Arif, Akash Chavan
 
-**→ [World Happiness Analysis & LLM Audit (main notebook)](World_Happiness_Analysis_and_LLM_Audit.ipynb)** — Jupyter Notebook, including all analysis and explanations.
+**→ [World Happiness Analysis & LLM Audit (main notebook)](World_Happiness_Analysis_and_LLM_Audit.ipynb)** | Jupyter Notebook, including all analysis and explanations.
 
-**→ [GitHub repository](https://github.com/SinaElahimanesh/DAS2025_World_Happiness_LLM_Bias)** — Source code and project files.
+**→ [GitHub repository](https://github.com/SinaElahimanesh/DAS2025_World_Happiness_LLM_Bias)** | Source code and project files.
 
 ---
 
