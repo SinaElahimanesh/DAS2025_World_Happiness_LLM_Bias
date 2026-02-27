@@ -141,6 +141,17 @@ Project/
     │       ├── statistics_*.csv
     │       └── persona_stats_*.csv
     │
+    ├── structured_personas_approach/   # Single question + structured persona fields
+    │   ├── run_audit_structured.py  # Main execution script
+    │   ├── survey_gallup.py        # Single question survey
+    │   ├── api_client_structured.py # API client for this approach
+    │   ├── structured_personas.py  # Structured persona definitions
+    │   ├── README.md               # Approach documentation
+    │   └── results/                # Generated results
+    │       ├── llm_audit_results.csv
+    │       ├── statistics_*.csv
+    │       └── persona_stats_*.csv
+    │
     └── results/                # Shared results directory
         ├── llm_audit_results.csv
         ├── llm_vs_real_comparison.csv
@@ -303,13 +314,52 @@ python run_audit_gallup.py
 - Same CSV structure (factor columns set to None)
 - Only `overall_happiness` collected
 
+### 4. Structured Personas Approach (1 Question + Structured Personas)
+
+**Purpose:** Single Cantril Ladder question with personas defined as structured fields (nationality, job, gender, age, etc.); nationality is the main focus in the prompt.
+
+```bash
+cd llm_audit_data/structured_personas_approach
+python run_audit_structured.py
+```
+
+**What it does:**
+- Same single question as Single Question Gallup (Cantril Ladder only)
+- Personas as structured fields: nationality, job, gender, work_details, living_situation, family, hobbies, values_or_notes
+- Half of personas male, half female; list order shuffled with fixed seed
+- Temperature: 0.3
+
+**Output:**
+- Same format as Single Question Gallup (`results/llm_audit_results.csv`, statistics, persona_stats)
+- Factor columns set to None
+
 **Note:** All approaches may take several hours due to API rate limits. Progress is saved incrementally, so you can resume if interrupted.
 
 ---
 
-### 4. Compare LLM vs Real Data
+### 5. Full LLM Analysis (All Approaches + Bias)
 
-**Purpose:** Compare LLM responses with actual World Happiness Report data
+**Purpose:** Build comparison from all four approaches and run bias analysis for dashboard and reports.
+
+```bash
+cd llm_audit_data
+python run_full_llm_analysis.py
+```
+
+**What it does:**
+- Builds `results/llm_vs_real_comparison.csv` from all approach result CSVs (initial, few-shot, single-question, structured-personas)
+- Runs `analyze_bias.py` to produce bias summaries, analysis data, significant findings, and reports
+- Run after adding or updating any approach's results
+
+**Output:**
+- `results/llm_vs_real_comparison.csv` (with 'approach' column)
+- `results/bias_summary_*.csv`, `bias_analysis_data_*.csv`, `significant_findings_*.csv`, `bias_analysis_report_*.txt`
+
+---
+
+### 6. Compare LLM vs Real Data (Single Approach)
+
+**Purpose:** Compare one approach's LLM responses with actual World Happiness Report data
 
 ```bash
 cd llm_audit_data
@@ -330,7 +380,7 @@ python analyze_llm_vs_real.py
 
 ---
 
-### 5. Analyze Bias by Groups
+### 7. Analyze Bias by Groups
 
 **Purpose:** Systematic bias analysis across different country groupings
 
@@ -358,7 +408,7 @@ python analyze_bias.py
 
 ---
 
-### 6. Hyperparameter Tuning
+### 8. Hyperparameter Tuning
 
 **Purpose:** Find optimal API hyperparameters (temperature, chain-of-thought)
 
@@ -381,7 +431,7 @@ python hyperparameter_tuning.py
 
 ---
 
-### 7. Prompt Tuning
+### 9. Prompt Tuning
 
 **Purpose:** Test different prompt strategies to improve LLM accuracy
 
@@ -444,7 +494,7 @@ The dashboard includes **6 main tabs** (LLM Audit has 4 sub-tabs):
    - **Bias by Groups:** Detailed analysis by groupings
    - **Statistical Significance:** Simplified significance tests showing:
      - **Key groupings only:** Continent, World 1/2/3, Region, and Developed/Undeveloped
-     - **Separate results for each approach:** Initial, Few-Shot, and Single Question Gallup
+     - **Separate results for each approach:** Initial, Few-Shot, Single Question Gallup, Structured Personas
      - **LLM vs Real comparison:** Shows LLM mean, Real mean, bias, p-values, and significance checkmarks
      - **Focus on Overall Happiness:** Tests whether LLM predictions differ significantly from real data
 
@@ -484,6 +534,7 @@ The LLM Audit tab includes an **Approach Filter** dropdown that allows you to:
 - View **Initial Approach** only
 - View **Few-Shot Approach** only
 - View **Single Question Gallup Approach** only
+- View **Structured Personas Approach** only
 
 When a specific approach is selected:
 - **Overview** tab shows statistics computed only from that approach's data
@@ -539,7 +590,7 @@ app.run(debug=True, port=8051)
 ## 📝 Notes
 
 - The LLM audit system uses OpenAI's GPT API (model: gpt-5.2)
-- **Three approaches available**: Initial (7 questions), Few-Shot (7 questions + calibration), Single Question (1 question only)
+- **Four approaches available**: Initial (7 questions), Few-Shot (7 questions + calibration), Single Question (1 question only), Structured Personas (1 question + structured persona fields)
 - Results are automatically organized - newest files kept in `results/`, older versions moved to `results/old_results/`
 - All approaches use the same 20 personas and produce compatible CSV output formats
 - Regional and income classifications are simplified for analysis purposes
