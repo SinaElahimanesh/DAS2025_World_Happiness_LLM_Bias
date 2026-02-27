@@ -21,7 +21,7 @@
 
 ## 🎯 Project Overview
 
-This project provides a comprehensive analysis of the World Happiness Report data (2013-2023) through an interactive web dashboard and advanced LLM audit system. The project combines traditional statistical analysis with cutting-edge AI bias research.
+This project provides a comprehensive analysis of the World Happiness Report data (2011-2024). Classical time-series and group analyses use historical years up to 2023, while LLM vs real comparisons are anchored on 2024. The project combines traditional statistical analysis with cutting-edge AI bias research.
 
 ### Key Components
 
@@ -76,7 +76,7 @@ Project/
 ├── trend_analysis.py           # Temporal trend analysis
 ├── group_comparison.py         # Regional/income comparisons
 ├── llm_audit.py                # LLM audit integration for dashboard
-├── data.xlsx                   # World Happiness Report dataset
+├── dataset.xlsx                # World Happiness Report dataset (2011–2024 panel)
 ├── requirements.txt            # Python dependencies
 ├── run.sh                      # Quick start script
 ├── README.md                   # Project documentation
@@ -215,8 +215,8 @@ Loading data...
 Starting World Happiness Analysis Dashboard
 ==================================================
 Data loaded: 1510 records
-Years: 2013 - 2023
-Countries: 166
+Years: 2011 - 2024
+Countries: 166 (147 with complete Gallup data used in main analysis)
 
 Access the dashboard at: http://127.0.0.1:8050
 ==================================================
@@ -228,13 +228,14 @@ Access the dashboard at: http://127.0.0.1:8050
 
 ## 🤖 LLM Audit Pipelines
 
-The LLM audit system consists of **three different approaches**, each with its own methodology:
+The LLM audit system consists of **four different approaches**, each with its own methodology:
 
-### Three Approaches Overview
+### Four Approaches Overview
 
 1. **Initial Approach** (`initial_approach/`) - Original 7-question method
 2. **Few-Shot Approach** (`few_shot_approach/`) - Improved with calibration examples
 3. **Single Question Gallup Approach** (`single_question_gallup_approach/`) - Pure Gallup methodology
+4. **Structured Personas Approach** (`structured_personas_approach/`) - Single-question Gallup-style with structured personas (nationality, job, gender, etc.) and explicit nationality focus
 
 See `llm_audit_data/README.md` for detailed comparison and methodology.
 
@@ -345,7 +346,7 @@ python analyze_bias.py
   - Developed/Undeveloped countries
 - Calculates mean differences, statistical significance, effect sizes
 - Generates detailed reports by group and metric
-- **Note:** The dashboard's Statistical Significance tab shows a simplified analysis focusing on key groupings: Continent, World 1/2/3, Region, and Developed/Undeveloped, with separate results for each of the three approaches
+- **Note:** The dashboard's Statistical Significance tab shows a simplified analysis focusing on key groupings: Continent, World 1/2/3, Region, and Developed/Undeveloped, with separate results for each approach (initial, few-shot, single-question, structured-personas)
 
 **Output:**
 - `results/bias_summary_*.csv` - Summary by groups
@@ -423,7 +424,7 @@ The dashboard includes **6 main tabs** (LLM Audit has 4 sub-tabs):
    - Regional differences in factor importance
    - R-squared values for model fit
 
-3. **📈 Trends (2013-2023)** - Temporal analysis
+3. **📈 Trends (2011-2023)** - Temporal analysis (historical window used for classical trends; the dataset itself covers 2011-2024, with 2024 reserved as the comparison year for LLM vs real)
    - Global average happiness over time
    - Regional and income-level trends
    - Top performers and biggest changers
@@ -461,7 +462,7 @@ The dashboard includes **6 main tabs** (LLM Audit has 4 sub-tabs):
 
 ### Required Files
 
-- ✅ `data.xlsx` - World Happiness Report dataset (required for dashboard)
+- ✅ `dataset.xlsx` - World Happiness Report dataset (historical panel, 2011–2024, required for dashboard and all analysis)
 
 ### Optional LLM Audit Files
 
@@ -506,9 +507,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### FileNotFoundError: data.xlsx
+### FileNotFoundError: main WHR dataset
 
-**Solution:** Ensure `data.xlsx` is in the project root directory.
+**Solution:** Ensure `dataset.xlsx` (the main World Happiness Report Excel file) is in the project root directory.
 
 ### Port 8050 Already in Use
 

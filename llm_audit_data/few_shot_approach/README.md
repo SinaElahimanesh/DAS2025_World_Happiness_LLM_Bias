@@ -104,7 +104,7 @@ This is a parallel implementation that does NOT change the original flows - both
    ```bash
    pip install openai pandas numpy
    ```
-3. **Data File**: Ensure `data.xlsx` exists in the project root directory
+3. **Data File**: Ensure the main World Happiness Report Excel dataset (`dataset.xlsx`) exists in the project root directory
 
 ### Run the Improved Audit
 
@@ -121,7 +121,7 @@ python run_audit_improved.py
 **Note**: This approach uses few-shot examples from real data to calibrate the LLM's understanding of score ranges.
 
 **What the script does:**
-1. Loads all countries from the main dataset (`data.xlsx`)
+1. Loads all countries from the main dataset (`dataset.xlsx`, via `data_loader.load_data`)
 2. Processes each country with all 20 personas (one at a time)
 3. Saves results incrementally to `results/llm_audit_results.csv` after each country
 4. Shows progress with country-level statistics
@@ -182,7 +182,7 @@ Pending: 2100
 
 ### Check Which Countries Are Used in Few-Shot Examples
 
-The few-shot examples are selected dynamically from your `data.xlsx`. The selected countries are **automatically printed** when the survey is generated. You'll see output like:
+The few-shot examples are selected dynamically from your main WHR dataset (`dataset.xlsx`, loaded through `data_loader`). The selected countries are **automatically printed** when the survey is generated. You'll see output like:
 
 ```
 Few-shot examples selected from real data:
@@ -272,7 +272,7 @@ The improved survey includes:
 - Country name for context (but no income-level or expected score biasing)
 
 #### Few-Shot Examples
-- Automatically loads real data from `data.xlsx` (latest year available)
+- Automatically loads real data from the main WHR dataset (`dataset.xlsx`) via `data_loader` (latest year available)
 - Selects 5 diverse countries based on happiness score percentiles:
   1. **Highest happiness country** (rank #1, top of the list when sorted by happiness_score descending)
   2. **Medium-high happiness country** (top 25% percentile, at index = total_countries ÷ 4)
@@ -280,7 +280,7 @@ The improved survey includes:
   4. **Medium-low happiness country** (bottom 25% percentile, at index = total_countries × 3 ÷ 4)
   5. **Lowest happiness country** (rank #last, bottom of the list when sorted by happiness_score descending)
 - Shows actual scores from World Happiness Report for these countries
-- **Countries are selected dynamically** based on the data in `data.xlsx`, so exact countries depend on your dataset
+- **Countries are selected dynamically** based on the data in `dataset.xlsx`, so exact countries depend on your dataset
 - To see which countries are used, call `get_few_shot_examples_from_real_data(verbose=True)` or check the survey prompt during execution
 - Presented as calibration examples, not targets
 - Helps LLM understand realistic score ranges across the full spectrum

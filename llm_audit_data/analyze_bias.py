@@ -129,7 +129,7 @@ def load_comparison_data(csv_file="results/llm_vs_real_comparison.csv"):
     
     This data includes:
     - LLM predictions (llm_* columns)
-    - Real data from data.xlsx (real_* columns) 
+    - Real data from the main WHR dataset (real_* columns, loaded via data_loader)
     - Differences (diff_* columns = llm - real)
     
     Returns DataFrame with all comparison data, or None if file not found
@@ -142,17 +142,17 @@ def load_comparison_data(csv_file="results/llm_vs_real_comparison.csv"):
     df = pd.read_csv(csv_file)
     print(f"Loaded comparison data for {len(df)} countries")
     
-    # Verify real data columns exist (these come from data.xlsx)
+    # Verify real data columns exist (these come from the WHR dataset via data_loader)
     real_cols = [c for c in df.columns if c.startswith('real_')]
     llm_cols = [c for c in df.columns if c.startswith('llm_')]
     diff_cols = [c for c in df.columns if c.startswith('diff_')]
     
-    print(f"  Real data columns (from data.xlsx): {len(real_cols)} found")
+    print(f"  Real data columns (from WHR dataset): {len(real_cols)} found")
     print(f"  LLM prediction columns: {len(llm_cols)} found")
     print(f"  Difference columns: {len(diff_cols)} found")
     
     if len(real_cols) == 0:
-        print("ERROR: No real data columns found! Cannot compare to real data from data.xlsx")
+        print("ERROR: No real data columns found! Cannot compare to real WHR data")
         return None
     
     if len(llm_cols) == 0:
@@ -434,7 +434,7 @@ def add_groupings(df):
 def calculate_group_bias(df, group_col, metric_col):
     """
     Calculate bias metrics for a specific group and metric
-    Tests if LLM predictions differ significantly from real data from data.xlsx
+    Tests if LLM predictions differ significantly from real data from the WHR dataset
     
     Args:
         df: DataFrame with comparison data (including diff columns and real data columns)
@@ -444,14 +444,14 @@ def calculate_group_bias(df, group_col, metric_col):
     if metric_col not in df.columns:
         return None
     
-    # Get corresponding real data column (from data.xlsx)
+    # Get corresponding real data column (from WHR dataset)
     real_col = metric_col.replace('diff_', 'real_')
     llm_col = metric_col.replace('diff_', 'llm_')
     
-    # CRITICAL: Verify real data columns exist - these come from data.xlsx
+    # CRITICAL: Verify real data columns exist - these come from WHR dataset via data_loader
     if real_col not in df.columns:
         print(f"WARNING: Real data column '{real_col}' not found for metric '{metric_col}'. "
-              f"Cannot compare to real data from data.xlsx!")
+              f"Cannot compare to real WHR data!")
         return None
     
     if llm_col not in df.columns:
@@ -500,12 +500,12 @@ def calculate_group_bias(df, group_col, metric_col):
         group_stats['f_statistic'] = np.nan
         group_stats['p_value_anova'] = np.nan
     
-    # PRIMARY TEST: For each group: paired t-test - are LLM values significantly different from real data (from data.xlsx)?
+    # PRIMARY TEST: For each group: paired t-test - are LLM values significantly different from real data (from WHR dataset)?
     # This is the main comparison - LLM predictions vs actual real-world data
     # 
     # WHAT WE'RE COMPARING:
     # - llm_values: LLM predictions for each country in the group
-    # - real_values: Real data from data.xlsx for each country in the group
+    # - real_values: Real data from WHR dataset for each country in the group
     # - Test: Paired t-test (ttest_rel) - compares LLM vs Real for each country pair
     # - Null hypothesis: Mean difference between LLM and Real is zero
     # - Alternative: Mean difference is not zero (two-tailed test)
@@ -526,7 +526,7 @@ def calculate_group_bias(df, group_col, metric_col):
         if len(group_df) > 1:
             try:
                 llm_values = group_df[llm_col].values
-                real_values = group_df[real_col].values  # Real data from data.xlsx
+                real_values = group_df[real_col].values  # Real data from WHR dataset
                 
                 # Verify we have matching pairs
                 if len(llm_values) != len(real_values):
@@ -539,7 +539,7 @@ def calculate_group_bias(df, group_col, metric_col):
                 # 
                 # Example: For "Global North" group with "diff_overall_happiness":
                 #   - llm_values: [7.345, 7.385, 6.63, ...] (LLM predictions for each country)
-                #   - real_values: [6.974, 6.81, 6.397, ...] (Real data from data.xlsx for same countries)
+        #   - real_values: [6.974, 6.81, 6.397, ...] (Real data from WHR dataset for same countries)
                 #   - Test compares: LLM[0] vs Real[0], LLM[1] vs Real[1], etc. (paired)
                 #   - Result: p-value tells us if LLM predictions are significantly different from real data
                 
@@ -622,8 +622,8 @@ def calculate_group_bias(df, group_col, metric_col):
     else:
         group_stats['pairwise_comparisons'] = ''
     
-    # Primary p-value for summary - ALWAYS prioritize comparison to real data from data.xlsx
-    # Priority: vs real data (from data.xlsx) > ANOVA > vs zero
+    # Primary p-value for summary - ALWAYS prioritize comparison to real data from WHR dataset
+    # Priority: vs real data (from WHR dataset) > ANOVA > vs zero
     # The paired t-test (p_value_vs_real) is the most important test as it directly compares
     # LLM predictions to actual real-world data from the World Happiness Report
     if 'p_value_vs_real' in group_stats.columns:
@@ -635,7 +635,7 @@ def calculate_group_bias(df, group_col, metric_col):
     else:
         group_stats['p_value'] = np.nan
     
-    # Significant flag (p < 0.05) - LLM significantly different from real data (from data.xlsx)
+    # Significant flag (p < 0.05) - LLM significantly different from real data (from WHR dataset)
     # This is based on the paired t-test comparing LLM predictions to real data
     group_stats['significant'] = group_stats.get('significantly_different_from_real', 
                                                  group_stats.get('p_value', 1.0) < 0.05)
@@ -731,7 +731,18 @@ def analyze_all_groupings(df, silent=False):
     return results
 
 def calculate_bias_summary(results):
-    """Create summary of biases across all groups and metrics"""
+    """Create summary of biases across all groups and metrics.
+    
+    NOTE on multiple comparisons:
+    - We perform many hypothesis tests across groupings and metrics.
+    - To control the family-wise error rate for the primary test
+      (LLM vs Real paired t-test, p_value_vs_real), we apply a
+      Bonferroni correction across ALL rows that have a finite
+      p_value_vs_real.
+    - The raw p-values (p_value_vs_real) are preserved, and we add:
+        * p_value_vs_real_bonferroni
+        * significantly_different_from_real_bonferroni
+    """
     summary = []
     
     for group_col, metrics in results.items():
@@ -755,7 +766,31 @@ def calculate_bias_summary(results):
                     'significantly_different_from_real': row.get('significantly_different_from_real', False)
                 })
     
-    return pd.DataFrame(summary)
+    summary_df = pd.DataFrame(summary)
+    
+    # Apply Bonferroni correction for the primary LLM vs Real test.
+    # We correct across all rows where p_value_vs_real is defined.
+    if not summary_df.empty and 'p_value_vs_real' in summary_df.columns:
+        mask = summary_df['p_value_vs_real'].notna()
+        m = int(mask.sum())
+        if m > 0:
+            # Bonferroni: p_adj = min(p * m, 1)
+            p_raw = summary_df.loc[mask, 'p_value_vs_real']
+            p_adj = np.minimum(p_raw * m, 1.0)
+            summary_df['p_value_vs_real_bonferroni'] = np.nan
+            summary_df.loc[mask, 'p_value_vs_real_bonferroni'] = p_adj
+            summary_df['significantly_different_from_real_bonferroni'] = (
+                summary_df['p_value_vs_real_bonferroni'] < 0.05
+            )
+        else:
+            summary_df['p_value_vs_real_bonferroni'] = np.nan
+            summary_df['significantly_different_from_real_bonferroni'] = False
+    else:
+        # Ensure columns exist for downstream code
+        summary_df['p_value_vs_real_bonferroni'] = np.nan
+        summary_df['significantly_different_from_real_bonferroni'] = False
+    
+    return summary_df
 
 def generate_bias_report(df, results, summary_df, output_dir="results"):
     """Generate detailed bias analysis report"""
@@ -770,14 +805,15 @@ def generate_bias_report(df, results, summary_df, output_dir="results"):
         f.write(f"Total countries analyzed: {len(df)}\n\n")
         
         # Summary of significant biases
+        # Use Bonferroni-corrected p-values for the main LLM vs Real test
         significant_biases = summary_df[
-            (summary_df['significant'] == True) | 
-            (summary_df['significantly_different_from_real'] == True)
+            (summary_df['significant'] == True) |
+            (summary_df.get('significantly_different_from_real_bonferroni', False) == True)
         ].copy()
         
         if len(significant_biases) > 0:
             f.write("="*80 + "\n")
-            f.write("STATISTICALLY SIGNIFICANT BIASES (p < 0.05)\n")
+            f.write("STATISTICALLY SIGNIFICANT BIASES (p < 0.05 after Bonferroni correction for LLM vs Real tests)\n")
             f.write("="*80 + "\n\n")
             
             for grouping in significant_biases['grouping'].unique():
@@ -943,17 +979,24 @@ def main():
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
-    # Save summary CSV
+    # Save summary CSV (includes Bonferroni-corrected p_value_vs_real_bonferroni)
     summary_file = os.path.join(output_dir, f"bias_summary_{timestamp}.csv")
     summary_df.to_csv(summary_file, index=False)
     print(f"\nBias summary saved to: {summary_file}")
     
     # Generate and save significant findings CSV (for web app)
-    # Filter for significant findings: p_value_vs_real < 0.05 or significantly_different_from_real == True
-    significant_findings = summary_df[
-        (summary_df['significantly_different_from_real'] == True) |
-        ((summary_df['p_value_vs_real'].notna()) & (summary_df['p_value_vs_real'] < 0.05))
-    ].copy()
+    # Filter for significant findings using Bonferroni-corrected p-values for the primary test
+    # (LLM vs Real paired t-test: p_value_vs_real_bonferroni < 0.05)
+    if 'significantly_different_from_real_bonferroni' in summary_df.columns:
+        significant_findings = summary_df[
+            summary_df['significantly_different_from_real_bonferroni'] == True
+        ].copy()
+    else:
+        # Fallback to uncorrected p-values if old summaries are loaded
+        significant_findings = summary_df[
+            (summary_df['significantly_different_from_real'] == True) |
+            ((summary_df['p_value_vs_real'].notna()) & (summary_df['p_value_vs_real'] < 0.05))
+        ].copy()
     
     if len(significant_findings) > 0:
         sig_file = os.path.join(output_dir, f"significant_findings_{timestamp}.csv")

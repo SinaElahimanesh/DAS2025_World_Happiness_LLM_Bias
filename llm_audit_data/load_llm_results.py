@@ -1,8 +1,9 @@
 """
 Load Real LLM Audit Results for Web Interface
 
-This module loads the actual LLM audit results from CSV files from all three approaches
-and prepares them for visualization in the web interface.
+This module loads the actual LLM audit results from CSV files from all approaches
+(initial, few_shot, single_question, structured_personas) and prepares them for
+visualization in the web interface.
 """
 
 import pandas as pd
@@ -38,13 +39,14 @@ def load_llm_results_from_approach(approach_name, approach_path):
         return None
 
 def get_all_llm_results():
-    """Load LLM audit results from all three approaches"""
+    """Load LLM audit results from all approaches (initial, few_shot, single_question, structured_personas)."""
     base_dir = Path(__file__).parent
     
     approaches = {
         'initial': base_dir / "initial_approach",
         'few_shot': base_dir / "few_shot_approach",
-        'single_question': base_dir / "single_question_gallup_approach"
+        'single_question': base_dir / "single_question_gallup_approach",
+        'structured_personas': base_dir / "structured_personas_approach"
     }
     
     all_results = []
@@ -83,14 +85,13 @@ def _build_comparison_from_raw():
     """Build LLM vs Real comparison from raw results (has 'approach' column). Returns None on failure."""
     if load_data is None:
         return None
-    data_file = parent_dir / "data.xlsx"
-    if not data_file.exists():
-        return None
     try:
+        # Let load_data resolve the underlying Excel file (e.g., dataset.xlsx)
+        data_file = parent_dir / "data.xlsx"
         df_real = load_data(str(data_file))
         df_real = clean_data(df_real)
-        latest_year = df_real['Year'].max()
-        df_real_latest = df_real[df_real['Year'] == latest_year].copy()
+        latest_year = df_real["Year"].max()
+        df_real_latest = df_real[df_real["Year"] == latest_year].copy()
         llm_results = get_all_llm_results()
         if llm_results is None:
             return None
@@ -151,7 +152,7 @@ def _build_comparison_from_raw():
 
 
 def get_latest_llm_comparison():
-    """Load and create LLM vs Real comparison data from all three approaches.
+    """Load and create LLM vs Real comparison data from all approaches.
     Prefers raw-built data (with 'approach' column) so dashboard can filter by approach.
     Falls back to pre-computed CSV if raw build fails."""
     # Prefer building from raw so we have 'approach' for per-approach filtering
@@ -163,6 +164,23 @@ def get_latest_llm_comparison():
     if comparison_file.exists():
         return pd.read_csv(comparison_file)
     return None
+
+
+def save_comparison_to_csv():
+    """
+    Build LLM vs Real comparison from all approaches and save to results/llm_vs_real_comparison.csv.
+    Call this before running analyze_bias.py so that bias summary and significant findings
+    include all approaches (including structured_personas).
+    Returns the path to the saved file, or None on failure.
+    """
+    built = _build_comparison_from_raw()
+    if built is None or len(built) == 0:
+        return None
+    results_dir = Path(__file__).parent / "results"
+    results_dir.mkdir(parents=True, exist_ok=True)
+    comparison_file = results_dir / "llm_vs_real_comparison.csv"
+    built.to_csv(comparison_file, index=False)
+    return comparison_file
 
 def compute_bias_from_comparison(comparison_df):
     """
@@ -189,10 +207,16 @@ def compute_bias_from_comparison(comparison_df):
     if not results:
         return None, None, None
     bias_summary_df = calculate_bias_summary(results)
-    significant_df = bias_summary_df[
-        (bias_summary_df['significantly_different_from_real'] == True) |
-        ((bias_summary_df['p_value_vs_real'].notna()) & (bias_summary_df['p_value_vs_real'] < 0.05))
-    ].copy()
+    # Use Bonferroni-corrected significance if available; otherwise fall back to raw p-values
+    if 'significantly_different_from_real_bonferroni' in bias_summary_df.columns:
+        significant_df = bias_summary_df[
+            bias_summary_df['significantly_different_from_real_bonferroni'] == True
+        ].copy()
+    else:
+        significant_df = bias_summary_df[
+            (bias_summary_df['significantly_different_from_real'] == True) |
+            ((bias_summary_df['p_value_vs_real'].notna()) & (bias_summary_df['p_value_vs_real'] < 0.05))
+        ].copy()
     return bias_summary_df, df, significant_df
 
 

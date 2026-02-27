@@ -253,7 +253,10 @@ def render_content(tab):
 
 def render_map_tab():
     """Enhanced world map visualization with interactivity"""
-    latest_year = df['Year'].max()
+    # For traditional map view, use historical data up to (but excluding) 2024
+    years = sorted(df['Year'].dropna().unique())
+    hist_years = [y for y in years if y < 2024]
+    latest_year = max(hist_years) if hist_years else years[-1]
     df_latest = df[df['Year'] == latest_year].copy()
     
     # Create enhanced choropleth map with better styling
@@ -557,8 +560,11 @@ def render_trends_tab():
     # Enhanced visualizations
     fig1 = px.line(global_trends, x='Year', y='average_happiness', markers=True)
     fig1.update_traces(line=dict(width=4, color='#1e3c72'), marker=dict(size=10, color='#2a5298'))
+    hist_years = [y for y in df['Year'].unique() if y < 2024]
+    start_year = min(hist_years) if hist_years else int(df['Year'].min())
+    end_year = max(hist_years) if hist_years else int(df['Year'].max())
     fig1.update_layout(
-        title=dict(text=f'Global Average Happiness Trend ({df["Year"].min()}-{df["Year"].max()})', font=dict(size=20, color='#1e3c72')),
+        title=dict(text=f'Global Average Happiness Trend ({start_year}-{end_year})', font=dict(size=20, color='#1e3c72')),
         height=450,
         xaxis=dict(title=dict(text='Year', font=dict(size=14)),
                   showgrid=True, gridcolor='#e8e8e8', gridwidth=1),
@@ -611,7 +617,7 @@ def render_trends_tab():
     fig5 = px.bar(trend_stats['biggest_improvers'].head(10), x='country', y='change', 
                   color='change', color_continuous_scale='Greens')
     fig5.update_layout(
-        title=dict(text=f'Biggest Improvements ({df["Year"].min()}-{df["Year"].max()})', font=dict(size=20, color='#1e3c72')),
+        title=dict(text=f'Biggest Improvements ({start_year}-{end_year})', font=dict(size=20, color='#1e3c72')),
         height=450,
         xaxis=dict(title=dict(text='Country', font=dict(size=14)), tickangle=-45,
                   showgrid=True, gridcolor='#e8e8e8', gridwidth=1),
@@ -624,7 +630,7 @@ def render_trends_tab():
     
     return html.Div([
         html.Div([
-            html.H2(f"Trend Analysis ({df['Year'].min()}-{df['Year'].max()})", style={'color': '#1e3c72', 'margin': '0 0 30px 0', 'fontSize': '2.2em', 'fontWeight': '600', 'borderBottom': '3px solid #2a5298', 'paddingBottom': '15px'}),
+            html.H2(f"Trend Analysis ({start_year}-{end_year})", style={'color': '#1e3c72', 'margin': '0 0 30px 0', 'fontSize': '2.2em', 'fontWeight': '600', 'borderBottom': '3px solid #2a5298', 'paddingBottom': '15px'}),
             html.Div([
                 html.Div([
                     html.H3("Key Statistics", style={'fontSize': '20px', 'marginBottom': '20px', 'color': '#1e3c72', 'fontWeight': '600'}),
@@ -809,11 +815,12 @@ def render_llm_tab_real_data(comparison_df, bias_summary_df, bias_data_df, signi
         approach_names = {
             'initial': 'Initial Approach',
             'few_shot': 'Few-Shot Approach',
-            'single_question': 'Single Question Gallup Approach'
+            'single_question': 'Single Question Gallup Approach',
+            'structured_personas': 'Structured Personas Approach'
         }
         approaches_used = [approach_names.get(a, a) for a in approaches_list]
     else:
-        approaches_used = ['All three approaches']
+        approaches_used = ['All approaches']
     
     # Prepare data for storage (convert NaN to None for JSON serialization)
     comparison_dict = comparison_df.replace({np.nan: None}).to_dict('records')
@@ -844,7 +851,8 @@ def render_llm_tab_real_data(comparison_df, bias_summary_df, bias_data_df, signi
                         {'label': 'All Approaches', 'value': 'all'},
                         {'label': 'Initial Approach', 'value': 'initial'},
                         {'label': 'Few-Shot Approach', 'value': 'few_shot'},
-                        {'label': 'Single Question Gallup Approach', 'value': 'single_question'}
+                        {'label': 'Single Question Gallup Approach', 'value': 'single_question'},
+                        {'label': 'Structured Personas Approach', 'value': 'structured_personas'}
                     ],
                     value='all',
                     clearable=False,
@@ -886,7 +894,7 @@ def render_llm_overview(comparison_df, bias_summary_df, is_filtered=False):
     fig1 = px.scatter(comparison_df, x='real_overall_happiness', y='llm_overall_happiness', 
                      hover_name='country', hover_data=['diff_overall_happiness'] + (['approach'] if color_col else []),
                      color=color_col,
-                     labels={'real_overall_happiness': 'Real Data (from data.xlsx)', 
+                    labels={'real_overall_happiness': 'Real Data (from WHR Excel dataset)',
                             'llm_overall_happiness': 'LLM Prediction',
                             'approach': 'Approach'},
                      title=f'LLM vs Real Data: Overall Happiness{title_suffix}')
@@ -1333,7 +1341,7 @@ def render_llm_groups(bias_summary_df, bias_data_df, is_filtered=False):
     return html.Div([
         html.H3("Bias Analysis by Groups", style={'fontSize': '20px', 'marginBottom': '20px', 'color': '#1e3c72', 'fontWeight': '600'}),
         filter_note if filter_note else html.Div(),
-        html.P("Positive values indicate LLM overestimation compared to real data from data.xlsx",
+        html.P("Positive values indicate LLM overestimation compared to real data from the WHR Excel dataset",
               style={'color': '#666', 'fontSize': '14px', 'marginBottom': '30px', 'fontStyle': 'italic'}),
         *figures_html
     ])
@@ -1353,7 +1361,8 @@ def render_llm_significance(significant_df, bias_summary_df, filtered_comparison
     approach_names = {
         'initial': 'Initial Approach',
         'few_shot': 'Few-Shot Approach',
-        'single_question': 'Single Question Gallup Approach'
+        'single_question': 'Single Question Gallup Approach',
+        'structured_personas': 'Structured Personas Approach'
     }
     
     all_results = []
@@ -1526,7 +1535,7 @@ def render_llm_metrics(comparison_df, bias_summary_df, is_filtered=False):
     
     return html.Div([
         html.H3("All Metrics Comparison", style={'fontSize': '20px', 'marginBottom': '20px', 'color': '#1e3c72', 'fontWeight': '600'}),
-        html.P("Comparing LLM predictions to real data from data.xlsx for all 7 metrics",
+        html.P("Comparing LLM predictions to real data from the WHR Excel dataset for all 7 metrics",
               style={'color': '#666', 'fontSize': '14px', 'marginBottom': '30px', 'fontStyle': 'italic'}),
         *[html.Div([dcc.Graph(figure=fig)], style={'marginBottom': '40px'}) for fig in figures]
     ])
@@ -1656,7 +1665,8 @@ def render_llm_subtab(subtab, approach_filter, comparison_data):
                 approach_names = {
                     'initial': 'Initial Approach',
                     'few_shot': 'Few-Shot Approach',
-                    'single_question': 'Single Question Gallup Approach'
+                    'single_question': 'Single Question Gallup Approach',
+                    'structured_personas': 'Structured Personas Approach'
                 }
                 approach_name = approach_names.get(approach_filter, approach_filter)
                 return html.Div([
@@ -1670,7 +1680,8 @@ def render_llm_subtab(subtab, approach_filter, comparison_data):
             approach_names = {
                 'initial': 'Initial Approach',
                 'few_shot': 'Few-Shot Approach',
-                'single_question': 'Single Question Gallup Approach'
+                'single_question': 'Single Question Gallup Approach',
+                'structured_personas': 'Structured Personas Approach'
             }
             count_msg = f"Showing {approach_names.get(approach_filter, approach_filter)}: {count_msg}"
         

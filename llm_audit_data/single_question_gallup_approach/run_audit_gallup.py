@@ -34,7 +34,7 @@ from analyzer import calculate_country_statistics, calculate_persona_statistics
 
 def load_countries():
     """Load list of countries from main dataset"""
-    data_file = os.path.join(parent_dir, 'data.xlsx')
+    data_file = os.path.join(parent_dir, 'data.xlsx')  # resolved by data_loader to dataset.xlsx
     
     from data_loader import load_data, clean_data
     
@@ -120,10 +120,10 @@ def main():
     processed_set = load_existing_results(csv_file)
     
     # Get countries and personas
-    print("\nLoading countries from data.xlsx...")
+    print("\nLoading countries from main WHR dataset (via data_loader)...")
     countries = load_countries()
     valid_countries_set = set(countries)  # Create set for fast lookup
-    print(f"Found {len(countries)} countries in data.xlsx")
+    print(f"Found {len(countries)} countries in main WHR dataset")
     
     print("\nLoading personas...")
     personas = get_all_personas()
@@ -143,20 +143,20 @@ def main():
         return
     
     # Group pending by country for efficient processing
-    # Filter out countries not in data.xlsx
+    # Filter out countries not in WHR dataset
     country_personas_map = {}
     skipped_countries = []
     for country, persona in pending_combinations:
         if country not in valid_countries_set:
             if country not in skipped_countries:
                 skipped_countries.append(country)
-            continue  # Skip countries not in data.xlsx
+            continue  # Skip countries not in WHR dataset
         if country not in country_personas_map:
             country_personas_map[country] = []
         country_personas_map[country].append(persona)
     
     if skipped_countries:
-        print(f"\n⚠️  Skipping {len(skipped_countries)} countries not found in data.xlsx:")
+        print(f"\n⚠️  Skipping {len(skipped_countries)} countries not found in WHR dataset:")
         for country in skipped_countries:
             print(f"   - {country}")
     
@@ -165,9 +165,9 @@ def main():
     
     # Process each country
     for idx, (country, country_personas) in enumerate(country_personas_map.items(), 1):
-        # Safety check: Skip if country not in data.xlsx
+        # Safety check: Skip if country not in WHR dataset
         if country not in valid_countries_set:
-            print(f"\n⚠️  Skipping {country} - not found in data.xlsx")
+            print(f"\n⚠️  Skipping {country} - not found in WHR dataset")
             continue
         
         print(f"\n{'='*60}")

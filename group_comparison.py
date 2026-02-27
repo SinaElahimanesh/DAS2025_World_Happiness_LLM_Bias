@@ -7,9 +7,21 @@ import numpy as np
 from scipy import stats
 
 
+def _latest_historical_year(df, cutoff_year: int = 2024) -> int:
+    """
+    Return the latest year strictly before cutoff_year if available,
+    otherwise fall back to the maximum year present.
+    Used so that group comparisons are based on historical data up to,
+    but not including, 2024.
+    """
+    years = sorted(df['Year'].dropna().unique())
+    hist_years = [y for y in years if y < cutoff_year]
+    return max(hist_years) if hist_years else years[-1]
+
+
 def compare_regions(df):
     """Compare happiness metrics across regions"""
-    latest_year = df['Year'].max()
+    latest_year = _latest_historical_year(df)
     df_latest = df[df['Year'] == latest_year].copy()
     
     region_stats = df_latest.groupby('region').agg({
@@ -34,7 +46,7 @@ def compare_regions(df):
 
 def compare_income_levels(df):
     """Compare happiness metrics across income levels"""
-    latest_year = df['Year'].max()
+    latest_year = _latest_historical_year(df)
     df_latest = df[df['Year'] == latest_year].copy()
     
     income_stats = df_latest.groupby('income_level').agg({
@@ -64,7 +76,7 @@ def compare_income_levels(df):
 
 def statistical_significance_test(df, group_col='region'):
     """Test statistical significance of differences between groups"""
-    latest_year = df['Year'].max()
+    latest_year = _latest_historical_year(df)
     df_latest = df[df['Year'] == latest_year].copy()
     
     groups = df_latest[group_col].unique()
@@ -92,7 +104,7 @@ def statistical_significance_test(df, group_col='region'):
 
 def get_factor_differences_by_group(df, group_col='region'):
     """Compare how different factors vary across groups"""
-    latest_year = df['Year'].max()
+    latest_year = _latest_historical_year(df)
     df_latest = df[df['Year'] == latest_year].copy()
     
     factors = ['gdp', 'social_support', 'life_expectancy', 'freedom', 
@@ -110,7 +122,7 @@ def get_factor_differences_by_group(df, group_col='region'):
 
 def get_happiness_gap_analysis(df):
     """Analyze the gap between highest and lowest happiness groups"""
-    latest_year = df['Year'].max()
+    latest_year = _latest_historical_year(df)
     df_latest = df[df['Year'] == latest_year].copy()
     
     # By region

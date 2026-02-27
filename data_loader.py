@@ -4,12 +4,31 @@ Data loading and preprocessing utilities
 
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
 
-def load_data(filepath='data.xlsx'):
-    """Load the World Happiness Report data"""
-    df = pd.read_excel(filepath)
-    return df
+def load_data(filepath: str = 'dataset.xlsx'):
+    """
+    Load the World Happiness Report data.
+
+    Expects the main Excel dataset in the project root (directory containing
+    this file) as 'dataset.xlsx'. Also accepts 'data.xlsx' for backward
+    compatibility. Paths are resolved relative to the project root so the
+    notebook or app can be run from any working directory.
+    """
+    root = Path(__file__).resolve().parent
+    candidate = (root / filepath) if not Path(filepath).is_absolute() else Path(filepath)
+    if not candidate.exists():
+        for alt_name in ('dataset.xlsx', 'data.xlsx'):
+            alt = root / alt_name
+            if alt.exists():
+                candidate = alt
+                break
+    if not candidate.exists():
+        raise FileNotFoundError(
+            f"Dataset not found. Place 'dataset.xlsx' (or 'data.xlsx') in the project root: {root}"
+        )
+    return pd.read_excel(candidate)
 
 
 def clean_data(df):

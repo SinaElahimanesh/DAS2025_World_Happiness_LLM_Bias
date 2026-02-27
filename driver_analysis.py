@@ -8,6 +8,18 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 
 
+def _latest_historical_year(df, cutoff_year: int = 2024) -> int:
+    """
+    Return the latest year strictly before cutoff_year if available,
+    otherwise fall back to the maximum year present.
+    This lets us keep 2024 for LLM vs real comparison, while using
+    all prior years for traditional analysis.
+    """
+    years = sorted(df['Year'].dropna().unique())
+    hist_years = [y for y in years if y < cutoff_year]
+    return max(hist_years) if hist_years else years[-1]
+
+
 def calculate_feature_importance(df):
     """
     Use weighted linear regression to determine importance of each factor
@@ -17,8 +29,8 @@ def calculate_feature_importance(df):
     features = ['gdp', 'social_support', 'life_expectancy', 'freedom', 
                 'generosity', 'corruption']
     
-    # Get data for latest year (most recent)
-    latest_year = df['Year'].max()
+    # Get data for latest historical year (exclude 2024 for regression)
+    latest_year = _latest_historical_year(df)
     df_latest = df[df['Year'] == latest_year].copy()
     
     # Remove rows with missing values
@@ -63,7 +75,7 @@ def analyze_drivers_by_group(df, group_by='region'):
         if len(df_group) < 10:  # Skip groups with too few data points
             continue
         
-        latest_year = df_group['Year'].max()
+        latest_year = _latest_historical_year(df_group)
         df_latest = df_group[df_group['Year'] == latest_year].copy()
         
         features = ['gdp', 'social_support', 'life_expectancy', 'freedom', 
@@ -106,8 +118,8 @@ def get_driver_summary(df):
     """Get overall driver analysis summary"""
     importance, model, scaler = calculate_feature_importance(df)
     
-    # Calculate R-squared
-    latest_year = df['Year'].max()
+    # Calculate R-squared on the same historical year
+    latest_year = _latest_historical_year(df)
     df_latest = df[df['Year'] == latest_year].copy()
     features = ['gdp', 'social_support', 'life_expectancy', 'freedom', 
                 'generosity', 'corruption']

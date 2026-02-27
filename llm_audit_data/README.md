@@ -1,6 +1,6 @@
 # LLM Audit System
 
-This directory contains three different approaches for conducting LLM happiness audits, each with different methodologies.
+This directory contains four different approaches for conducting LLM happiness audits, each with different methodologies.
 
 ## Directory Structure
 
@@ -25,6 +25,13 @@ llm_audit_data/
 │   ├── api_client_gallup.py
 │   └── README.md
 │
+├── structured_personas_approach/   # Single question with structured persona fields
+│   ├── run_audit_structured.py
+│   ├── survey_gallup.py
+│   ├── api_client_structured.py
+│   ├── structured_personas.py
+│   └── README.md
+│
 └── [Shared Files]                 # Used by all approaches
     ├── config.py                  # Configuration (API key management)
     ├── api_client.py              # API client (used by initial_approach & tuning scripts)
@@ -39,7 +46,7 @@ llm_audit_data/
     └── load_llm_results.py       # Load results for dashboard
 ```
 
-## Three Approaches
+## Four Approaches
 
 ### 1. Initial Approach (`initial_approach/`)
 
@@ -83,6 +90,16 @@ llm_audit_data/
 - Realistic system prompts
 - Temperature: 0.3
 
+### 4. Structured Personas Approach (`structured_personas_approach/`)
+
+**Methodology**: Same single Cantril Ladder question as Method 3, but personas are defined as structured fields (nationality, job, gender, age, living situation, family, hobbies, etc.) instead of long text. Nationality is the main focus in the prompt; half of personas are male, half female.
+
+**Characteristics**:
+- Same survey and output format as Single Question Gallup
+- Structured persona profile (nationality, job, gender, work_details, living_situation, family, hobbies, values_or_notes)
+- Reproducible persona definitions; list order shuffled with fixed seed
+- Temperature: 0.3
+
 ## Shared Components
 
 All approaches use:
@@ -119,7 +136,7 @@ All approaches use:
    pip install openai pandas numpy python-dotenv
    ```
 
-3. **Data file**: Ensure `data.xlsx` exists in the project root directory
+3. **Data file**: Ensure the main World Happiness Report Excel dataset (`dataset.xlsx`) exists in the project root directory
 
 ## Running Each Approach
 
@@ -141,6 +158,23 @@ cd single_question_gallup_approach
 python run_audit_gallup.py
 ```
 
+### Structured Personas Approach
+```bash
+cd structured_personas_approach
+python run_audit_structured.py
+```
+
+### Full Analysis (all approaches + bias)
+
+To regenerate the LLM vs Real comparison and bias reports so the dashboard and reports include **all four approaches** (including Structured Personas):
+
+```bash
+cd llm_audit_data
+python run_full_llm_analysis.py
+```
+
+This script (1) builds `results/llm_vs_real_comparison.csv` from all approach result CSVs, and (2) runs `analyze_bias.py` to produce `bias_summary_*.csv`, `bias_analysis_data_*.csv`, `significant_findings_*.csv`, and `bias_analysis_report_*.txt`. Run it after adding or updating any approach’s results.
+
 ## Output Format
 
 All approaches produce results in the same CSV format:
@@ -152,17 +186,18 @@ All approaches produce results in the same CSV format:
 
 ## Comparison
 
-| Aspect | Initial | Few-Shot | Single Question |
-|--------|---------|----------|-----------------|
-| **Questions** | 7 (1 overall + 6 factors) | 7 (1 overall + 6 factors) | 1 (overall only) |
-| **Calibration** | None | Few-shot examples + percentile anchoring | None |
-| **Temperature** | 0.0 | 0.3 | 0.3 |
-| **Factor Data** | Collected | Collected | Not collected (None) |
-| **Complexity** | Medium | High | Low |
+| Aspect | Initial | Few-Shot | Single Question | Structured Personas |
+|--------|---------|----------|-----------------|----------------------|
+| **Questions** | 7 (1 overall + 6 factors) | 7 (1 overall + 6 factors) | 1 (overall only) | 1 (overall only) |
+| **Calibration** | None | Few-shot examples + percentile anchoring | None | None |
+| **Temperature** | 0.0 | 0.3 | 0.3 | 0.3 |
+| **Factor Data** | Collected | Collected | Not collected (None) | Not collected (None) |
+| **Complexity** | Medium | High | Low | Low |
 
 ## Analysis Tools
 
 After running any approach, use:
-- `analyze_llm_vs_real.py` - Compare with real data
-- `analyze_bias.py` - Bias analysis by groups
+- **`run_full_llm_analysis.py`** - Build comparison from all four approaches and run bias analysis (recommended for dashboard and reports)
+- `analyze_llm_vs_real.py` - Compare a single approach with real data
+- `analyze_bias.py` - Bias analysis by groups (uses `results/llm_vs_real_comparison.csv`; run after `run_full_llm_analysis.py` or after manually creating comparison CSV)
 - `few_shot_approach/compare_approaches.py` - Compare approaches (if you have results from multiple)

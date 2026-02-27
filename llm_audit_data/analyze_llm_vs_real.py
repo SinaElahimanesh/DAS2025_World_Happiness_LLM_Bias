@@ -35,26 +35,27 @@ def load_llm_results(csv_file="results/llm_audit_results.csv"):
     return df
 
 def load_real_data():
-    """Load real World Happiness Report data for 2024"""
-    # Get the data file path
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    parent_dir = os.path.dirname(current_dir)
-    data_file = os.path.join(parent_dir, 'data.xlsx')
-    
-    df_raw = load_data(data_file)
+    """
+    Load real World Happiness Report data for 2024.
+
+    Uses the main Excel dataset via load_data/clean_data and then filters
+    to Year == 2024 (or the latest available year if 2024 is not present).
+    Internally, load_data will resolve the correct Excel file
+    (e.g., 'dataset.xlsx' in this project).
+    """
+    # Let load_data pick the correct underlying Excel file
+    df_raw = load_data('data.xlsx')
     df = clean_data(df_raw)
-    
-    # Filter for 2024 (or latest year if 2024 doesn't exist)
+
     if 'Year' in df.columns:
         available_years = sorted(df['Year'].unique(), reverse=True)
         target_year = 2024 if 2024 in available_years else available_years[0]
         df_2024 = df[df['Year'] == target_year].copy()
         print(f"Using data from year {target_year} (requested 2024)")
     else:
-        # If no Year column, use the latest data (assuming it's sorted)
         df_2024 = df.copy()
         print("No Year column found, using all available data")
-    
+
     return df_2024
 
 def calculate_llm_averages(df_llm):

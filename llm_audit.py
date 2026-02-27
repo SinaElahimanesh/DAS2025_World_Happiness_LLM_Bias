@@ -75,7 +75,10 @@ def compare_llm_vs_human(df, use_mock=True):
     """
     Compare LLM-generated scores with actual human-reported scores
     """
-    latest_year = df['Year'].max()
+    # Use latest historical year (exclude 2024) for this classic comparison
+    years = sorted(df['Year'].dropna().unique())
+    hist_years = [y for y in years if y < 2024]
+    latest_year = max(hist_years) if hist_years else years[-1]
     df_latest = df[df['Year'] == latest_year].copy()
     
     # Get unique countries

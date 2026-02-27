@@ -58,7 +58,7 @@ def load_improved_results():
 
 
 def load_real_data():
-    """Load real data from data.xlsx for comparison"""
+    """Load real WHR data (via data_loader) for comparison"""
     try:
         data_file = os.path.join(parent_dir, 'data.xlsx')
         from data_loader import load_data, clean_data
