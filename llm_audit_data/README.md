@@ -1,7 +1,5 @@
 # LLM Audit System
 
-**→ [World Happiness Analysis & LLM Audit (main notebook)](../World_Happiness_Analysis_and_LLM_Audit.ipynb)** — analysis, visualizations, and LLM audit results in one place.
-
 This directory contains four different approaches for conducting LLM happiness audits, each with different methodologies.
 
 ## Directory Structure

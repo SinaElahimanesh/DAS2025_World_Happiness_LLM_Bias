@@ -4,7 +4,7 @@
 
 **Team:** Sina Elahi Manesh, Yassal Arif, Akash Chavan
 
-**→ [World Happiness Analysis & LLM Audit (main notebook)](World_Happiness_Analysis_and_LLM_Audit.ipynb)** — analysis, visualizations, and LLM audit results in one place.
+**→ [World Happiness Analysis & LLM Audit (main notebook)](World_Happiness_Analysis_and_LLM_Audit.ipynb)** - Jupyter Notebook, including all analysis and explanations.
 
 ---
 
